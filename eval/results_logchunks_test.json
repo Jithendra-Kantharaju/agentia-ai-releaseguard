@@ -1,0 +1,4166 @@
+[
+  {
+    "summary": {
+      "method": "baseline",
+      "n": 243,
+      "evidence_hit_rate": 0.325,
+      "mean_precision": 0.081,
+      "mean_recall": 0.154,
+      "empty_rate": 0.021,
+      "avg_lines_cited": 6.49,
+      "mean_latency_s": 0.053,
+      "errors": 0
+    },
+    "items": [
+      {
+        "id": "Atom@atom:529072794",
+        "repo": "Atom@atom",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.3333333333333333,
+        "n_pred": 8
+      },
+      {
+        "id": "Atom@atom:544693739",
+        "repo": "Atom@atom",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "Atom@atom:544815664",
+        "repo": "Atom@atom",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "Atom@atom:544909524",
+        "repo": "Atom@atom",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "Atom@atom:544911466",
+        "repo": "Atom@atom",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "Atom@atom:544911934",
+        "repo": "Atom@atom",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "Atom@atom:544955015",
+        "repo": "Atom@atom",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "Atom@atom:544967051",
+        "repo": "Atom@atom",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "Atom@atom:544967184",
+        "repo": "Atom@atom",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "Atom@atom:544975039",
+        "repo": "Atom@atom",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:564664934",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566116668",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566117171",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566340191",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566340236",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566612949",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "Realm@realm-cocoa:538275604",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "Realm@realm-cocoa:545920250",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:550555722",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:550968986",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:552057535",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:552059876",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:552207105",
+        "repo": "Realm@realm-cocoa",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "airbnb@javascript:543923279",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556125301",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556126724",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556129904",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556132210",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:562099876",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:563268407",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:563272067",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:563282619",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:563286141",
+        "repo": "airbnb@javascript",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "angular@angular:476567056",
+        "repo": "angular@angular",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "angular@angular:502325280",
+        "repo": "angular@angular",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.2,
+        "n_pred": 8
+      },
+      {
+        "id": "angular@angular:502325876",
+        "repo": "angular@angular",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.2,
+        "n_pred": 8
+      },
+      {
+        "id": "angular@angular:504754325",
+        "repo": "angular@angular",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "angular@angular:504763230",
+        "repo": "angular@angular",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "avelino@awesome-go:552235410",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:553491785",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.011494252873563218,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:554941726",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:556378971",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:556757260",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:560328897",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.09090909090909091,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:560330322",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.09090909090909091,
+        "n_pred": 8
+      },
+      {
+        "id": "avelino@awesome-go:566068072",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.16666666666666666,
+        "recall": 0.019230769230769232,
+        "n_pred": 6
+      },
+      {
+        "id": "avelino@awesome-go:566530398",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.5,
+        "n_pred": 5
+      },
+      {
+        "id": "avelino@awesome-go:567188064",
+        "repo": "avelino@awesome-go",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.5,
+        "n_pred": 5
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:476896825",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.1,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:496514022",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.011976047904191617,
+        "n_pred": 8
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:496530269",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.011976047904191617,
+        "n_pred": 8
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:507107253",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.2,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:507195141",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.2,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:507199842",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.2,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:514356719",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.2,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:523143840",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.1,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:523684642",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.1,
+        "n_pred": 4
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:532942148",
+        "repo": "bcit-ci@CodeIgniter",
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.03787878787878788,
+        "n_pred": 8
+      },
+      {
+        "id": "bitcoin@bitcoin:567118690",
+        "repo": "bitcoin@bitcoin",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "bitcoin@bitcoin:567119401",
+        "repo": "bitcoin@bitcoin",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "bitcoin@bitcoin:567143552",
+        "repo": "bitcoin@bitcoin",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "bitcoin@bitcoin:567144565",
+        "repo": "bitcoin@bitcoin",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.00980392156862745,
+        "n_pred": 8
+      },
+      {
+        "id": "bitcoin@bitcoin:567199364",
+        "repo": "bitcoin@bitcoin",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "bitcoin@bitcoin:567200607",
+        "repo": "bitcoin@bitcoin",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "bitcoin@bitcoin:567200724",
+        "repo": "bitcoin@bitcoin",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "cplusplus@draft:566217161",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:566236411",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:566259827",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:566261609",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:566741544",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:568239097",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:568376150",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:568620326",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:568621273",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:568621492",
+        "repo": "cplusplus@draft",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ethereum@go-ethereum:566009484",
+        "repo": "ethereum@go-ethereum",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ethereum@go-ethereum:566352197",
+        "repo": "ethereum@go-ethereum",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ethereum@go-ethereum:566363943",
+        "repo": "ethereum@go-ethereum",
+        "hit": true,
+        "precision": 0.375,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ethereum@go-ethereum:566442292",
+        "repo": "ethereum@go-ethereum",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "ethereum@go-ethereum:566644156",
+        "repo": "ethereum@go-ethereum",
+        "hit": true,
+        "precision": 0.375,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ethereum@go-ethereum:566757022",
+        "repo": "ethereum@go-ethereum",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "ethereum@go-ethereum:566824752",
+        "repo": "ethereum@go-ethereum",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ethereum@go-ethereum:566991375",
+        "repo": "ethereum@go-ethereum",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "ethereum@go-ethereum:567003594",
+        "repo": "ethereum@go-ethereum",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "ethereum@go-ethereum:567288450",
+        "repo": "ethereum@go-ethereum",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "getlantern@lantern:519285064",
+        "repo": "getlantern@lantern",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "getlantern@lantern:547502360",
+        "repo": "getlantern@lantern",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.3333333333333333,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:564416725",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:564815538",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:565119978",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:565692415",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:565709337",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:566150972",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "git@git:566701284",
+        "repo": "git@git",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:504854205",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:506226859",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:508448705",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:513413329",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:513586826",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:549739957",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:557164268",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:566095816",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "h4cc@awesome-elixir:569345345",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "h4cc@awesome-elixir:569347444",
+        "repo": "h4cc@awesome-elixir",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "jgm@pandoc:479981799",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgm@pandoc:479984913",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgm@pandoc:480080048",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgm@pandoc:480326509",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jgm@pandoc:480334631",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jgm@pandoc:480353000",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jgm@pandoc:481351360",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jgm@pandoc:483247329",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgm@pandoc:483377953",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgm@pandoc:483389926",
+        "repo": "jgm@pandoc",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jlord@git-it-electron:189032546",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "jlord@git-it-electron:189032849",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:189033034",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:189034096",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:189034833",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:295480897",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "jlord@git-it-electron:356703873",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "jlord@git-it-electron:376184199",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "jlord@git-it-electron:496567160",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "jlord@git-it-electron:506436018",
+        "repo": "jlord@git-it-electron",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "junegunn@vim-plug:398587466",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:413520039",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:427001960",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:427130117",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:427130135",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:445184806",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "n_pred": 7
+      },
+      {
+        "id": "junegunn@vim-plug:446003299",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:499351600",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:551582171",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "junegunn@vim-plug:567393250",
+        "repo": "junegunn@vim-plug",
+        "hit": true,
+        "precision": 0.16666666666666666,
+        "recall": 1.0,
+        "n_pred": 6
+      },
+      {
+        "id": "koalaman@shellcheck:469308814",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:501296412",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:501296929",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:540421319",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:540436118",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:553130518",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:563353767",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "koalaman@shellcheck:563381753",
+        "repo": "koalaman@shellcheck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "nvbn@thefuck:545320732",
+        "repo": "nvbn@thefuck",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:555251409",
+        "repo": "pester@Pester",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:555401304",
+        "repo": "pester@Pester",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:555401307",
+        "repo": "pester@Pester",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:555419018",
+        "repo": "pester@Pester",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:555419060",
+        "repo": "pester@Pester",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:562258202",
+        "repo": "pester@Pester",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "php@php-src:530444639",
+        "repo": "php@php-src",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "php@php-src:531216112",
+        "repo": "php@php-src",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "php@php-src:531576999",
+        "repo": "php@php-src",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571552147",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571748388",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571753140",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571806905",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571824621",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572222015",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572773115",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572773664",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572967302",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572968583",
+        "repo": "rabbitmq@rabbitmq-server",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "redox-os@redox:357884038",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:360624245",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:360652670",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:387092985",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:387097216",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:387097804",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:387174339",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "redox-os@redox:391353410",
+        "repo": "redox-os@redox",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "rstudio@shiny:573996615",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "rstudio@shiny:574875945",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rstudio@shiny:574887432",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rstudio@shiny:574891057",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rstudio@shiny:575046224",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rstudio@shiny:575046237",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rstudio@shiny:575510992",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rstudio@shiny:575511001",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "rstudio@shiny:575521370",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "rstudio@shiny:575541227",
+        "repo": "rstudio@shiny",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562395304",
+        "repo": "scikit-learn@scikit-learn",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562396459",
+        "repo": "scikit-learn@scikit-learn",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562398767",
+        "repo": "scikit-learn@scikit-learn",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562416451",
+        "repo": "scikit-learn@scikit-learn",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562417178",
+        "repo": "scikit-learn@scikit-learn",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:332708478",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:341246416",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:345524470",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:347585795",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:367594701",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:367594706",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:368688524",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:369927984",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:369957693",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:373752512",
+        "repo": "sjdy521@Mojo-Webqq",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "square@retrofit:403602199",
+        "repo": "square@retrofit",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "symfony@symfony:566997029",
+        "repo": "symfony@symfony",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "symfony@symfony:567032141",
+        "repo": "symfony@symfony",
+        "hit": true,
+        "precision": 0.875,
+        "recall": 0.2,
+        "n_pred": 8
+      },
+      {
+        "id": "technomancy@leiningen:239201655",
+        "repo": "technomancy@leiningen",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.2,
+        "n_pred": 5
+      },
+      {
+        "id": "technomancy@leiningen:239339113",
+        "repo": "technomancy@leiningen",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.2,
+        "n_pred": 5
+      },
+      {
+        "id": "technomancy@leiningen:239388390",
+        "repo": "technomancy@leiningen",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.2,
+        "n_pred": 5
+      },
+      {
+        "id": "technomancy@leiningen:239432824",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:240096317",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:242689049",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:242695567",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:243016828",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:243103322",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:243309632",
+        "repo": "technomancy@leiningen",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "tldr-pages@tldr:563696877",
+        "repo": "tldr-pages@tldr",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "tldr-pages@tldr:564862983",
+        "repo": "tldr-pages@tldr",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.125,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:564864762",
+        "repo": "tldr-pages@tldr",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.14285714285714285,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:564866008",
+        "repo": "tldr-pages@tldr",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.2,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:564867534",
+        "repo": "tldr-pages@tldr",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.2,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:564868148",
+        "repo": "tldr-pages@tldr",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "tldr-pages@tldr:564869043",
+        "repo": "tldr-pages@tldr",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.16666666666666666,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:564870496",
+        "repo": "tldr-pages@tldr",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "tldr-pages@tldr:566346797",
+        "repo": "tldr-pages@tldr",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.2,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:566487257",
+        "repo": "tldr-pages@tldr",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "twitter@finagle:565192758",
+        "repo": "twitter@finagle",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.06666666666666667,
+        "n_pred": 8
+      },
+      {
+        "id": "twitter@finagle:565242073",
+        "repo": "twitter@finagle",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twitter@finagle:566247562",
+        "repo": "twitter@finagle",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twitter@finagle:566723155",
+        "repo": "twitter@finagle",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twitter@finagle:567176660",
+        "repo": "twitter@finagle",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:555378073",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.08333333333333333,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:555392625",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.14285714285714285,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:555423918",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.14285714285714285,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:556831164",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.00648508430609598,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557005417",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.00648508430609598,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557328684",
+        "repo": "vim@vim",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557413766",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.3333333333333333,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557480996",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.1724137931034483,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557500309",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.23076923076923078,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557785733",
+        "repo": "vim@vim",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "vinta@awesome-python:125301582",
+        "repo": "vinta@awesome-python",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.25,
+        "n_pred": 4
+      },
+      {
+        "id": "vinta@awesome-python:125333673",
+        "repo": "vinta@awesome-python",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.25,
+        "n_pred": 4
+      },
+      {
+        "id": "vinta@awesome-python:125491392",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125541453",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "vinta@awesome-python:125721156",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125752429",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125769913",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125934220",
+        "repo": "vinta@awesome-python",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.4,
+        "n_pred": 5
+      },
+      {
+        "id": "vinta@awesome-python:126281496",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "vinta@awesome-python:126421712",
+        "repo": "vinta@awesome-python",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      }
+    ]
+  },
+  {
+    "summary": {
+      "method": "llm",
+      "n": 243,
+      "evidence_hit_rate": 0.617,
+      "mean_precision": 0.38,
+      "mean_recall": 0.377,
+      "empty_rate": 0.091,
+      "avg_lines_cited": 3.704,
+      "mean_latency_s": 7.465,
+      "errors": 0,
+      "citation_validity": 0.832,
+      "prompt_tokens": 2364942,
+      "completion_tokens": 87277
+    },
+    "items": [
+      {
+        "id": "Atom@atom:529072794",
+        "repo": "Atom@atom",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "n_pred": 4
+      },
+      {
+        "id": "Atom@atom:544693739",
+        "repo": "Atom@atom",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "Atom@atom:544815664",
+        "repo": "Atom@atom",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.5,
+        "n_pred": 1
+      },
+      {
+        "id": "Atom@atom:544909524",
+        "repo": "Atom@atom",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.5,
+        "n_pred": 1
+      },
+      {
+        "id": "Atom@atom:544911466",
+        "repo": "Atom@atom",
+        "category": "timeout",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "Atom@atom:544911934",
+        "repo": "Atom@atom",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.5,
+        "n_pred": 1
+      },
+      {
+        "id": "Atom@atom:544955015",
+        "repo": "Atom@atom",
+        "category": "deployment_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "Atom@atom:544967051",
+        "repo": "Atom@atom",
+        "category": "deployment_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "Atom@atom:544967184",
+        "repo": "Atom@atom",
+        "category": "deployment_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "Atom@atom:544975039",
+        "repo": "Atom@atom",
+        "category": "deployment_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:564664934",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566116668",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.4,
+        "n_pred": 6
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566117171",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.8,
+        "n_pred": 8
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566340191",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.16666666666666666,
+        "recall": 0.125,
+        "n_pred": 6
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566340236",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "FreeCodeCamp@freecodecamp:566612949",
+        "repo": "FreeCodeCamp@freecodecamp",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.16666666666666666,
+        "recall": 0.5,
+        "n_pred": 6
+      },
+      {
+        "id": "Realm@realm-cocoa:538275604",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "Realm@realm-cocoa:545920250",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:550555722",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "Realm@realm-cocoa:550968986",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "Realm@realm-cocoa:552057535",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "Realm@realm-cocoa:552059876",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "Realm@realm-cocoa:552207105",
+        "repo": "Realm@realm-cocoa",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "n_pred": 3
+      },
+      {
+        "id": "airbnb@javascript:543923279",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "airbnb@javascript:556125301",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556126724",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556129904",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:556132210",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.8888888888888888,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:562099876",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.875,
+        "recall": 0.4375,
+        "n_pred": 8
+      },
+      {
+        "id": "airbnb@javascript:563268407",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "airbnb@javascript:563272067",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "airbnb@javascript:563282619",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "airbnb@javascript:563286141",
+        "repo": "airbnb@javascript",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "angular@angular:476567056",
+        "repo": "angular@angular",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "angular@angular:502325280",
+        "repo": "angular@angular",
+        "category": "permission_or_auth",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.2,
+        "n_pred": 6
+      },
+      {
+        "id": "angular@angular:502325876",
+        "repo": "angular@angular",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.2,
+        "n_pred": 2
+      },
+      {
+        "id": "angular@angular:504754325",
+        "repo": "angular@angular",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.5,
+        "n_pred": 2
+      },
+      {
+        "id": "angular@angular:504763230",
+        "repo": "angular@angular",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "avelino@awesome-go:552235410",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "avelino@awesome-go:553491785",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "avelino@awesome-go:554941726",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "avelino@awesome-go:556378971",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "avelino@awesome-go:556757260",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "avelino@awesome-go:560328897",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "avelino@awesome-go:560330322",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "avelino@awesome-go:566068072",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "avelino@awesome-go:566530398",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "avelino@awesome-go:567188064",
+        "repo": "avelino@awesome-go",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:476896825",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.7142857142857143,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:496514022",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.015968063872255488,
+        "n_pred": 8
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:496530269",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.013972055888223553,
+        "n_pred": 7
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:507107253",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.6,
+        "n_pred": 6
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:507195141",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.6,
+        "n_pred": 7
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:507199842",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6,
+        "recall": 0.6,
+        "n_pred": 5
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:514356719",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.6,
+        "n_pred": 6
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:523143840",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.4,
+        "n_pred": 8
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:523684642",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8571428571428571,
+        "recall": 0.6,
+        "n_pred": 7
+      },
+      {
+        "id": "bcit-ci@CodeIgniter:532942148",
+        "repo": "bcit-ci@CodeIgniter",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.022727272727272728,
+        "n_pred": 4
+      },
+      {
+        "id": "bitcoin@bitcoin:567118690",
+        "repo": "bitcoin@bitcoin",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.5714285714285714,
+        "n_pred": 4
+      },
+      {
+        "id": "bitcoin@bitcoin:567119401",
+        "repo": "bitcoin@bitcoin",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.16666666666666666,
+        "n_pred": 2
+      },
+      {
+        "id": "bitcoin@bitcoin:567143552",
+        "repo": "bitcoin@bitcoin",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.25,
+        "n_pred": 2
+      },
+      {
+        "id": "bitcoin@bitcoin:567144565",
+        "repo": "bitcoin@bitcoin",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 0.0196078431372549,
+        "n_pred": 3
+      },
+      {
+        "id": "bitcoin@bitcoin:567199364",
+        "repo": "bitcoin@bitcoin",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.16666666666666666,
+        "recall": 0.09090909090909091,
+        "n_pred": 6
+      },
+      {
+        "id": "bitcoin@bitcoin:567200607",
+        "repo": "bitcoin@bitcoin",
+        "category": "generic_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "bitcoin@bitcoin:567200724",
+        "repo": "bitcoin@bitcoin",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.2727272727272727,
+        "n_pred": 8
+      },
+      {
+        "id": "cplusplus@draft:566217161",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "cplusplus@draft:566236411",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "cplusplus@draft:566259827",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "cplusplus@draft:566261609",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "cplusplus@draft:566741544",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "cplusplus@draft:568239097",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "cplusplus@draft:568376150",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "cplusplus@draft:568620326",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "cplusplus@draft:568621273",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "cplusplus@draft:568621492",
+        "repo": "cplusplus@draft",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "ethereum@go-ethereum:566009484",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "ethereum@go-ethereum:566352197",
+        "repo": "ethereum@go-ethereum",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.42857142857142855,
+        "n_pred": 3
+      },
+      {
+        "id": "ethereum@go-ethereum:566363943",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 6
+      },
+      {
+        "id": "ethereum@go-ethereum:566442292",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.6666666666666666,
+        "n_pred": 5
+      },
+      {
+        "id": "ethereum@go-ethereum:566644156",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.6666666666666666,
+        "n_pred": 6
+      },
+      {
+        "id": "ethereum@go-ethereum:566757022",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "n_pred": 4
+      },
+      {
+        "id": "ethereum@go-ethereum:566824752",
+        "repo": "ethereum@go-ethereum",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.42857142857142855,
+        "n_pred": 3
+      },
+      {
+        "id": "ethereum@go-ethereum:566991375",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.2857142857142857,
+        "recall": 1.0,
+        "n_pred": 7
+      },
+      {
+        "id": "ethereum@go-ethereum:567003594",
+        "repo": "ethereum@go-ethereum",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "ethereum@go-ethereum:567288450",
+        "repo": "ethereum@go-ethereum",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.42857142857142855,
+        "n_pred": 3
+      },
+      {
+        "id": "getlantern@lantern:519285064",
+        "repo": "getlantern@lantern",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "getlantern@lantern:547502360",
+        "repo": "getlantern@lantern",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "git@git:564416725",
+        "repo": "git@git",
+        "category": "generic_error",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "git@git:564815538",
+        "repo": "git@git",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "git@git:565119978",
+        "repo": "git@git",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "git@git:565692415",
+        "repo": "git@git",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "git@git:565709337",
+        "repo": "git@git",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "git@git:566150972",
+        "repo": "git@git",
+        "category": "generic_error",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "git@git:566701284",
+        "repo": "git@git",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "h4cc@awesome-elixir:504854205",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "h4cc@awesome-elixir:506226859",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "n_pred": 7
+      },
+      {
+        "id": "h4cc@awesome-elixir:508448705",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8333333333333334,
+        "recall": 0.8333333333333334,
+        "n_pred": 6
+      },
+      {
+        "id": "h4cc@awesome-elixir:513413329",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:513586826",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:549739957",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6,
+        "recall": 0.5,
+        "n_pred": 5
+      },
+      {
+        "id": "h4cc@awesome-elixir:557164268",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:566095816",
+        "repo": "h4cc@awesome-elixir",
+        "category": "generic_error",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "h4cc@awesome-elixir:569345345",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8,
+        "recall": 0.5,
+        "n_pred": 5
+      },
+      {
+        "id": "h4cc@awesome-elixir:569347444",
+        "repo": "h4cc@awesome-elixir",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jgm@pandoc:479981799",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "jgm@pandoc:479984913",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "jgm@pandoc:480080048",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "jgm@pandoc:480326509",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "jgm@pandoc:480334631",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "jgm@pandoc:480353000",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "jgm@pandoc:481351360",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "jgm@pandoc:483247329",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.25,
+        "n_pred": 2
+      },
+      {
+        "id": "jgm@pandoc:483377953",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "jgm@pandoc:483389926",
+        "repo": "jgm@pandoc",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "jlord@git-it-electron:189032546",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.02857142857142857,
+        "n_pred": 3
+      },
+      {
+        "id": "jlord@git-it-electron:189032849",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.0761904761904762,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:189033034",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.0761904761904762,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:189034096",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.0380952380952381,
+        "n_pred": 4
+      },
+      {
+        "id": "jlord@git-it-electron:189034833",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.0761904761904762,
+        "n_pred": 8
+      },
+      {
+        "id": "jlord@git-it-electron:295480897",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "jlord@git-it-electron:356703873",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "jlord@git-it-electron:376184199",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.5,
+        "n_pred": 2
+      },
+      {
+        "id": "jlord@git-it-electron:496567160",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "jlord@git-it-electron:506436018",
+        "repo": "jlord@git-it-electron",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "junegunn@vim-plug:398587466",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 1
+      },
+      {
+        "id": "junegunn@vim-plug:413520039",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "junegunn@vim-plug:427001960",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 1
+      },
+      {
+        "id": "junegunn@vim-plug:427130117",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "junegunn@vim-plug:427130135",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "junegunn@vim-plug:445184806",
+        "repo": "junegunn@vim-plug",
+        "category": "generic_error",
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 1.0,
+        "n_pred": 7
+      },
+      {
+        "id": "junegunn@vim-plug:446003299",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "junegunn@vim-plug:499351600",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "junegunn@vim-plug:551582171",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "junegunn@vim-plug:567393250",
+        "repo": "junegunn@vim-plug",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "koalaman@shellcheck:469308814",
+        "repo": "koalaman@shellcheck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "koalaman@shellcheck:501296412",
+        "repo": "koalaman@shellcheck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "koalaman@shellcheck:501296929",
+        "repo": "koalaman@shellcheck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "koalaman@shellcheck:540421319",
+        "repo": "koalaman@shellcheck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "koalaman@shellcheck:540436118",
+        "repo": "koalaman@shellcheck",
+        "category": "none",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "koalaman@shellcheck:553130518",
+        "repo": "koalaman@shellcheck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "koalaman@shellcheck:563353767",
+        "repo": "koalaman@shellcheck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "koalaman@shellcheck:563381753",
+        "repo": "koalaman@shellcheck",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.5,
+        "n_pred": 1
+      },
+      {
+        "id": "nvbn@thefuck:545320732",
+        "repo": "nvbn@thefuck",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "pester@Pester:555251409",
+        "repo": "pester@Pester",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "pester@Pester:555401304",
+        "repo": "pester@Pester",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "pester@Pester:555401307",
+        "repo": "pester@Pester",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "pester@Pester:555419018",
+        "repo": "pester@Pester",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "pester@Pester:555419060",
+        "repo": "pester@Pester",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "pester@Pester:562258202",
+        "repo": "pester@Pester",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "php@php-src:530444639",
+        "repo": "php@php-src",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "php@php-src:531216112",
+        "repo": "php@php-src",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "php@php-src:531576999",
+        "repo": "php@php-src",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571552147",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.5,
+        "n_pred": 5
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571748388",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "n_pred": 4
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571753140",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "n_pred": 2
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571806905",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 0.2857142857142857,
+        "recall": 0.3333333333333333,
+        "n_pred": 7
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:571824621",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572222015",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "generic_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572773115",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572773664",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "n_pred": 6
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572967302",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "n_pred": 5
+      },
+      {
+        "id": "rabbitmq@rabbitmq-server:572968583",
+        "repo": "rabbitmq@rabbitmq-server",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "redox-os@redox:357884038",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "redox-os@redox:360624245",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "redox-os@redox:360652670",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "redox-os@redox:387092985",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "redox-os@redox:387097216",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "n_pred": 5
+      },
+      {
+        "id": "redox-os@redox:387097804",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "redox-os@redox:387174339",
+        "repo": "redox-os@redox",
+        "category": "deployment_error",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "redox-os@redox:391353410",
+        "repo": "redox-os@redox",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.6666666666666666,
+        "n_pred": 4
+      },
+      {
+        "id": "rstudio@shiny:573996615",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "rstudio@shiny:574875945",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:574887432",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:574891057",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:575046224",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:575046237",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:575510992",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:575511001",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "rstudio@shiny:575521370",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.25,
+        "n_pred": 2
+      },
+      {
+        "id": "rstudio@shiny:575541227",
+        "repo": "rstudio@shiny",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562395304",
+        "repo": "scikit-learn@scikit-learn",
+        "category": "dependency_error",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "n_pred": 8
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562396459",
+        "repo": "scikit-learn@scikit-learn",
+        "category": "dependency_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "n_pred": 6
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562398767",
+        "repo": "scikit-learn@scikit-learn",
+        "category": "dependency_error",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.8571428571428571,
+        "n_pred": 6
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562416451",
+        "repo": "scikit-learn@scikit-learn",
+        "category": "dependency_error",
+        "hit": true,
+        "precision": 0.8571428571428571,
+        "recall": 0.8571428571428571,
+        "n_pred": 7
+      },
+      {
+        "id": "scikit-learn@scikit-learn:562417178",
+        "repo": "scikit-learn@scikit-learn",
+        "category": "dependency_error",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "n_pred": 8
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:332708478",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.5,
+        "n_pred": 5
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:341246416",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:345524470",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:347585795",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:367594701",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:367594706",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "n_pred": 5
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:368688524",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:369927984",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:369957693",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "n_pred": 3
+      },
+      {
+        "id": "sjdy521@Mojo-Webqq:373752512",
+        "repo": "sjdy521@Mojo-Webqq",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "n_pred": 5
+      },
+      {
+        "id": "square@retrofit:403602199",
+        "repo": "square@retrofit",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "symfony@symfony:566997029",
+        "repo": "symfony@symfony",
+        "category": "dependency_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "symfony@symfony:567032141",
+        "repo": "symfony@symfony",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "technomancy@leiningen:239201655",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.3,
+        "n_pred": 4
+      },
+      {
+        "id": "technomancy@leiningen:239339113",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.6,
+        "n_pred": 6
+      },
+      {
+        "id": "technomancy@leiningen:239388390",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.4,
+        "n_pred": 4
+      },
+      {
+        "id": "technomancy@leiningen:239432824",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "technomancy@leiningen:240096317",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "technomancy@leiningen:242689049",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "n_pred": 1
+      },
+      {
+        "id": "technomancy@leiningen:242695567",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "technomancy@leiningen:243016828",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.3333333333333333,
+        "n_pred": 2
+      },
+      {
+        "id": "technomancy@leiningen:243103322",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "technomancy@leiningen:243309632",
+        "repo": "technomancy@leiningen",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "tldr-pages@tldr:563696877",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "tldr-pages@tldr:564862983",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.375,
+        "n_pred": 4
+      },
+      {
+        "id": "tldr-pages@tldr:564864762",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 0.8571428571428571,
+        "n_pred": 8
+      },
+      {
+        "id": "tldr-pages@tldr:564866008",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "n_pred": 6
+      },
+      {
+        "id": "tldr-pages@tldr:564867534",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8,
+        "recall": 0.8,
+        "n_pred": 5
+      },
+      {
+        "id": "tldr-pages@tldr:564868148",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "tldr-pages@tldr:564869043",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "n_pred": 7
+      },
+      {
+        "id": "tldr-pages@tldr:564870496",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "tldr-pages@tldr:566346797",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 0.4,
+        "n_pred": 3
+      },
+      {
+        "id": "tldr-pages@tldr:566487257",
+        "repo": "tldr-pages@tldr",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "twitter@finagle:565192758",
+        "repo": "twitter@finagle",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "twitter@finagle:565242073",
+        "repo": "twitter@finagle",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "twitter@finagle:566247562",
+        "repo": "twitter@finagle",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "twitter@finagle:566723155",
+        "repo": "twitter@finagle",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "twitter@finagle:567176660",
+        "repo": "twitter@finagle",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "vim@vim:555378073",
+        "repo": "vim@vim",
+        "category": "generic_error",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "vim@vim:555392625",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.42857142857142855,
+        "n_pred": 6
+      },
+      {
+        "id": "vim@vim:555423918",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5714285714285714,
+        "recall": 0.5714285714285714,
+        "n_pred": 7
+      },
+      {
+        "id": "vim@vim:556831164",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.875,
+        "recall": 0.009079118028534372,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557005417",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.010376134889753566,
+        "n_pred": 8
+      },
+      {
+        "id": "vim@vim:557328684",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.2,
+        "n_pred": 1
+      },
+      {
+        "id": "vim@vim:557413766",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 0.4444444444444444,
+        "n_pred": 6
+      },
+      {
+        "id": "vim@vim:557480996",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.2857142857142857,
+        "recall": 0.06896551724137931,
+        "n_pred": 7
+      },
+      {
+        "id": "vim@vim:557500309",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.3076923076923077,
+        "n_pred": 4
+      },
+      {
+        "id": "vim@vim:557785733",
+        "repo": "vim@vim",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
+      },
+      {
+        "id": "vinta@awesome-python:125301582",
+        "repo": "vinta@awesome-python",
+        "category": "timeout",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.25,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125333673",
+        "repo": "vinta@awesome-python",
+        "category": "timeout",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "vinta@awesome-python:125491392",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125541453",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125721156",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "vinta@awesome-python:125752429",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125769913",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:125934220",
+        "repo": "vinta@awesome-python",
+        "category": "timeout",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.4,
+        "n_pred": 2
+      },
+      {
+        "id": "vinta@awesome-python:126281496",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 1
+      },
+      {
+        "id": "vinta@awesome-python:126421712",
+        "repo": "vinta@awesome-python",
+        "category": "test_failure",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      }
+    ]
+  }
+]

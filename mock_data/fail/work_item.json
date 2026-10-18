@@ -1,0 +1,12 @@
+{
+  "id": "US-1003",
+  "job_id": "JOB-5003",
+  "title": "Refactor opportunity approval Apex",
+  "description": "Refactor the opportunity approval handler and remove legacy callouts.",
+  "acceptance_criteria": [
+    "Approval handler logic is split into service classes",
+    "No change in approval behaviour"
+  ],
+  "components": ["OpportunityApprovalHandler", "ApprovalService", "LegacyCalloutUtil"],
+  "security_findings": {"critical": 1, "high": 2, "medium": 0}
+}

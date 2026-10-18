@@ -1,0 +1,19 @@
+{
+  "id": "US-1004",
+  "job_id": "JOB-5004",
+  "title": "Update discount rounding logic",
+  "description": "Change the rounding rule for quote discounts.",
+  "acceptance_criteria": [
+    "Discounts round to 2 decimals",
+    "Totals match the finance export"
+  ],
+  "components": [
+    "DiscountRounding",
+    "DiscountRoundingTest"
+  ],
+  "security_findings": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0
+  }
+}

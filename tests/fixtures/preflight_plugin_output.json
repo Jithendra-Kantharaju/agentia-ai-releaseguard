@@ -1,0 +1,53 @@
+{
+  "result": {
+    "generatedAt": "2026-10-17T23:05:55.357Z",
+    "orgHealth": {
+      "failing": [
+        {
+          "checkId": "HC-1",
+          "fixGuidance": "Create the extension configuration",
+          "name": "Local quality gate configured",
+          "severity": "high"
+        }
+      ],
+      "summary": {
+        "fail": 1,
+        "pass": 1,
+        "warn": 1,
+        "total": 3
+      },
+      "warnings": [
+        {
+          "checkId": "HC-3",
+          "fixGuidance": null,
+          "name": "Credential rotation",
+          "severity": null
+        }
+      ]
+    },
+    "schema": "releaseguard.preflight/1",
+    "user": {
+      "fullName": "Dana Developer",
+      "id": "005FAKE",
+      "username": "dana.dev@example.com"
+    },
+    "workItem": {
+      "acceptanceCriteria": "- Downgrade blocked\n- Upgrade saves",
+      "baseBranch": "main",
+      "id": "a0FAKE",
+      "name": "US-0000042",
+      "priority": 1,
+      "projectName": "Core",
+      "status": "In Progress",
+      "title": "Add tier validation"
+    },
+    "workspace": {
+      "baseBranch": "main",
+      "branch": "feature/US-0000042",
+      "workItemName": "US-0000042",
+      "workItemTitle": "Add tier validation"
+    }
+  },
+  "status": 0,
+  "transactionId": "tx-test"
+}

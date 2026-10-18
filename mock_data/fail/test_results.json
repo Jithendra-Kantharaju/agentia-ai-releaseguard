@@ -1,0 +1,15 @@
+{
+  "total": 140,
+  "passed": 134,
+  "failed": 6,
+  "skipped": 0,
+  "coverage_percent": 68.5,
+  "failures": [
+    {"name": "ApprovalServiceTest.testBulkApproval", "error": "System.DmlException: UNABLE_TO_LOCK_ROW"},
+    {"name": "ApprovalServiceTest.testRejectPath", "error": "System.NullPointerException: Attempt to de-reference a null object"},
+    {"name": "OpportunityApprovalHandlerTest.testEscalation", "error": "System.AssertException: Expected: Escalated, Actual: Pending"},
+    {"name": "OpportunityApprovalHandlerTest.testManagerApproval", "error": "System.AssertException: Expected: Approved, Actual: Pending"},
+    {"name": "LegacyCalloutUtilTest.testTimeout", "error": "System.CalloutException: Unauthorized endpoint"},
+    {"name": "LegacyCalloutUtilTest.testRetry", "error": "System.CalloutException: Unauthorized endpoint"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "US-1002",
+  "job_id": "JOB-5002",
+  "title": "Update CPQ discount approval flow",
+  "description": "Change the discount approval thresholds in the quote approval flow and add a new custom permission.",
+  "acceptance_criteria": [
+    "Discounts above 20% require manager approval",
+    "Discounts above 35% require VP approval"
+  ],
+  "components": ["Quote_Discount_Approval_Flow", "DiscountApprovalHandler", "Custom_Permission_VP_Discount"],
+  "security_findings": {"critical": 0, "high": 1, "medium": 2}
+}

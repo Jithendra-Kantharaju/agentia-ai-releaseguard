@@ -1,0 +1,9 @@
+[09:11:02] Job JOB-5003 started: Validate US-1003
+[09:11:06] Retrieving metadata from source org... done
+[09:11:40] ERROR: Component LegacyCalloutUtil: Unauthorized endpoint https://legacy.example.com
+[09:12:55] Running 140 Apex tests
+[09:14:20] ERROR: ApprovalServiceTest.testBulkApproval - UNABLE_TO_LOCK_ROW
+[09:14:21] 134 tests passed, 6 failed
+[09:14:22] Code coverage: 68.5%
+[09:14:23] FATAL: Deployment failed - quality gate not met
+[09:14:24] Job JOB-5003 finished: Failed

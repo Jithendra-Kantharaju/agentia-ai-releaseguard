@@ -1,0 +1,13 @@
+{
+  "id": "US-1001",
+  "job_id": "JOB-5001",
+  "title": "Add account tier validation trigger",
+  "description": "Validate account tier changes before save to prevent invalid downgrades.",
+  "acceptance_criteria": [
+    "Downgrading a tier with open contracts is blocked with a clear error",
+    "Tier upgrades save without error",
+    "Existing bulk loads are not slowed down"
+  ],
+  "components": ["AccountTierTrigger", "AccountTierService", "AccountTierServiceTest"],
+  "security_findings": {"critical": 0, "high": 0, "medium": 1}
+}

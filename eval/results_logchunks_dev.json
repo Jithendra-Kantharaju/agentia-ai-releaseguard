@@ -1,0 +1,4235 @@
+[
+  {
+    "summary": {
+      "method": "baseline",
+      "n": 254,
+      "evidence_hit_rate": 0.264,
+      "mean_precision": 0.077,
+      "mean_recall": 0.075,
+      "empty_rate": 0.031,
+      "avg_lines_cited": 6.638,
+      "mean_latency_s": 0.058,
+      "errors": 0
+    },
+    "items": [
+      {
+        "id": "BVLC@caffe:214074807",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:214077363",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:214247336",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:214320399",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:214320609",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:214327990",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:214329485",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BVLC@caffe:221812641",
+        "repo": "BVLC@caffe",
+        "pred_lines": [],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "BurntSushi@ripgrep:524197508",
+        "repo": "BurntSushi@ripgrep",
+        "pred_lines": [
+          921,
+          1000,
+          1001,
+          1003,
+          1007
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "BurntSushi@ripgrep:524343295",
+        "repo": "BurntSushi@ripgrep",
+        "pred_lines": [
+          920,
+          999,
+          1000,
+          1002,
+          1006
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "BurntSushi@ripgrep:524430085",
+        "repo": "BurntSushi@ripgrep",
+        "pred_lines": [
+          1612,
+          1621,
+          1623,
+          1625,
+          1629
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "BurntSushi@ripgrep:524433448",
+        "repo": "BurntSushi@ripgrep",
+        "pred_lines": [
+          1631,
+          1640,
+          1642,
+          1644,
+          1648
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "BurntSushi@ripgrep:524443210",
+        "repo": "BurntSushi@ripgrep",
+        "pred_lines": [
+          1601,
+          1610,
+          1612,
+          1614,
+          1618
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "BurntSushi@ripgrep:524445021",
+        "repo": "BurntSushi@ripgrep",
+        "pred_lines": [
+          1584,
+          1593,
+          1595,
+          1597,
+          1601
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "LightTable@LightTable:557182503",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          149,
+          277,
+          528,
+          533,
+          538,
+          544,
+          549,
+          553
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557182511",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          149,
+          277,
+          533,
+          538,
+          543,
+          549,
+          554,
+          558
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557187552",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          277,
+          528,
+          533,
+          538,
+          542,
+          544,
+          549,
+          553
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557187564",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          277,
+          533,
+          538,
+          543,
+          547,
+          549,
+          554,
+          558
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557191599",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          277,
+          528,
+          533,
+          538,
+          543,
+          549,
+          554,
+          558
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557191614",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          277,
+          533,
+          538,
+          543,
+          548,
+          554,
+          559,
+          563
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557192585",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          277,
+          528,
+          533,
+          538,
+          543,
+          549,
+          554,
+          558
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557192591",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          277,
+          533,
+          538,
+          543,
+          548,
+          554,
+          559,
+          563
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557196001",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          528,
+          533,
+          538,
+          543,
+          547,
+          549,
+          554,
+          558
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "LightTable@LightTable:557196013",
+        "repo": "LightTable@LightTable",
+        "pred_lines": [
+          533,
+          538,
+          543,
+          548,
+          552,
+          554,
+          559,
+          563
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "Microsoft@TypeScript:566234931",
+        "repo": "Microsoft@TypeScript",
+        "pred_lines": [
+          1443,
+          1451,
+          1459,
+          1467,
+          1474,
+          1480,
+          1482,
+          1494
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.10256410256410256,
+        "n_pred": 8
+      },
+      {
+        "id": "Microsoft@TypeScript:566236265",
+        "repo": "Microsoft@TypeScript",
+        "pred_lines": [
+          1421,
+          1429,
+          1437,
+          1445,
+          1452,
+          1458,
+          1460,
+          1472
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.10256410256410256,
+        "n_pred": 8
+      },
+      {
+        "id": "Microsoft@TypeScript:566547811",
+        "repo": "Microsoft@TypeScript",
+        "pred_lines": [
+          1428,
+          1436,
+          1444,
+          1452,
+          1459,
+          1465,
+          1467,
+          1479
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.10256410256410256,
+        "n_pred": 8
+      },
+      {
+        "id": "Microsoft@TypeScript:566574811",
+        "repo": "Microsoft@TypeScript",
+        "pred_lines": [
+          1181,
+          1331,
+          1397,
+          1413,
+          1427,
+          1433,
+          1435,
+          1447
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.06451612903225806,
+        "n_pred": 8
+      },
+      {
+        "id": "NancyFx@Nancy:375658615",
+        "repo": "NancyFx@Nancy",
+        "pred_lines": [
+          5444,
+          6009,
+          6013
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "ReactiveX@RxJava:561008032",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          773,
+          774,
+          779,
+          780,
+          811,
+          832,
+          835,
+          855
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:561016934",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1246,
+          1247,
+          1249,
+          1252,
+          1253,
+          1260,
+          1263,
+          1283
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:562514757",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1196,
+          1198,
+          1200,
+          1203,
+          1204,
+          1215,
+          1218,
+          1245
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:563267830",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1219,
+          1220,
+          1222,
+          1225,
+          1226,
+          1233,
+          1236,
+          1256
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:564360281",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1472,
+          1473,
+          1475,
+          1478,
+          1479,
+          1486,
+          1489,
+          1509
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:564360351",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1469,
+          1470,
+          1472,
+          1475,
+          1476,
+          1483,
+          1486,
+          1506
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:565360975",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1511,
+          1512,
+          1514,
+          1517,
+          1518,
+          1525,
+          1528,
+          1550
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:565366738",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1511,
+          1512,
+          1514,
+          1517,
+          1518,
+          1525,
+          1528,
+          1548
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:565371172",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1512,
+          1513,
+          1515,
+          1518,
+          1519,
+          1526,
+          1529,
+          1549
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "ReactiveX@RxJava:565378954",
+        "repo": "ReactiveX@RxJava",
+        "pred_lines": [
+          1870,
+          1871,
+          1873,
+          1876,
+          1877,
+          1884,
+          1887,
+          1907
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "SwiftyJSON@SwiftyJSON:347096816",
+        "repo": "SwiftyJSON@SwiftyJSON",
+        "pred_lines": [
+          131,
+          149,
+          150,
+          278,
+          897,
+          904,
+          906
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "SwiftyJSON@SwiftyJSON:364917910",
+        "repo": "SwiftyJSON@SwiftyJSON",
+        "pred_lines": [
+          1407,
+          1857,
+          2295,
+          2358,
+          2420,
+          2482,
+          2491,
+          2495
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "SwiftyJSON@SwiftyJSON:364918572",
+        "repo": "SwiftyJSON@SwiftyJSON",
+        "pred_lines": [
+          1428,
+          1878,
+          2316,
+          2379,
+          2441,
+          2503,
+          2512,
+          2516
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:448963603",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          902,
+          903,
+          905,
+          915,
+          917
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:487309865",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          898,
+          899,
+          901,
+          909,
+          913
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:491868630",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          904,
+          905,
+          907,
+          915,
+          919
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:559434441",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          915,
+          916,
+          918,
+          926,
+          930
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:559469687",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          917,
+          918,
+          920,
+          928,
+          932
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:559475600",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          917,
+          918,
+          920,
+          928,
+          932
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:559637917",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          916,
+          917,
+          919,
+          927,
+          931
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:559642811",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          916,
+          917,
+          919,
+          927,
+          931
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:559652409",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          977,
+          978,
+          980,
+          988,
+          992
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "adambard@learnxinyminutes-docs:572950271",
+        "repo": "adambard@learnxinyminutes-docs",
+        "pred_lines": [
+          721,
+          722,
+          724,
+          747,
+          751
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 5
+      },
+      {
+        "id": "cmusatyalab@openface:196472359",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          8028,
+          8034,
+          8040,
+          8047,
+          8053,
+          8061,
+          8075,
+          8077
+        ],
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.045871559633027525,
+        "n_pred": 8
+      },
+      {
+        "id": "cmusatyalab@openface:199278645",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7377,
+          7381,
+          7395,
+          7412,
+          7414
+        ],
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.25,
+        "n_pred": 5
+      },
+      {
+        "id": "cmusatyalab@openface:199281591",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7380,
+          7384,
+          7397,
+          7415,
+          7417
+        ],
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.25,
+        "n_pred": 5
+      },
+      {
+        "id": "cmusatyalab@openface:199282796",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7384,
+          7401,
+          7403
+        ],
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.25,
+        "n_pred": 3
+      },
+      {
+        "id": "cmusatyalab@openface:199292219",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7400,
+          7416,
+          7418
+        ],
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      },
+      {
+        "id": "cmusatyalab@openface:204083712",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7596,
+          7602,
+          7608,
+          7615,
+          7621,
+          7629,
+          7643,
+          7645
+        ],
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.045871559633027525,
+        "n_pred": 8
+      },
+      {
+        "id": "cmusatyalab@openface:204084152",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7600,
+          7606,
+          7612,
+          7619,
+          7625,
+          7633,
+          7647,
+          7649
+        ],
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.045871559633027525,
+        "n_pred": 8
+      },
+      {
+        "id": "cmusatyalab@openface:204084833",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7615,
+          7621,
+          7627,
+          7634,
+          7640,
+          7648,
+          7662,
+          7664
+        ],
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.045871559633027525,
+        "n_pred": 8
+      },
+      {
+        "id": "cmusatyalab@openface:204085173",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7610,
+          7616,
+          7622,
+          7629,
+          7635,
+          7643,
+          7657,
+          7659
+        ],
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.045871559633027525,
+        "n_pred": 8
+      },
+      {
+        "id": "cmusatyalab@openface:225393266",
+        "repo": "cmusatyalab@openface",
+        "pred_lines": [
+          7602,
+          7608,
+          7614,
+          7621,
+          7627,
+          7635,
+          7649,
+          7651
+        ],
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.045871559633027525,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:547576002",
+        "repo": "composer@composer",
+        "pred_lines": [
+          1215,
+          1216,
+          1269,
+          1281,
+          1293,
+          1294,
+          1370,
+          1395
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:547593737",
+        "repo": "composer@composer",
+        "pred_lines": [
+          149,
+          277,
+          1275,
+          1287,
+          1299,
+          1300,
+          1376,
+          1401
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.08695652173913043,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:547594407",
+        "repo": "composer@composer",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          1303,
+          1315,
+          1316,
+          1392,
+          1417
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.09090909090909091,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:551282890",
+        "repo": "composer@composer",
+        "pred_lines": [
+          558,
+          571,
+          576,
+          592
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "composer@composer:558512461",
+        "repo": "composer@composer",
+        "pred_lines": [
+          3432,
+          3572,
+          3708,
+          3750,
+          3757,
+          3765,
+          3768,
+          3782
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:565348117",
+        "repo": "composer@composer",
+        "pred_lines": [
+          101,
+          102,
+          103,
+          338,
+          347,
+          562,
+          574
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "composer@composer:566643668",
+        "repo": "composer@composer",
+        "pred_lines": [
+          103,
+          989,
+          1009,
+          1027,
+          1045,
+          1046,
+          1048,
+          1060
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.05454545454545454,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:566904372",
+        "repo": "composer@composer",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          937,
+          1320,
+          1323,
+          1340
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:566982103",
+        "repo": "composer@composer",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          937,
+          1319,
+          1322,
+          1339
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "composer@composer:567101801",
+        "repo": "composer@composer",
+        "pred_lines": [
+          101,
+          102,
+          103,
+          545,
+          547,
+          552,
+          564
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "discourse@discourse:565586706",
+        "repo": "discourse@discourse",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          4178,
+          4245,
+          4257
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "discourse@discourse:565999589",
+        "repo": "discourse@discourse",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          11923,
+          12445,
+          12447,
+          12481,
+          12493
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:555180400",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          2938,
+          3478,
+          4800,
+          4801,
+          4802,
+          5523,
+          5643,
+          5885
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:560605858",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          3478,
+          4800,
+          4801,
+          4802,
+          5524,
+          5629,
+          5644,
+          5892
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:561971122",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          4826,
+          4827,
+          5557,
+          5565,
+          5670,
+          5685,
+          5953,
+          5957
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.047619047619047616,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562351363",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          2944,
+          3484,
+          4806,
+          4807,
+          4808,
+          5545,
+          5665,
+          5907
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562459124",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          3482,
+          4804,
+          4805,
+          4806,
+          5545,
+          5650,
+          5665,
+          5907
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562459179",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          2967,
+          3507,
+          4829,
+          4830,
+          4831,
+          5570,
+          5690,
+          5960
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562461418",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          3482,
+          4804,
+          4805,
+          4806,
+          5528,
+          5633,
+          5648,
+          5890
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562461458",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          3507,
+          4829,
+          4830,
+          4831,
+          5553,
+          5658,
+          5673,
+          5929
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562475166",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          3482,
+          4804,
+          4805,
+          4806,
+          5545,
+          5650,
+          5665,
+          5907
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "dkhamsing@open-source-ios-apps:562475335",
+        "repo": "dkhamsing@open-source-ios-apps",
+        "pred_lines": [
+          3482,
+          4804,
+          4805,
+          4806,
+          5530,
+          5635,
+          5650,
+          5892
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303140404",
+        "repo": "electron@electron",
+        "pred_lines": [
+          917,
+          919,
+          920,
+          922,
+          994,
+          995,
+          1008,
+          1010
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303144317",
+        "repo": "electron@electron",
+        "pred_lines": [
+          930,
+          932,
+          933,
+          935,
+          997,
+          998,
+          1011,
+          1013
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303153628",
+        "repo": "electron@electron",
+        "pred_lines": [
+          914,
+          916,
+          917,
+          919,
+          981,
+          982,
+          995,
+          997
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303172126",
+        "repo": "electron@electron",
+        "pred_lines": [
+          922,
+          924,
+          925,
+          927,
+          1011,
+          1012,
+          1025,
+          1027
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303174572",
+        "repo": "electron@electron",
+        "pred_lines": [
+          948,
+          950,
+          951,
+          953,
+          1040,
+          1041,
+          1054,
+          1056
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303176966",
+        "repo": "electron@electron",
+        "pred_lines": [
+          941,
+          943,
+          944,
+          946,
+          1008,
+          1009,
+          1022,
+          1024
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303184368",
+        "repo": "electron@electron",
+        "pred_lines": [
+          884,
+          886,
+          887,
+          889,
+          951,
+          952,
+          965,
+          967
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303191669",
+        "repo": "electron@electron",
+        "pred_lines": [
+          913,
+          915,
+          916,
+          918,
+          980,
+          981,
+          994,
+          996
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303192562",
+        "repo": "electron@electron",
+        "pred_lines": [
+          927,
+          929,
+          930,
+          932,
+          994,
+          995,
+          1008,
+          1010
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "electron@electron:303195467",
+        "repo": "electron@electron",
+        "pred_lines": [
+          881,
+          883,
+          884,
+          886,
+          948,
+          949,
+          962,
+          964
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "elixir-lang@elixir:572202401",
+        "repo": "elixir-lang@elixir",
+        "pred_lines": [
+          716,
+          719,
+          735,
+          736,
+          854,
+          951,
+          959,
+          963
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "elixir-lang@elixir:572202566",
+        "repo": "elixir-lang@elixir",
+        "pred_lines": [
+          727,
+          730,
+          746,
+          747,
+          865,
+          962,
+          970,
+          974
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "elixir-lang@elixir:574602754",
+        "repo": "elixir-lang@elixir",
+        "pred_lines": [
+          663,
+          666,
+          682,
+          683,
+          801,
+          900,
+          908,
+          912
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:536981552",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          851,
+          856,
+          1435,
+          1440,
+          1593,
+          1598,
+          1604,
+          1608
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:537024011",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          829,
+          834,
+          1411,
+          1416,
+          1570,
+          1575,
+          1581,
+          1585
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:542563687",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          847,
+          852,
+          1431,
+          1436,
+          1590,
+          1595,
+          1601,
+          1605
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:543405275",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          825,
+          830,
+          1409,
+          1414,
+          1567,
+          1572,
+          1578,
+          1582
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:547360333",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          604,
+          609,
+          1179,
+          1184,
+          1190,
+          1195,
+          1201,
+          1205
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:547364057",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          603,
+          608,
+          1178,
+          1183,
+          1189,
+          1194,
+          1200,
+          1204
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:547370322",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          983,
+          988,
+          1558,
+          1563,
+          1569,
+          1574,
+          1580,
+          1584
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:559751801",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          580,
+          1151,
+          1159,
+          1164,
+          1318,
+          1323,
+          1329,
+          1333
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.25,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:565318712",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          559,
+          564,
+          1152,
+          1157,
+          1310,
+          1315,
+          1321,
+          1325
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "emacs-tw@awesome-emacs:571137445",
+        "repo": "emacs-tw@awesome-emacs",
+        "pred_lines": [
+          573,
+          578,
+          1186,
+          1191,
+          1344,
+          1349,
+          1355,
+          1359
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "erlang@otp:546804521",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1121,
+          1513
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:546984181",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1129,
+          1333
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:546987224",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1125,
+          1517
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:550114180",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          1647,
+          1722,
+          1723,
+          1724,
+          1815,
+          1819,
+          1820,
+          1958
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "erlang@otp:551677118",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          1555,
+          1630,
+          1631,
+          1632,
+          1819,
+          1823,
+          1832,
+          1866
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "erlang@otp:552509993",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1034,
+          1235
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:553211512",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1189,
+          1390
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:554431291",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1145,
+          1537
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:554692041",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1159,
+          1551
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "erlang@otp:555761574",
+        "repo": "erlang@otp",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          1136,
+          1528
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "google@material-design-icons:92806560",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          408,
+          410
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:92807014",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          477,
+          479
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:92809009",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          406,
+          408
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:92809205",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          483,
+          485
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:92810143",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          408,
+          410
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:93320805",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          505,
+          507
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:96429687",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          427,
+          429
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:96448414",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          408,
+          410
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:97618287",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          539,
+          541
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@material-design-icons:99516227",
+        "repo": "google@material-design-icons",
+        "pred_lines": [
+          463,
+          465
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "google@web-starter-kit:348091008",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          122,
+          140,
+          141,
+          268,
+          2178,
+          2192,
+          2194
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.06666666666666667,
+        "n_pred": 7
+      },
+      {
+        "id": "google@web-starter-kit:348092162",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          122,
+          140,
+          141,
+          268,
+          2175,
+          2189,
+          2191
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.06666666666666667,
+        "n_pred": 7
+      },
+      {
+        "id": "google@web-starter-kit:348096455",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          2419,
+          2437,
+          2438,
+          2565,
+          4577,
+          4588,
+          4592,
+          4594
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "google@web-starter-kit:348293982",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          122,
+          140,
+          141,
+          268,
+          2280,
+          2291,
+          2295,
+          2297
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.06666666666666667,
+        "n_pred": 8
+      },
+      {
+        "id": "google@web-starter-kit:398798677",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          705,
+          749,
+          754,
+          756
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "google@web-starter-kit:398800704",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          712,
+          757,
+          762,
+          764
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "google@web-starter-kit:411570811",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          711,
+          755,
+          760,
+          762
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "google@web-starter-kit:537108381",
+        "repo": "google@web-starter-kit",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          834,
+          877,
+          880,
+          884
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "iluwatar@java-design-patterns:565304449",
+        "repo": "iluwatar@java-design-patterns",
+        "pred_lines": [
+          839,
+          841,
+          868,
+          870,
+          885,
+          887,
+          893,
+          1065
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.125,
+        "n_pred": 8
+      },
+      {
+        "id": "iluwatar@java-design-patterns:565659321",
+        "repo": "iluwatar@java-design-patterns",
+        "pred_lines": [
+          149,
+          277,
+          832,
+          834,
+          835,
+          836,
+          838,
+          1103
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:557871100",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          277,
+          1041,
+          1328,
+          1666,
+          1667,
+          1674,
+          1692,
+          1711
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:558414447",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          277,
+          1040,
+          1327,
+          1665,
+          1666,
+          1673,
+          1691,
+          1710
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:558541567",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          149,
+          277,
+          957,
+          1238,
+          1239,
+          1259,
+          1274,
+          1293
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:558544016",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          149,
+          277,
+          974,
+          1255,
+          1256,
+          1276,
+          1291,
+          1310
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:558598688",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          277,
+          978,
+          1265,
+          1631,
+          1632,
+          1639,
+          1654,
+          1673
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:562218280",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          665,
+          946,
+          947,
+          954,
+          969,
+          988
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jekyll@jekyll:565960060",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          279,
+          543,
+          570,
+          589
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "jekyll@jekyll:566659348",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          2059,
+          2196,
+          2386,
+          2387,
+          2394,
+          2401,
+          2435,
+          2454
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "jekyll@jekyll:567204630",
+        "repo": "jekyll@jekyll",
+        "pred_lines": [
+          279,
+          532,
+          560,
+          567,
+          582,
+          601
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgthms@bulma:373686035",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          903,
+          909,
+          911
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.5,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:406362104",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          889,
+          891
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "jgthms@bulma:437082455",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          133,
+          151,
+          152,
+          280,
+          1024,
+          1032,
+          1034
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:438531930",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          133,
+          151,
+          152,
+          280,
+          1108,
+          1116,
+          1118
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:513332094",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          987,
+          993,
+          997
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:534204380",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          921,
+          927,
+          931
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:534209066",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          939,
+          945,
+          949
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:534210704",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          940,
+          946,
+          950
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:534211385",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          952,
+          958,
+          962
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jgthms@bulma:534214736",
+        "repo": "jgthms@bulma",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          875,
+          881,
+          885
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.25,
+        "n_pred": 7
+      },
+      {
+        "id": "jwilm@alacritty:564527447",
+        "repo": "jwilm@alacritty",
+        "pred_lines": [
+          479,
+          481,
+          483,
+          486
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
+      },
+      {
+        "id": "jwilm@alacritty:564632044",
+        "repo": "jwilm@alacritty",
+        "pred_lines": [
+          622,
+          627,
+          631
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "jwilm@alacritty:567130646",
+        "repo": "jwilm@alacritty",
+        "pred_lines": [
+          1448,
+          1539,
+          1542,
+          1637,
+          1651,
+          1653,
+          1655,
+          1659
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.01932367149758454,
+        "n_pred": 8
+      },
+      {
+        "id": "major@MySQLTuner-perl:431782730",
+        "repo": "major@MySQLTuner-perl",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          1192,
+          1199,
+          1201
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "martanne@vis:243935654",
+        "repo": "martanne@vis",
+        "pred_lines": [
+          1385,
+          1395,
+          1476,
+          1520,
+          1522,
+          1537,
+          1624,
+          1636
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "martanne@vis:346413726",
+        "repo": "martanne@vis",
+        "pred_lines": [
+          1475,
+          1481,
+          1804,
+          1810,
+          1816,
+          1822,
+          1828,
+          1840
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "martanne@vis:346425105",
+        "repo": "martanne@vis",
+        "pred_lines": [
+          1475,
+          1481,
+          1804,
+          1810,
+          1816,
+          1822,
+          1828,
+          1840
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "martanne@vis:496555781",
+        "repo": "martanne@vis",
+        "pred_lines": [
+          1272,
+          1277,
+          1310,
+          1315,
+          1320,
+          1325,
+          1330,
+          1348
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "mhinz@vim-galore:374778890",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          672,
+          674
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:374779116",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          673,
+          675
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:374779422",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          672,
+          674
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:374779992",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          672,
+          674
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:374781325",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          671,
+          673
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:374803396",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          682,
+          684
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:403259414",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          673,
+          675
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:417699186",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          903,
+          905
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:430784580",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          691,
+          693
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "mhinz@vim-galore:443978045",
+        "repo": "mhinz@vim-galore",
+        "pred_lines": [
+          121,
+          139,
+          140,
+          267,
+          805,
+          807
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "necolas@normalize.css:140173233",
+        "repo": "necolas@normalize.css",
+        "pred_lines": [
+          2357,
+          2367,
+          2371,
+          2373
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.1,
+        "n_pred": 4
+      },
+      {
+        "id": "neovim@neovim:567614596",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          10283,
+          12148,
+          12150,
+          12152,
+          12179,
+          12180,
+          12181,
+          12211
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567659224",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8129,
+          9833,
+          9835,
+          9837,
+          9864,
+          9865,
+          9866,
+          9890
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567670361",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8163,
+          9867,
+          9869,
+          9871,
+          9898,
+          9899,
+          9900,
+          9924
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567681636",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8129,
+          9833,
+          9835,
+          9837,
+          9864,
+          9865,
+          9866,
+          9889
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567681970",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8114,
+          9818,
+          9820,
+          9822,
+          9849,
+          9850,
+          9851,
+          9876
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567682531",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8434,
+          10138,
+          10140,
+          10142,
+          10169,
+          10170,
+          10171,
+          10201
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567686448",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8210,
+          9914,
+          9916,
+          9918,
+          9945,
+          9946,
+          9947,
+          9972
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "neovim@neovim:567689244",
+        "repo": "neovim@neovim",
+        "pred_lines": [
+          8196,
+          9900,
+          9902,
+          9904,
+          9931,
+          9932,
+          9933,
+          9957
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:535985298",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          859,
+          903,
+          968,
+          972,
+          973,
+          976,
+          982,
+          1039
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:535986685",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          1044,
+          1052,
+          1054,
+          1059,
+          1067,
+          1139,
+          1145,
+          1157
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.2727272727272727,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:535987243",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          1116,
+          1120,
+          1121,
+          1124,
+          1130,
+          1171,
+          1174,
+          1180
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:535987256",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          973,
+          980,
+          981,
+          985,
+          986,
+          989,
+          995,
+          1053
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:536509309",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          5790,
+          5794,
+          5795,
+          5798,
+          5804,
+          5864,
+          5867,
+          5873
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:536509314",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          5330,
+          5365,
+          5381,
+          5385,
+          5386,
+          5389,
+          5395,
+          5451
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:536510132",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          1103,
+          1107,
+          1108,
+          1111,
+          1117,
+          1162,
+          1165,
+          1171
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:536510159",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          859,
+          903,
+          967,
+          971,
+          972,
+          975,
+          981,
+          1040
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:547432425",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          1108,
+          1112,
+          1113,
+          1116,
+          1122,
+          1157,
+          1160,
+          1166
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "powershell@PowerShell:547432434",
+        "repo": "powershell@PowerShell",
+        "pred_lines": [
+          968,
+          972,
+          973,
+          977,
+          978,
+          981,
+          987,
+          1021
+        ],
+        "hit": true,
+        "precision": 0.375,
+        "recall": 0.5,
+        "n_pred": 8
+      },
+      {
+        "id": "processone@ejabberd:554568247",
+        "repo": "processone@ejabberd",
+        "pred_lines": [
+          3199,
+          3249,
+          3250,
+          3252,
+          3404,
+          3409,
+          3411,
+          3433
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.08333333333333333,
+        "n_pred": 8
+      },
+      {
+        "id": "processone@ejabberd:557787572",
+        "repo": "processone@ejabberd",
+        "pred_lines": [
+          1606,
+          1611,
+          1792,
+          1797,
+          1799,
+          1819,
+          1821,
+          1830
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:495224858",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          904,
+          906,
+          908,
+          909,
+          953,
+          965
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:495247642",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          877,
+          879,
+          881,
+          882,
+          926,
+          938
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:495316554",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          875,
+          877,
+          879,
+          880,
+          924,
+          936
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:495429346",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          895,
+          897,
+          899,
+          900,
+          944,
+          956
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:515415388",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          277,
+          845,
+          1057,
+          1059,
+          1066,
+          1068,
+          1135,
+          1149
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:515415960",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          868,
+          870,
+          877,
+          879,
+          946,
+          965
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:515416520",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          871,
+          873,
+          880,
+          882,
+          949,
+          961
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:516445189",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          149,
+          277,
+          931,
+          933,
+          940,
+          942,
+          1024,
+          1036
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purcell@emacs.d:533616131",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          130,
+          148,
+          149,
+          277,
+          876,
+          920,
+          932
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 7
+      },
+      {
+        "id": "purcell@emacs.d:570347231",
+        "repo": "purcell@emacs.d",
+        "pred_lines": [
+          589,
+          797,
+          811
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "purescript@purescript:549434310",
+        "repo": "purescript@purescript",
+        "pred_lines": [
+          1330,
+          1331,
+          1334,
+          1335,
+          1508,
+          1960,
+          3227,
+          3244
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purescript@purescript:549447715",
+        "repo": "purescript@purescript",
+        "pred_lines": [
+          913,
+          921,
+          1003,
+          2522,
+          2745,
+          2781,
+          2818,
+          2847
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purescript@purescript:549463948",
+        "repo": "purescript@purescript",
+        "pred_lines": [
+          3276,
+          3645,
+          4743,
+          4790,
+          4916,
+          5214,
+          5216,
+          5244
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "purescript@purescript:551305362",
+        "repo": "purescript@purescript",
+        "pred_lines": [
+          6869,
+          6870,
+          6871,
+          6872,
+          6873,
+          6874,
+          6881,
+          6890
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 1.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517022106",
+        "repo": "rails@rails",
+        "pred_lines": [
+          1926,
+          2679,
+          2681,
+          2741,
+          3412,
+          3413,
+          3415,
+          3427
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.03773584905660377,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517085282",
+        "repo": "rails@rails",
+        "pred_lines": [
+          1596,
+          2393,
+          3044,
+          3045,
+          3047,
+          3059
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "rails@rails:517100249",
+        "repo": "rails@rails",
+        "pred_lines": [
+          277,
+          808,
+          1122,
+          2710,
+          2720,
+          2721,
+          2723,
+          2735
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517209604",
+        "repo": "rails@rails",
+        "pred_lines": [
+          2347,
+          3093,
+          3095,
+          4195,
+          4199,
+          4200,
+          4202,
+          4214
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.024691358024691357,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517220648",
+        "repo": "rails@rails",
+        "pred_lines": [
+          2282,
+          2298,
+          2315,
+          2336,
+          2342,
+          2343,
+          2345,
+          2357
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517221606",
+        "repo": "rails@rails",
+        "pred_lines": [
+          2281,
+          2298,
+          2315,
+          2336,
+          2342,
+          2343,
+          2345,
+          2357
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517286749",
+        "repo": "rails@rails",
+        "pred_lines": [
+          1535,
+          2240,
+          2246,
+          2247,
+          2249,
+          2261
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "rails@rails:517367844",
+        "repo": "rails@rails",
+        "pred_lines": [
+          148,
+          149,
+          277,
+          1443,
+          8126,
+          8127,
+          8129,
+          8157
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517367909",
+        "repo": "rails@rails",
+        "pred_lines": [
+          277,
+          974,
+          986,
+          1017,
+          1039,
+          1040,
+          1042,
+          1072
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.14285714285714285,
+        "n_pred": 8
+      },
+      {
+        "id": "rails@rails:517368002",
+        "repo": "rails@rails",
+        "pred_lines": [
+          277,
+          1156,
+          1470,
+          2296,
+          2303,
+          2304,
+          2306,
+          2318
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "soulmachine@leetcode:172062089",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          382,
+          384
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:224191374",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          449,
+          451
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:224191504",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          450,
+          452
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:224191617",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          449,
+          451
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:224192148",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          454,
+          456
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:245016628",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          386,
+          388
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:245420059",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          387,
+          389
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:250792311",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          370,
+          372
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 2
+      },
+      {
+        "id": "soulmachine@leetcode:302364749",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          131,
+          149,
+          150,
+          278,
+          784,
+          786
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "soulmachine@leetcode:306325878",
+        "repo": "soulmachine@leetcode",
+        "pred_lines": [
+          131,
+          149,
+          150,
+          278,
+          786,
+          788
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "twbs@bootstrap:565940461",
+        "repo": "twbs@bootstrap",
+        "pred_lines": [
+          596,
+          597,
+          598,
+          599,
+          601,
+          602,
+          603,
+          604
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twbs@bootstrap:565973566",
+        "repo": "twbs@bootstrap",
+        "pred_lines": [
+          590,
+          591,
+          592,
+          593,
+          595,
+          596,
+          597,
+          598
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twbs@bootstrap:566522647",
+        "repo": "twbs@bootstrap",
+        "pred_lines": [
+          654,
+          655,
+          656,
+          657,
+          659,
+          660,
+          661,
+          662
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twbs@bootstrap:566876747",
+        "repo": "twbs@bootstrap",
+        "pred_lines": [
+          654,
+          655,
+          656,
+          657,
+          659,
+          660,
+          661,
+          662
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twbs@bootstrap:567309401",
+        "repo": "twbs@bootstrap",
+        "pred_lines": [
+          379,
+          380,
+          381,
+          382,
+          384,
+          385,
+          386,
+          387
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twbs@bootstrap:567309876",
+        "repo": "twbs@bootstrap",
+        "pred_lines": [
+          384,
+          385,
+          386,
+          387,
+          389,
+          390,
+          391,
+          392
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 8
+      },
+      {
+        "id": "twitter@AnomalyDetection:45992929",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1211,
+          1220,
+          1222
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 3
+      },
+      {
+        "id": "twitter@AnomalyDetection:45994776",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1250,
+          1282,
+          1283,
+          1300,
+          1302
+        ],
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.125,
+        "n_pred": 5
+      },
+      {
+        "id": "twitter@AnomalyDetection:46403875",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1400,
+          1445,
+          1446,
+          1465,
+          1467
+        ],
+        "hit": true,
+        "precision": 0.2,
+        "recall": 0.0625,
+        "n_pred": 5
+      },
+      {
+        "id": "twitter@AnomalyDetection:48330777",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1374,
+          1375,
+          1379,
+          1381
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.5,
+        "n_pred": 4
+      },
+      {
+        "id": "twitter@AnomalyDetection:56908634",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1340,
+          1372,
+          1373,
+          1386,
+          1390,
+          1392
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.1875,
+        "n_pred": 6
+      },
+      {
+        "id": "twitter@AnomalyDetection:57198542",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1339,
+          1371,
+          1372,
+          1385,
+          1389,
+          1391
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.1875,
+        "n_pred": 6
+      },
+      {
+        "id": "twitter@AnomalyDetection:57281902",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1357,
+          1389,
+          1390,
+          1407,
+          1409
+        ],
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.125,
+        "n_pred": 5
+      },
+      {
+        "id": "twitter@AnomalyDetection:74461732",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1955,
+          2015,
+          2016,
+          2029,
+          2033,
+          2040,
+          2042
+        ],
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.1875,
+        "n_pred": 7
+      },
+      {
+        "id": "twitter@AnomalyDetection:74708143",
+        "repo": "twitter@AnomalyDetection",
+        "pred_lines": [
+          1967,
+          2000,
+          2001,
+          2014,
+          2018,
+          2025,
+          2027
+        ],
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.1875,
+        "n_pred": 7
+      },
+      {
+        "id": "vsouza@awesome-ios:557856885",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          608,
+          613,
+          3316,
+          3340,
+          3349,
+          3355,
+          3359
+        ],
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.06666666666666667,
+        "n_pred": 7
+      },
+      {
+        "id": "vsouza@awesome-ios:557890661",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          647,
+          652,
+          3356,
+          3389,
+          3419,
+          3423
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:557945079",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          605,
+          610,
+          3314,
+          3346,
+          3352,
+          3356
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:558884711",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          632,
+          637,
+          3341,
+          3373,
+          3402,
+          3406
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:560497551",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          608,
+          613,
+          3317,
+          3351,
+          3357,
+          3361
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:561711374",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          606,
+          611,
+          3316,
+          3350,
+          3356,
+          3360
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:565882693",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          630,
+          635,
+          3341,
+          3377,
+          3410,
+          3414
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:566627090",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          632,
+          637,
+          3343,
+          3379,
+          3412,
+          3416
+        ],
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 6
+      },
+      {
+        "id": "vsouza@awesome-ios:566908885",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          630,
+          635,
+          3345,
+          3372,
+          3382,
+          3413,
+          3417,
+          3421
+        ],
+        "hit": true,
+        "precision": 0.125,
+        "recall": 0.05263157894736842,
+        "n_pred": 8
+      },
+      {
+        "id": "vsouza@awesome-ios:566968587",
+        "repo": "vsouza@awesome-ios",
+        "pred_lines": [
+          3340,
+          3362,
+          3368,
+          3378,
+          3403,
+          3409,
+          3413,
+          3417
+        ],
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.1,
+        "n_pred": 8
+      }
+    ]
+  }
+]

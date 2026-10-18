@@ -1,0 +1,39 @@
+{
+  "schema": "releaseguard.preflight/1",
+  "generatedAt": "2026-10-17T20:00:00Z",
+  "_note": "SYNTHETIC mock of the plugin output (agentia releaseguard preflight --json)",
+  "user": {
+    "id": "005MOCK000000001",
+    "fullName": "Dana Developer",
+    "username": "dana.dev@example.com"
+  },
+  "workspace": {
+    "workItemName": null,
+    "workItemTitle": "",
+    "branch": "feature/mock",
+    "baseBranch": "main"
+  },
+  "workItem": {
+    "id": "a0MOCK",
+    "name": null,
+    "title": "",
+    "status": "In Progress",
+    "acceptanceCriteria": "",
+    "projectName": "Mock Project"
+  },
+  "orgHealth": {
+    "summary": {
+      "fail": 1,
+      "pass": 11,
+      "warn": 0,
+      "total": 12
+    },
+    "failing": [
+      {
+        "checkId": "HC-07",
+        "name": "Local quality gate configured",
+        "severity": "high"
+      }
+    ]
+  }
+}

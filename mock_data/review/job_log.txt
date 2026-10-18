@@ -1,0 +1,7 @@
+[14:20:05] Job JOB-5002 started: Validate US-1002
+[14:20:09] Retrieving metadata from source org... done
+[14:20:30] WARNING: Flow Quote_Discount_Approval_Flow references a permission not present in target org
+[14:20:31] WARNING: 3 tests skipped (marked @isTest(SeeAllData=true))
+[14:21:50] 96 tests passed, 0 failed
+[14:21:51] Code coverage: 80.2%
+[14:21:52] Job JOB-5002 finished: Success (with warnings)

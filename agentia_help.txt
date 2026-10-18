@@ -1,0 +1,349 @@
+]633;E;for c in "auth" "setup" "plugins" "cicd" "cicd work get" "cicd work set" "cicd work status" "cicd work test" "cicd work submit" "cicd job" "cicd job log"\x3b do echo "##### agentia $c --help"\x3b agentia $c --help\x3b done > agentia_help.txt 2>&1;89d4d011-8327-420b-8e4d-5291cbf97347]633;C##### agentia auth --help
+Manage authentication credentials
+
+USAGE
+  $ agentia auth COMMAND
+
+COMMANDS
+  auth get    Show stored authentication credentials and their configured
+              endpoints and scopes
+  auth set    Store authentication credentials securely in the system keychain
+  auth unset  Remove stored authentication credentials from the system keychain
+
+##### agentia setup --help
+Prepare this machine and the current project for Agentia. Guides CICD, AI, and CRT authentication, Cursor MCP, local quality gates, and AGENTS.md. Git is optional: .gitignore is updated only inside a repository, and generated files are not committed.
+
+USAGE
+  $ agentia setup
+
+DESCRIPTION
+  Prepare this machine and the current project for Agentia. Guides CICD, AI, and
+  CRT authentication, Cursor MCP, local quality gates, and AGENTS.md. Git is
+  optional: .gitignore is updated only inside a repository, and generated files
+  are not committed.
+
+EXAMPLES
+  $ agentia setup
+
+TOPICS
+  setup skills  Create and update Agentia Agent Skills
+
+##### agentia plugins --help
+List installed plugins.
+
+USAGE
+  $ agentia plugins [--json] [--core]
+
+FLAGS
+  --core  Show core plugins.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  List installed plugins.
+
+EXAMPLES
+  $ agentia plugins
+
+COMMANDS
+  plugins inspect    Displays installation properties of a plugin.
+  plugins install    Install plugins with npm after checking them against the
+                     Agentia plugin catalog.
+  plugins link       Links a plugin into the CLI for development.
+  plugins reset      Remove all user-installed and linked plugins.
+  plugins uninstall  Removes a plugin from the CLI.
+  plugins update     Update installed plugins.
+
+##### agentia cicd --help
+Manage Copado CICD workflows
+
+USAGE
+  $ agentia cicd COMMAND
+
+TOPICS
+  cicd cloud         Run Copado cloud commit and promotion operations
+  cicd credential    Manage Copado environment credentials
+  cicd data          Manage Copado data templates and data commits
+  cicd environment   Manage Copado environments
+  cicd function      Scaffold default Copado Function metadata and script
+                     without writing to Salesforce
+  cicd job           Manage Copado job executions
+  cicd metadata      Inspect and compare Copado metadata
+  cicd notification  Configure Copado notification subscriptions
+  cicd pipeline      Manage Copado pipelines
+  cicd project       Manage Copado projects
+  cicd promotion     Manage Copado promotions
+  cicd repository    Manage Copado Git repositories
+  cicd stage         Create a Copado stage
+  cicd template      Scaffold default Copado Job Template metadata without
+                     writing to Salesforce (legacy create ≈ defaults --write)
+  cicd user          Manage Copado users
+  cicd work          Manage Copado user stories
+
+COMMANDS
+  cicd health-check  Run organization-scoped governance health checks
+
+##### agentia cicd work get --help
+Get a Copado user story by ID
+
+USAGE
+  $ agentia cicd work get [ID] [--json] [--user-stories-ahead-behind]
+
+ARGUMENTS
+  [ID]  User story ID (defaults to the active work item from `work set`)
+
+FLAGS
+  --user-stories-ahead-behind  When the user story has a pipeline and source
+                               environment, compare user stories ahead of and
+                               behind the next pipeline environment
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Get a Copado user story by ID
+
+EXAMPLES
+  $ agentia cicd work get
+
+  $ agentia cicd work get a0SKC000000CmZ2AU
+
+  $ agentia cicd work get a0SKC000000CmZ2AU --json
+
+  $ agentia cicd work get a0SKC000000CmZ2AU --user-stories-ahead-behind
+
+  $ agentia cicd work get a0SKC000000CmZ2AU --user-stories-ahead-behind --json
+
+##### agentia cicd work set --help
+Set the active work item and prepare a local feature branch. Calls the CICD gateway work/set endpoint, requires a clean tracked working tree, fetches the work item base branch from origin, fetches the feature branch when it exists on origin, then creates or checks out feature/<user-story-name> from the remote feature branch when present, otherwise from the base branch. A gateway warning prints the message, skips git, clears lastBaseBranch/lastDevOrgBranch/lastPullRequestBaseUrl, and records lastWorkItemId/lastWorkItem/lastWorkItemTitle from the returned work item. After work/set returns, compares the Story source credential with the CICD project default: warns when the default or Story credential is missing, and warns without changing the Story when they differ (shows the current credential and environment; use work update to change it). With --none, clears every last* key from `.agentia/config.user.json` and checks out the previous lastBaseBranch when present, else main, else master, else stays put.
+
+USAGE
+  $ agentia cicd work set [ID] [--json] [--base-branch <value>] [--none]
+
+ARGUMENTS
+  [ID]  User story ID or name (omit with --none)
+
+FLAGS
+  --base-branch=<value>  Override the base branch returned by the work/set
+                         endpoint
+  --none                 Clear every last* key from `.agentia/config.user.json`
+                         and check out lastBaseBranch, else main, else master.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Set the active work item and prepare a local feature branch. Calls the CICD
+  gateway work/set endpoint, requires a clean tracked working tree, fetches the
+  work item base branch from origin, fetches the feature branch when it exists
+  on origin, then creates or checks out feature/<user-story-name> from the
+  remote feature branch when present, otherwise from the base branch. A gateway
+  warning prints the message, skips git, clears
+  lastBaseBranch/lastDevOrgBranch/lastPullRequestBaseUrl, and records
+  lastWorkItemId/lastWorkItem/lastWorkItemTitle from the returned work item.
+  After work/set returns, compares the Story source credential with the CICD
+  project default: warns when the default or Story credential is missing, and
+  warns without changing the Story when they differ (shows the current
+  credential and environment; use work update to change it). With --none, clears
+  every last* key from `.agentia/config.user.json` and checks out the previous
+  lastBaseBranch when present, else main, else master, else stays put.
+
+EXAMPLES
+  $ agentia cicd work set a0SKC000000CmZ2AU
+
+  $ agentia cicd work set US-0001 --json
+
+  $ agentia cicd work set US-0001 --base-branch develop
+
+  $ agentia cicd work set --none
+
+##### agentia cicd work status --help
+Get status for a work item, including related job executions. Includes local branch metadata when lastBaseBranch is recorded by `work set`. Uses the given user story ID/name, or the last work item from `agentia cicd work set`. Use --metadata-list-only to retrieve only local branch metadata without an API call.
+
+USAGE
+  $ agentia cicd work status [ID] [--json] [--metadata-list-only]
+
+ARGUMENTS
+  [ID]  User story ID or name (defaults to the last work item from `work set`)
+
+FLAGS
+  --metadata-list-only  Return only local branch metadata without calling the
+                        CICD API
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Get status for a work item, including related job executions. Includes local
+  branch metadata when lastBaseBranch is recorded by `work set`. Uses the given
+  user story ID/name, or the last work item from `agentia cicd work set`. Use
+  --metadata-list-only to retrieve only local branch metadata without an API
+  call.
+
+EXAMPLES
+  $ agentia cicd work status
+
+  $ agentia cicd work status US-0001
+
+  $ agentia cicd work status a0SKC000000CmZ2AU --json
+
+  $ agentia cicd work status --metadata-list-only
+
+##### agentia cicd work test --help
+Run quality gates for the current work item. With --local (the default) it runs project-root .agentia_quality_gates.sh (macOS/Linux) or .agentia_quality_gates.cmd (Windows) when present. When no project script exists it warns, runs the stock Agentia setup sample from a temporary file, then deletes that file. With --cloud it runs remote Copado quality gates (not implemented yet).
+
+USAGE
+  $ agentia cicd work test [--json] [--apex-test-classes <value>] [--cloud]
+    [-e <value>...] [--local] [--rerun-failed-apex-tests]
+
+FLAGS
+  -e, --env=<value>...             Extra environment variable for the
+                                   quality-gate script as NAME=value.
+                                   Repeatable. Applied before reserved
+                                   AGENTIA_APEX_* variables.
+      --apex-test-classes=<value>  Comma-separated Apex test class names passed
+                                   to local quality gates as
+                                   AGENTIA_APEX_TEST_CLASSES
+      --cloud                      Run remote Copado quality gates (not
+                                   implemented yet).
+      --local                      Run local project-root quality gates scripts.
+                                   Used by default when --cloud is omitted.
+      --rerun-failed-apex-tests    Pass AGENTIA_APEX_RERUN_FAILED=--rerun-failed
+                                   -apex-tests to local quality gates so sample
+                                   scripts forward that flag to work test apex.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Run quality gates for the current work item. With --local (the default) it
+  runs project-root .agentia_quality_gates.sh (macOS/Linux) or
+  .agentia_quality_gates.cmd (Windows) when present. When no project script
+  exists it warns, runs the stock Agentia setup sample from a temporary file,
+  then deletes that file. With --cloud it runs remote Copado quality gates (not
+  implemented yet).
+
+EXAMPLES
+  $ agentia cicd work test
+
+  $ agentia cicd work test --local --apex-test-classes=MyTest,OtherTest
+
+  $ agentia cicd work test --local --rerun-failed-apex-tests
+
+  $ agentia cicd work test -e SKIP_LWC_TESTS=1 -e TOOL_API_KEY=secret
+
+  $ agentia cicd work test --json
+
+  $ agentia cicd work test --cloud
+
+COMMANDS
+  cicd work test apex
+      Run specified Apex test classes via Salesforce CLI (`sf apex run test`) with
+      code coverage. Usually run from project-root local quality gates
+      (`.agentia_quality_gates.sh` / `.agentia_quality_gates.cmd`) when those
+      scripts are configured. When `--apex-test-classes` is omitted or empty, logs
+      that no Apex tests were specified and exits without running Salesforce CLI.
+      Failed runs save `.agentia/apex.tests.<user-story>.json`; successful runs
+      delete that file. `--rerun-failed-apex-tests` runs the previously failed
+      classes (optionally filtered by `--apex-test-classes`). Prints the test-run
+      summary when the run passes, or failing tests with their messages and stack
+      traces when it fails. Exits with the same process exit code as Salesforce
+      CLI (`sf`), including 100 when Apex tests fail.
+
+##### agentia cicd work submit --help
+Submit the current feature/<lastWorkItem> work item for pipeline quality gates and validation. Runs project-root .agentia_quality_gates.sh (macOS/Linux) or .agentia_quality_gates.cmd (Windows) when present, pushes and registers commits when the branch is ahead of origin, then calls headless work/submit (Promote Action with validate=true). When the last pending related job template name contains Commit, waits up to 5 minutes for that job before submitting. Before submit or promote, counts user stories ahead and behind between the source environment and the next pipeline environment, and warns when stories behind might cause promotion conflicts (advising `agentia cicd work environment-sync`). After a successful submit or promote, uploads the captured command output as a Salesforce File on the user story (`Local Commit Logs <commitId> <datetime>.txt`) via `/agentia/headless/file/upload`. HTTP 404 is ignored until that endpoint is rolled out; other upload failures are warned and do not fail the command. With --done or --deploy, matches Copado UI Submit when promoting (validate=false / headless work/done). cicd work done is a compatibility alias of this command with --done.
+
+USAGE
+  $ agentia cicd work submit [--json] [--skip-nested-metadata-detection]
+    [--apex-test-classes <value>] [--deploy] [--done] [--skip-local-tests]
+    [--skip-pull-request]
+
+FLAGS
+  --apex-test-classes=<value>       Comma-separated Apex test class names passed
+                                    to local quality gates as
+                                    AGENTIA_APEX_TEST_CLASSES
+  --deploy                          Alias of --done: promote instead of
+                                    validate-only (Copado UI Submit promote)
+  --done                            Promote instead of validate-only (Copado UI
+                                    Submit promote); honors
+                                    --skip-nested-metadata-detection. --deploy
+                                    is an alias of --done.
+  --skip-local-tests                Skip running local quality gates scripts in
+                                    the project root
+  --skip-nested-metadata-detection  Do not detect the nested metadata changed
+                                    across the branch when pushing (also
+                                    configurable via skipNestedMetadataDetection
+                                    in .agentia/config.json or
+                                    .agentia/config.user.json)
+  --skip-pull-request               Do not open the pull request compare URL
+                                    after submit (also configurable via
+                                    skipPullRequest in .agentia/config.json or
+                                    .agentia/config.user.json)
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Submit the current feature/<lastWorkItem> work item for pipeline quality gates
+  and validation. Runs project-root .agentia_quality_gates.sh (macOS/Linux) or
+  .agentia_quality_gates.cmd (Windows) when present, pushes and registers
+  commits when the branch is ahead of origin, then calls headless work/submit
+  (Promote Action with validate=true). When the last pending related job
+  template name contains Commit, waits up to 5 minutes for that job before
+  submitting. Before submit or promote, counts user stories ahead and behind
+  between the source environment and the next pipeline environment, and warns
+  when stories behind might cause promotion conflicts (advising `agentia cicd
+  work environment-sync`). After a successful submit or promote, uploads the
+  captured command output as a Salesforce File on the user story (`Local Commit
+  Logs <commitId> <datetime>.txt`) via `/agentia/headless/file/upload`. HTTP 404
+  is ignored until that endpoint is rolled out; other upload failures are warned
+  and do not fail the command. With --done or --deploy, matches Copado UI Submit
+  when promoting (validate=false / headless work/done). cicd work done is a
+  compatibility alias of this command with --done.
+
+EXAMPLES
+  $ agentia cicd work submit
+
+  $ agentia cicd work submit --apex-test-classes=MyTest,OtherTest
+
+  $ agentia cicd work submit --skip-local-tests
+
+  $ agentia cicd work submit --skip-pull-request
+
+  $ agentia cicd work submit --done
+
+  $ agentia cicd work submit --deploy
+
+  $ agentia cicd work submit --done --skip-nested-metadata-detection
+
+  $ agentia cicd work submit --json
+
+##### agentia cicd job --help
+Manage Copado job executions
+
+USAGE
+  $ agentia cicd job COMMAND
+
+TOPICS
+  cicd job log          Inspect Copado job execution logs
+  cicd job result-file  Inspect Files linked to Copado job Results
+
+COMMANDS
+  cicd job get     Get a Copado job execution with ordered steps
+  cicd job kill    Cancel a Copado job execution
+  cicd job list    List Copado job executions
+  cicd job open    Open a Copado job execution in the browser
+  cicd job pause   Pause a Copado job execution (resumable cancel alias)
+  cicd job resume  Resume outstanding steps for a Copado job execution
+  cicd job run     Run all steps for a Copado job execution
+
+##### agentia cicd job log --help
+Inspect Copado job execution logs
+
+USAGE
+  $ agentia cicd job log COMMAND
+
+COMMANDS
+  cicd job log get  Get log output for a Copado job execution step
+

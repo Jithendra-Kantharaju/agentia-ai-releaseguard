@@ -1,0 +1,80 @@
+{
+  "policy_version": "2.0",
+  "description": "ReleaseGuard release policies. on_violation 'fail' blocks the release, 'review' sends it to a human. weight feeds the explainable risk score.",
+  "risk_levels": {"medium": 1, "high": 5},
+  "rules": [
+    {
+      "id": "R1_NO_FAILED_TESTS",
+      "description": "All tests must pass",
+      "type": "max_failed_tests",
+      "threshold": 0,
+      "weight": 5,
+      "on_violation": "fail"
+    },
+    {
+      "id": "R2_MIN_COVERAGE",
+      "description": "Code coverage must be at least 75%",
+      "type": "min_coverage",
+      "threshold": 75,
+      "weight": 5,
+      "on_violation": "fail"
+    },
+    {
+      "id": "R3_TARGET_COVERAGE",
+      "description": "Code coverage below 85% needs human review",
+      "type": "min_coverage",
+      "threshold": 85,
+      "weight": 2,
+      "on_violation": "review"
+    },
+    {
+      "id": "R4_NO_CRITICAL_SECURITY",
+      "description": "No critical security findings allowed",
+      "type": "max_security",
+      "severity": "critical",
+      "threshold": 0,
+      "weight": 5,
+      "on_violation": "fail"
+    },
+    {
+      "id": "R5_HIGH_SECURITY_REVIEW",
+      "description": "High security findings need human review",
+      "type": "max_security",
+      "severity": "high",
+      "threshold": 0,
+      "weight": 2,
+      "on_violation": "review"
+    },
+    {
+      "id": "R6_NO_ERRORS_IN_LOGS",
+      "description": "Job logs must not contain deployment errors",
+      "type": "log_patterns",
+      "patterns": ["ERROR", "FATAL", "UNABLE_TO_LOCK_ROW", "Deployment failed"],
+      "weight": 5,
+      "on_violation": "fail"
+    },
+    {
+      "id": "R7_ACCEPTANCE_CRITERIA",
+      "description": "Work item must have acceptance criteria",
+      "type": "requires_acceptance_criteria",
+      "weight": 2,
+      "on_violation": "review"
+    },
+    {
+      "id": "R8_LLM_HIGH_RISK",
+      "description": "If the AI rates the release high risk, a human must review it (AI can escalate, never approve)",
+      "type": "llm_risk_at_least",
+      "level": "high",
+      "weight": 2,
+      "on_violation": "review"
+    },
+    {
+      "id": "R9_ORG_HEALTH",
+      "description": "Failing Copado governance health checks need human review (needs the ReleaseGuard plugin preflight)",
+      "type": "org_health",
+      "max_failed_checks": 0,
+      "weight": 2,
+      "on_violation": "review"
+    }
+  ]
+}

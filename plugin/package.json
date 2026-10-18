@@ -1,0 +1,67 @@
+{
+  "name": "agentia-cli-releaseguard-plugin",
+  "description": "ReleaseGuard preflight: verified Copado context (story, user, governance health) for release safety checks",
+  "version": "0.2.0",
+  "author": "ReleaseGuard",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "license": "MIT",
+  "keywords": [
+    "oclif-plugin",
+    "agentia"
+  ],
+  "files": [
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "dependencies": {
+    "@copado/agentia-plugin-sdk": "^0.1.1"
+  },
+  "peerDependencies": {
+    "@oclif/core": "^4"
+  },
+  "devDependencies": {
+    "@oclif/core": "^4",
+    "@types/node": "^22",
+    "oclif": "^4",
+    "shx": "^0.3.3",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "agentia": {
+    "hostApi": 1,
+    "requires": [
+      "format.table",
+      "organization.healthCheck",
+      "user.get",
+      "work.getWorkItem",
+      "workspace.current"
+    ],
+    "permissions": {
+      "network": [],
+      "files": "none",
+      "commands": [],
+      "env": []
+    }
+  },
+  "oclif": {
+    "bin": "agentia",
+    "dirname": "agentia-cli",
+    "commands": "./dist/commands",
+    "topics": {
+      "releaseguard": {
+        "description": "ReleaseGuard release safety commands"
+      }
+    }
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "clean": "shx rm -f oclif.manifest.json",
+    "prepack": "npm run build && oclif manifest",
+    "postpack": "npm run clean"
+  }
+}

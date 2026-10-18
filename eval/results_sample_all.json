@@ -1,0 +1,137 @@
+[
+  {
+    "summary": {
+      "method": "baseline",
+      "n": 6,
+      "evidence_hit_rate": 0.833,
+      "mean_precision": 0.511,
+      "mean_recall": 0.639,
+      "empty_rate": 0.167,
+      "avg_lines_cited": 2.5,
+      "mean_latency_s": 0.0,
+      "errors": 0
+    },
+    "items": [
+      {
+        "id": "synthetic@apex_lock:1005",
+        "repo": "synthetic@apex_lock",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "synthetic@job_time_limit:1006",
+        "repo": "synthetic@job_time_limit",
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 0
+      },
+      {
+        "id": "synthetic@maven_compile:1001",
+        "repo": "synthetic@maven_compile",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "synthetic@npm_missing_package:1002",
+        "repo": "synthetic@npm_missing_package",
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "n_pred": 5
+      },
+      {
+        "id": "synthetic@oom_heap:1004",
+        "repo": "synthetic@oom_heap",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.5,
+        "n_pred": 1
+      },
+      {
+        "id": "synthetic@pytest_assertion:1003",
+        "repo": "synthetic@pytest_assertion",
+        "hit": true,
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "n_pred": 3
+      }
+    ]
+  },
+  {
+    "summary": {
+      "method": "llm",
+      "n": 6,
+      "evidence_hit_rate": 1.0,
+      "mean_precision": 0.722,
+      "mean_recall": 1.0,
+      "empty_rate": 0.0,
+      "avg_lines_cited": 3.0,
+      "mean_latency_s": 4.231,
+      "errors": 0,
+      "citation_validity": 1.0,
+      "prompt_tokens": 2871,
+      "completion_tokens": 1687
+    },
+    "items": [
+      {
+        "id": "synthetic@apex_lock:1005",
+        "repo": "synthetic@apex_lock",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "synthetic@job_time_limit:1006",
+        "repo": "synthetic@job_time_limit",
+        "category": "timeout",
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "n_pred": 2
+      },
+      {
+        "id": "synthetic@maven_compile:1001",
+        "repo": "synthetic@maven_compile",
+        "category": "compilation_error",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 1.0,
+        "n_pred": 4
+      },
+      {
+        "id": "synthetic@npm_missing_package:1002",
+        "repo": "synthetic@npm_missing_package",
+        "category": "dependency_error",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "synthetic@oom_heap:1004",
+        "repo": "synthetic@oom_heap",
+        "category": "out_of_memory",
+        "hit": true,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "n_pred": 3
+      },
+      {
+        "id": "synthetic@pytest_assertion:1003",
+        "repo": "synthetic@pytest_assertion",
+        "category": "test_failure",
+        "hit": true,
+        "precision": 0.75,
+        "recall": 1.0,
+        "n_pred": 4
+      }
+    ]
+  }
+]

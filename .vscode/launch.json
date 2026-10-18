@@ -1,0 +1,99 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ReleaseGuard: PASS",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "check",
+        "--scenario",
+        "pass"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: REVIEW (asks you)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "check",
+        "--scenario",
+        "review"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: FAIL",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "check",
+        "--scenario",
+        "fail"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: INJECTION",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "check",
+        "--scenario",
+        "injection",
+        "--no-llm"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: gate FAIL",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "gate",
+        "--scenario",
+        "fail"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: full demo",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "demo",
+        "--no-llm"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: eval sample",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "eval",
+        "--dataset",
+        "sample"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ReleaseGuard: history",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "releaseguard",
+      "args": [
+        "history"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}
