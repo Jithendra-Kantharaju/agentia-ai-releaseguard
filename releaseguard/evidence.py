@@ -40,11 +40,16 @@ def stable_work_item(work_item: dict | None) -> dict:
     return {k: work_item.get(k) for k in STABLE_WORK_ITEM_KEYS}
 
 
-def evidence_hash(work_item: dict | None, test_results: dict | None, job_log: str | None) -> str:
+def evidence_hash(
+    work_item: dict | None, test_results: dict | None, job_log: str | None,
+    preflight: dict | None = None, policies: dict | None = None,
+) -> str:
     snapshot = {
         "work_item": stable_work_item(work_item),
         "test_results": test_results or {},
         "job_log": normalize_log(job_log),
+        "preflight": preflight or {},
+        "policies": policies or {},
     }
     return sha256_text(canonical(snapshot))
 

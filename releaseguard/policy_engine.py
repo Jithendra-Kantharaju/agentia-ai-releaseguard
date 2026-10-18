@@ -60,7 +60,8 @@ def evaluate(
         # Missing evidence is never treated as a pass - it goes to a human.
         if what not in missing_reported:
             missing_reported.add(what)
-            violations.append(_violation(rule, f"No {what} evidence was available", "review"))
+            severity = "fail" if rule.get("on_violation") == "fail" else "review"
+            violations.append(_violation(rule, f"No {what} evidence was available", severity))
 
     for rule in policies.get("rules", []):
         rtype = rule["type"]
@@ -69,6 +70,8 @@ def evaluate(
             failed = tests.get("failed")
             if failed is None:
                 missing(rule, "test result")
+            elif tests.get("total") == 0:
+                missing(rule, "executed tests (zero tests reported)")
             elif failed > rule["threshold"]:
                 violations.append(_violation(rule, f"{failed} test(s) failed (allowed: {rule['threshold']})"))
 
@@ -83,7 +86,8 @@ def evaluate(
             sev = rule["severity"]
             count = (work_item.get("security_findings") or {}).get(sev)
             if count is None:
-                continue  # scanner did not report this severity; nothing to compare
+                missing(rule, f"security scan ({sev})")
+                continue
             if count > rule["threshold"]:
                 violations.append(_violation(rule, f"{count} {sev} security finding(s) (allowed: {rule['threshold']})"))
 

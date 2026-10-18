@@ -40,7 +40,7 @@ def exit_code_for(state: dict) -> int:
     status = state.get("final_status")
     if status in ("VALIDATED", "READY_FOR_VALIDATION"):
         return 0
-    if status == "REVIEW_REQUIRED":
+    if status in ("REVIEW_REQUIRED", "VALIDATION_UNVERIFIED"):
         return 2
     return 1
 
@@ -65,6 +65,7 @@ def run_check(
         reviewer=args.reviewer,
         preflight_path=args.preflight,
         audit_dir=audit_dir,
+        policy_path=args.policies or str(Path(__file__).resolve().parent.parent / "policies.json"),
     )
     run_id = "run-" + uuid.uuid4().hex[:8]
     print(LINE)
@@ -83,6 +84,9 @@ def cmd_check(args: argparse.Namespace) -> int:
 
 def cmd_gate(args: argparse.Namespace) -> int:
     """Non-interactive quality gate: never prompts, never submits. The exit code is the result."""
+    if args.mode == "mock" and not args.scenario:
+        print("REVIEW_REQUIRED: mock gate needs explicit --scenario", file=sys.stderr)
+        return 2
     return exit_code_for(run_check(args, approval="none", authorize=False, label="gate"))
 
 
@@ -189,7 +193,7 @@ def cmd_import_sf(args: argparse.Namespace) -> int:
     t = result["test_results"]
     print(f"Imported: {t['passed']} passed, {t['failed']} failed, coverage {t['coverage_percent']}%")
     if not args.security:
-        print("Note: no --security values given, so the security rules (R4/R5) are not evaluated.")
+        print("Note: no --security results provided. Mandatory security evidence will block release.")
     print(f"Scenario folder: {result['out_dir']}")
     print(f"Run it with: python -m releaseguard check --scenario {out_dir.name}")
     return 0
@@ -244,7 +248,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     gate = sub.add_parser("gate", help="non-interactive quality gate; exit code 0 pass, 1 blocked, 2 review required")
     add_common(gate)
-    gate.set_defaults(func=cmd_gate)
+    gate.set_defaults(func=cmd_gate, scenario=None)
 
     demo = sub.add_parser("demo", help="run pass, review, fail, injection and fixed scenarios (mock mode)")
     add_common(demo)
@@ -311,7 +315,7 @@ def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     try:
         return int(args.func(args) or 0)
-    except (AdapterError, PreflightError) as exc:
+    except (AdapterError, PreflightError, audit.AuditCorruptionError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
 

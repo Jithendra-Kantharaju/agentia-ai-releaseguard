@@ -28,6 +28,10 @@ def _ensure_dirs(audit_dir: Path) -> None:
     (audit_dir / "reports").mkdir(parents=True, exist_ok=True)
 
 
+class AuditCorruptionError(ValueError):
+    """Audit log is unreadable or not a list of JSON event objects."""
+
+
 def load_log(audit_dir: Path = AUDIT_DIR) -> list[dict]:
     path = audit_dir / "audit_log.json"
     if not path.exists():
@@ -35,9 +39,11 @@ def load_log(audit_dir: Path = AUDIT_DIR) -> list[dict]:
     try:
         with path.open("r", encoding="utf-8") as fh:
             data = json.load(fh)
-        return data if isinstance(data, list) else []
-    except (json.JSONDecodeError, OSError):
-        return []
+    except (json.JSONDecodeError, OSError, UnicodeError) as exc:
+        raise AuditCorruptionError(f"Unreadable audit log: {path}: {exc}") from exc
+    if not isinstance(data, list) or not all(isinstance(entry, dict) for entry in data):
+        raise AuditCorruptionError(f"Invalid audit log structure: {path}")
+    return data
 
 
 def _entry_hash(entry: dict) -> str:
@@ -59,6 +65,10 @@ def _write_log(entries: list[dict], audit_dir: Path) -> Path:
 
 def append_entry(entry: dict, audit_dir: Path = AUDIT_DIR) -> Path:
     _ensure_dirs(audit_dir)
+    # Do not append onto a damaged chain, which could conceal prior corruption.
+    result = verify_chain(audit_dir)
+    if not result["ok"]:
+        raise AuditCorruptionError(result["message"])
     entries = load_log(audit_dir)
     last = entries[-1] if entries else None
     entry = dict(entry)
@@ -70,7 +80,10 @@ def append_entry(entry: dict, audit_dir: Path = AUDIT_DIR) -> Path:
 
 def verify_chain(audit_dir: Path = AUDIT_DIR) -> dict:
     """Returns {"ok": bool, "entries": n, "chained": n, "legacy": n, "message": str}."""
-    entries = load_log(audit_dir)
+    try:
+        entries = load_log(audit_dir)
+    except AuditCorruptionError as exc:
+        return {"ok": False, "entries": 0, "chained": 0, "legacy": 0, "message": str(exc)}
     expected_prev = GENESIS
     chained = legacy = 0
     for index, entry in enumerate(entries, start=1):
@@ -157,7 +170,8 @@ def render_report(state: dict) -> str:
     add(f"- Tests: {tests.get('passed')} passed, {tests.get('failed')} failed (total {tests.get('total')})")
     add(f"- Coverage: {tests.get('coverage_percent')}%")
     sec = work.get("security_findings") or {}
-    add(f"- Security findings: critical={sec.get('critical', 0)}, high={sec.get('high', 0)}, medium={sec.get('medium', 0)}")
+    fmt = lambda key: str(sec[key]) if key in sec and sec[key] is not None else "NOT_SCANNED"
+    add(f"- Security findings: critical={fmt('critical')}, high={fmt('high')}, medium={fmt('medium')}")
     pf = state.get("preflight")
     if pf:
         health = pf.get("org_health") or {}

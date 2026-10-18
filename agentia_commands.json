@@ -3,7 +3,7 @@
   "work_get": ["agentia", "cicd", "work", "get", "--json"],
   "work_test": ["agentia", "cicd", "work", "test", "apex"],
   "job_log_get": ["agentia", "cicd", "job", "log", "get"],
-  "work_submit": ["agentia", "cicd", "work", "submit", "--skip-local-tests"],
+  "work_submit": ["agentia", "cicd", "work", "submit"],
   "work_status": ["agentia", "cicd", "work", "status", "--json"],
   "timeout_seconds": 600
 }

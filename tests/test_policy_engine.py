@@ -57,14 +57,14 @@ def test_missing_acceptance_criteria_needs_review():
     assert decision == pe.NEEDS_REVIEW
 
 
-def test_missing_evidence_goes_to_human_not_pass():
+def test_missing_mandatory_test_evidence_blocks_release():
     _, decision = run(tests={"total": None, "passed": None, "failed": None, "coverage_percent": None})
-    assert decision == pe.NEEDS_REVIEW
+    assert decision == pe.FAIL
 
 
-def test_empty_log_goes_to_human():
+def test_empty_log_blocks_when_log_is_mandatory():
     _, decision = run(log="")
-    assert decision == pe.NEEDS_REVIEW
+    assert decision == pe.FAIL
 
 
 def test_ai_high_risk_escalates_to_review():

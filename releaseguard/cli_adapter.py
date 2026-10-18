@@ -162,7 +162,7 @@ class AgentiaAdapter:
             return ""
         res = self._run("job_log_get", job_id)
         if not res["ok"]:
-            return f"(could not fetch job log: {res['stderr']})"
+            raise AdapterError(f"Job log unavailable: {res['stderr'] or res['data']}")
         data = res["data"]
         return data["raw"] if isinstance(data, dict) and "raw" in data else json.dumps(data, indent=2)
 
@@ -178,33 +178,93 @@ class AgentiaAdapter:
                 return load_preflight(candidate)
         return None
 
+    # ------------------------------------------------------------------ validation job handling
+    @staticmethod
+    def _job_id(payload: Any) -> str | None:
+        """Read a single, explicit job identifier from structured CLI JSON only."""
+        if not isinstance(payload, dict):
+            return None
+        for key in ("job_id", "jobId", "validation_job_id", "validationJobId"):
+            val = payload.get(key)
+            if isinstance(val, (str, int)) and str(val).strip():
+                return str(val)
+        for key in ("job", "validation", "result", "data"):
+            nested = payload.get(key)
+            if isinstance(nested, dict):
+                found = AgentiaAdapter._job_id(nested)
+                if found:
+                    return found
+        return None
+
+    @staticmethod
+    def _job_state(payload: Any) -> str:
+        """Do NOT infer success from arbitrary human-readable text."""
+        if not isinstance(payload, dict):
+            return "Unknown"
+        for key in ("status", "state", "job_status", "jobStatus"):
+            val = payload.get(key)
+            if isinstance(val, str):
+                normalized = val.strip().lower()
+                if normalized in ("success", "succeeded", "passed"):
+                    return "Success"
+                if normalized in ("failed", "failure", "error", "cancelled", "canceled"):
+                    return "Failed"
+                if normalized in ("pending", "queued", "running", "in_progress", "in progress"):
+                    return "Pending"
+                return "Unknown"
+        for key in ("job", "validation", "result", "data"):
+            nested = payload.get(key)
+            if isinstance(nested, dict):
+                return AgentiaAdapter._job_state(nested)
+        return "Unknown"
+
     # ------------------------------------------------------------------ actions
     def submit(self, work_id: str | None = None) -> dict:
-        """Submit for VALIDATION only. This never promotes or deploys to production."""
+        """Submit for validation only; the configured command runs standard local gates."""
         if self.mode == "mock":
+            data = _read_json(self._scenario_dir / "validation_status.json")
             return {
                 "ok": True,
+                "job_id": self._job_id(data),
                 "command": "agentia cicd work submit (mock)",
-                "message": "Submitted for validation. Validation job started.",
+                "message": "Mock submission for validation (no cloud job executed).",
             }
         res = self._run("work_submit", work_id)
+        job_id = self._job_id(res["data"])
         return {
             "ok": res["ok"],
+            "job_id": job_id,
             "command": res["command"],
-            "message": res["stderr"] if not res["ok"] else "Submitted for validation.",
+            "message": res["stderr"] if not res["ok"] else (
+                "Submitted for validation; job ID confirmed." if job_id else
+                "CLI accepted submission but returned no structured job ID. Validation UNVERIFIED."
+            ),
             "data": res["data"],
         }
 
-    def status(self, work_id: str | None = None) -> dict:
+    def status(self, work_id: str | None = None, job_id: str | None = None) -> dict:
+        if not job_id:
+            return {"ok": False, "job_id": None, "status": "Unknown", "message": "No submission job ID to verify"}
         if self.mode == "mock":
             data = _read_json(self._scenario_dir / "validation_status.json")
-            return {"ok": True, "command": "agentia cicd work status (mock)", **data}
+            seen = self._job_id(data)
+            matched = seen == str(job_id)
+            return {
+                "ok": matched, "job_id": seen,
+                "command": "agentia cicd work status (mock)",
+                "status": self._job_state(data) if matched else "Unknown",
+                "message": data.get("message", "Mock job status") if matched else "Job ID mismatch",
+            }
         res = self._run("work_status", work_id)
         data = res["data"]
-        text = data["raw"] if isinstance(data, dict) and "raw" in data else json.dumps(data)
+        seen = self._job_id(data)
+        matched = bool(seen and seen == str(job_id))
+        state = self._job_state(data) if (res["ok"] and matched) else "Unknown"
         return {
-            "ok": res["ok"],
-            "command": res["command"],
-            "status": "Success" if res["ok"] and re.search(r"success|succeeded|passed", text, re.I) else "Unknown",
-            "message": text[:500],
+            "ok": res["ok"] and matched, "job_id": seen,
+            "command": res["command"], "status": state,
+            "message": (
+                f"Verified job {seen}: {state}" if matched else
+                f"Unable to correlate validation status with submitted job {job_id}; reported={seen!r}"
+            ),
         }

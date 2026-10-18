@@ -30,7 +30,7 @@ def test_gate_with_failing_org_health_requires_review(tmp_path):
 
 def test_bad_scenario_and_bad_preflight_return_2(tmp_path, capsys):
     assert gate(tmp_path, "--scenario", "nope") == 2
-    assert gate(tmp_path, "--preflight", str(tmp_path / "missing.json")) == 2
+    assert gate(tmp_path, "--scenario", "pass", "--preflight", str(tmp_path / "missing.json")) == 2
     assert "ERROR" in capsys.readouterr().err
 
 

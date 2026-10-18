@@ -97,9 +97,15 @@ def test_real_get_uses_json_flag_and_id(calls):
     assert calls[0] == ["agentia", "cicd", "work", "get", "--json", "US-1"]
 
 
-def test_real_submit_skips_local_gates_to_avoid_re_running_releaseguard(calls):
+def test_real_submit_does_not_bypass_local_quality_gates(calls):
     AgentiaAdapter("real").submit("US-1")
-    assert "--skip-local-tests" in calls[0] and calls[0][-1] == "US-1"
+    assert "--skip-local-tests" not in calls[0] and calls[0][-1] == "US-1"
+
+
+def test_real_submit_without_structured_job_id_is_unverified(calls):
+    result = AgentiaAdapter("real").submit("US-1")
+    assert result["ok"] is True and result["job_id"] is None
+    assert "UNVERIFIED" in result["message"]
 
 
 def test_real_tests_never_call_work_test_local_and_pass_no_work_id(calls):

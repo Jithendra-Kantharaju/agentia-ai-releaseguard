@@ -14,6 +14,7 @@ Safety rules
 from __future__ import annotations
 
 from pathlib import Path
+from time import sleep
 from typing import Callable, TypedDict
 
 from langgraph.graph import END, StateGraph
@@ -64,6 +65,7 @@ def build_graph(
     reviewer: str | None = None,
     preflight_path: str | None = None,
     audit_dir: Path = audit.AUDIT_DIR,
+    policy_path: str | Path | None = None,
     say: Callable[[str], None] = print,
     ask: Callable[[str], str] = input,
 ):
@@ -84,7 +86,7 @@ def build_graph(
         job_id = state.get("job_id") or work_item.get("job_id") or work_item.get("jobId")
         tests = adapter.run_tests(work_id)
         job_log = adapter.get_job_log(job_id)
-        digest = evidence_hash(work_item, tests, job_log)
+        digest = evidence_hash(work_item, tests, job_log, preflight, policies)
         say(f"{tag('collect')}work item {work_item.get('id')} - {work_item.get('title')}")
         say(f"{' ' * 11}tests: {tests.get('passed')} passed, {tests.get('failed')} failed, coverage {tests.get('coverage_percent')}%")
         if preflight:
@@ -171,12 +173,22 @@ def build_graph(
         return update
 
     def recheck(state: ReleaseState) -> dict:
-        preflight = state.get("preflight")
-        fresh_work = merge_work_item(adapter.get_work_item(state.get("work_id")), preflight)
+        # Re-read ALL decision-relevant evidence; approval is invalid if any of it changed.
+        fresh_preflight = adapter.get_preflight(preflight_path)
+        fresh_work = merge_work_item(adapter.get_work_item(state.get("work_id")), fresh_preflight)
+        fresh_tests = adapter.run_tests(state.get("work_id"))
         fresh_log = adapter.get_job_log(state.get("job_id"))
-        fresh = evidence_hash(fresh_work, state["test_results"], fresh_log)
-        ok = fresh == state["evidence_hash"]
-        record = {"ok": ok, "approved_hash": state["evidence_hash"], "current_hash": fresh}
+        fresh_policies = policy_engine.load_policies(policy_path) if policy_path else policies
+        fresh = evidence_hash(fresh_work, fresh_tests, fresh_log, fresh_preflight, fresh_policies)
+        fresh_violations = policy_engine.evaluate(
+            fresh_policies, fresh_work, fresh_tests, fresh_log, state.get("analysis"), fresh_preflight
+        )
+        fresh_decision = policy_engine.decide(fresh_violations)
+        ok = fresh == state["evidence_hash"] and fresh_decision == state["decision"]
+        record = {
+            "ok": ok, "approved_hash": state["evidence_hash"], "current_hash": fresh,
+            "fresh_decision": fresh_decision,
+        }
         if ok:
             say(f"{tag('recheck')}evidence unchanged ({short(fresh)}...)")
         else:
@@ -203,12 +215,33 @@ def build_graph(
         }
 
     def verify(state: ReleaseState) -> dict:
-        status = adapter.status(state.get("work_id"))
+        submit_result = state.get("submit_result") or {}
+        if not submit_result.get("ok"):
+            status = {"status": "Failed", "message": "Submission command failed"}
+            final = "VALIDATION_FAILED"
+        elif not submit_result.get("job_id"):
+            status = {"status": "Unknown", "message": "No structured job ID returned by Agentia CLI"}
+            final = "VALIDATION_UNVERIFIED"
+        else:
+            expected_id = submit_result["job_id"]
+            attempts = 1 if adapter.mode == "mock" else 4
+            status = {"status": "Unknown", "message": "Not checked"}
+            for attempt in range(attempts):
+                status = adapter.status(state.get("work_id"), job_id=expected_id)
+                if status.get("status") in ("Success", "Failed") or not status.get("ok"):
+                    break
+                if attempt < attempts - 1:
+                    sleep(2)
+            final = {
+                "Success": "VALIDATED",
+                "Failed": "VALIDATION_FAILED",
+            }.get(status.get("status"), "VALIDATION_UNVERIFIED")
+            if not status.get("ok"):
+                final = "VALIDATION_UNVERIFIED"
         say(f"{tag('verify')}status: {status.get('status')} - {status.get('message')}")
-        ok = state["submit_result"].get("ok") and str(status.get("status")).lower() == "success"
         return {
             "verify_result": status,
-            "final_status": "VALIDATED" if ok else "VALIDATION_FAILED",
+            "final_status": final,
             "events": _event(state, "verify", f"Validation status: {status.get('status')}"),
         }
 

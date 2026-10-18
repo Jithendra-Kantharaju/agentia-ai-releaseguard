@@ -5,7 +5,7 @@ from releaseguard.main import main
 from releaseguard.replay import list_candidates, make_scenario
 
 POLICIES = pe.load_policies()
-OK_WORK = {"acceptance_criteria": ["a"], "security_findings": {}}
+OK_WORK = {"acceptance_criteria": ["a"], "security_findings": {"critical": 0, "high": 0}}
 OK_TESTS = {"total": 1, "passed": 1, "failed": 0, "coverage_percent": 99.0}
 
 
@@ -28,8 +28,14 @@ def test_zero_exit_does_not_trigger_the_rule():
     assert "R10_JOB_EXIT_NONZERO" not in rules and decision == pe.PASS
 
 
-def test_empty_log_still_goes_to_a_human():
-    assert verdict("")[0] == pe.NEEDS_REVIEW
+def test_empty_log_blocks_because_log_evidence_is_mandatory():
+    decision, rules = verdict("")
+    assert decision == pe.FAIL and "R6_NO_ERRORS_IN_LOGS" in rules
+
+
+def test_missing_security_scan_blocks_even_with_a_clean_log():
+    v = pe.evaluate(POLICIES, {"acceptance_criteria": ["a"], "security_findings": {}}, OK_TESTS, "all good", {"risk_level": "low"})
+    assert pe.decide(v) == pe.FAIL
 
 
 LOG = "\n".join(["compile"] * 5 + ["configure: error: C compiler cannot create executables", "thread 'main' panicked", 'The command "ci/script.sh" exited with 101.', "Done. Your build exited with 1."])
