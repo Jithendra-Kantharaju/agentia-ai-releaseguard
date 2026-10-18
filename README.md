@@ -97,7 +97,7 @@ fixed      PASS           0      VALIDATED
 
 | Rule | Violation | Outcome |
 |---|---|---|
-| R1 | Any failed test, no test result, or zero tests run | FAIL |
+| R1 | Any failed test; missing, zero or inconsistent test counts; or a failed Agentia test command | FAIL |
 | R2, R3 | Coverage below 75% / below 85% (missing coverage counts) | FAIL / review |
 | R4, R5 | Critical / high security findings (a missing scan counts) | FAIL / review |
 | R6 | `ERROR`, `FATAL`, `UNABLE_TO_LOCK_ROW`, `Deployment failed` in the log, or no log | FAIL |
@@ -112,8 +112,8 @@ The risk score is the sum of the weights of the violated rules, so it is fully e
 
 - **No live Copado org was available.** `--mode real`, `agentia cicd work submit` and job-status verification are implemented from `--help` output and unit-tested with fake command output only. A live response with a different shape results in `VALIDATION_UNVERIFIED`, not success.
 - **Security evidence is required.** If the Agentia work-item output has no scan results, the mandatory security rules block the release. Supply a real scanner result; do not enter invented zeros. The `mock_data/` scenarios contain synthetic security counts and are labelled as synthetic.
-- **Human approval is demo-grade.** The reviewer name is self-reported, and `--approval approve` exists for demos and tests. It is not an authenticated approval. A production version needs a verified identity or a governed approval step.
-- **Real-mode submit and the local gate.** Submit does not use `--skip-local-tests`, so Agentia re-runs the project quality gate. That gate never approves a release that needs review, so a human-approved review release will be stopped there by design. Set the `RELEASEGUARD_*` variables before running real mode.
+- **Human approval is demo-grade, so it is disabled in real mode.** In mock mode the reviewer name is self-reported and `--approval approve` exists for demos and tests. In `--mode real`, a release that needs review always stays `REVIEW_REQUIRED` (pending) and is never submitted, because an unauthenticated terminal answer is not proof of an authorised reviewer. A production version needs a verified identity or a governed approval step.
+- **Real-mode submit and the local gate.** Submit does not use `--skip-local-tests`, so Agentia re-runs the project quality gate. Set the `RELEASEGUARD_*` variables before running real mode.
 - **Real-mode recheck runs the Apex tests twice**, and verification polls only briefly. Long validation jobs will report `VALIDATION_UNVERIFIED`.
 - **The audit log is a local hash chain.** It detects casual edits and corruption. It is not protected storage: someone with file access could rebuild the whole chain.
 - **No durable workflow state.** Human review happens inside the running process (no persistent LangGraph checkpointer).
