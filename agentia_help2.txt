@@ -1,0 +1,71 @@
+]633;E;for c in "cicd health-check" "cicd job get" "cicd job log get"\x3b do echo "##### agentia $c --help"\x3b agentia $c --help\x3b done > agentia_help2.txt 2>&1;89d4d011-8327-420b-8e4d-5291cbf97347]633;C##### agentia cicd health-check --help
+Run organization-scoped governance health checks
+
+USAGE
+  $ agentia cicd health-check [--json] [--path <value> --git-sizer]
+
+FLAGS
+  --git-sizer     Also analyze a local Git clone with git-sizer
+  --path=<value>  Local Git clone for --git-sizer. Defaults to the current
+                  directory.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Run organization-scoped governance health checks
+
+EXAMPLES
+  $ agentia cicd health-check
+
+  $ agentia cicd health-check --json
+
+  $ agentia cicd health-check --git-sizer
+
+  $ agentia cicd health-check --git-sizer --path /path/to/clone
+
+##### agentia cicd job get --help
+Get a Copado job execution with ordered steps
+
+USAGE
+  $ agentia cicd job get ID [--json]
+
+ARGUMENTS
+  ID  JobExecution Id
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Get a Copado job execution with ordered steps
+
+EXAMPLES
+  $ agentia cicd job get <job-id>
+
+  $ agentia cicd job get <job-id> --json
+
+##### agentia cicd job log get --help
+Get log output for a Copado job execution step
+
+USAGE
+  $ agentia cicd job log get ID [--json] [--step <value>]
+
+ARGUMENTS
+  ID  JobExecution Id
+
+FLAGS
+  --step=<value>  Job step Id (defaults to the first step with a result Id)
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+DESCRIPTION
+  Get log output for a Copado job execution step
+
+EXAMPLES
+  $ agentia cicd job log get <job-id>
+
+  $ agentia cicd job log get <job-id> --step <step-id>
+
+  $ agentia cicd job log get <job-id> --json
+

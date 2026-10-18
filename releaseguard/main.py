@@ -195,6 +195,32 @@ def cmd_import_sf(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_replay_logchunks(args: argparse.Namespace) -> int:
+    from .cli_adapter import MOCK_DIR
+    from .replay import list_candidates, make_scenario
+
+    try:
+        if args.list:
+            rows = list_candidates(args.dataset, "all", args.list)
+            print(f"{'id':<46}{'language':<12}{'lines':<8}{'category'}")
+            for r in rows:
+                print(f"{r['id']:<46}{str(r['language']):<12}{r['lines']:<8}{r['category']}")
+            print(f"\nPick one: python -m releaseguard replay-logchunks --dataset {args.dataset} --id \"<id>\" --name real_failure")
+            return 0
+        if not args.id or not args.name:
+            print("ERROR: give --list N, or both --id and --name", file=sys.stderr)
+            return 2
+        out_dir = Path(args.out_dir) if args.out_dir else MOCK_DIR / args.name
+        result = make_scenario(args.dataset, args.id, out_dir)
+    except (FileNotFoundError, ValueError) as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        return 2
+    print(f"Scenario written: {result['out_dir']}")
+    print(f"Human-labelled failure lines (ground truth): {result['gold_lines'][:8]}")
+    print(f"Run it with: python -m releaseguard gate --scenario {out_dir.name}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="releaseguard", description="Evidence-driven, policy-governed release safety")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -254,6 +280,14 @@ def build_parser() -> argparse.ArgumentParser:
     prep.add_argument("--out", default="data/logchunks.jsonl")
     prep.add_argument("--max-lines", type=int, default=20000, help="skip logs longer than this")
     prep.set_defaults(func=cmd_prepare_logchunks)
+
+    rep = sub.add_parser("replay-logchunks", help="turn a real public CI failure into a scenario you can run through the gate")
+    rep.add_argument("--dataset", default="data/logchunks.jsonl")
+    rep.add_argument("--list", type=int, default=0, help="show N candidate logs (one per repository)")
+    rep.add_argument("--id", default=None)
+    rep.add_argument("--name", default=None, help="scenario folder name under mock_data/")
+    rep.add_argument("--out-dir", default=None)
+    rep.set_defaults(func=cmd_replay_logchunks)
 
     imp = sub.add_parser("import-sf", help="turn Salesforce CLI Apex test JSON into a scenario")
     imp.add_argument("--apex-json", required=True)

@@ -1,0 +1,9 @@
+{
+  "id": "CI-524197508",
+  "job_id": "CI-524197508",
+  "title": "Replay of public CI failure: BurntSushi@ripgrep build 524197508",
+  "description": "A real failed Travis CI build from the LogChunks dataset (CC BY 4.0, Brandt et al.). The log is real; this work item is a stand-in. No test results are claimed.",
+  "acceptance_criteria": [],
+  "components": [],
+  "security_findings": {}
+}

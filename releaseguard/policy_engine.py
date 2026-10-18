@@ -8,6 +8,7 @@ The risk score is a plain sum of rule weights, so it is fully explainable.
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -93,6 +94,14 @@ def evaluate(
             hits = [p for p in rule["patterns"] if p in job_log]
             if hits:
                 violations.append(_violation(rule, "Job log contains: " + ", ".join(hits)))
+
+        elif rtype == "log_regex":
+            if not job_log.strip():
+                missing(rule, "job log")
+                continue
+            found = next((m.group(0) for pat in rule["patterns"] if (m := re.search(pat, job_log, re.M))), None)
+            if found:
+                violations.append(_violation(rule, "Job log reports: " + found.strip()[:120]))
 
         elif rtype == "requires_acceptance_criteria":
             if not work_item.get("acceptance_criteria"):

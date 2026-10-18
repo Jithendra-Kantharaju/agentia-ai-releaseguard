@@ -3,15 +3,15 @@
 | Metric | baseline | llm |
 |---|---|---|
 | Logs evaluated | 243 | 243 |
-| Evidence hit rate | 0.325 | 0.617 |
-| Mean line precision | 0.081 | 0.38 |
-| Mean line recall | 0.154 | 0.377 |
-| Empty answers | 0.021 | 0.091 |
-| Avg lines cited | 6.49 | 3.704 |
-| Mean latency (s) | 0.053 | 7.465 |
+| Evidence hit rate | 0.337 | 0.634 |
+| Mean line precision | 0.16 | 0.376 |
+| Mean line recall | 0.12 | 0.367 |
+| Empty answers | 0.021 | 0.082 |
+| Avg lines cited | 3.893 | 3.691 |
+| Mean latency (s) | 0.072 | 4.509 |
 | Errors | 0 | 0 |
-| Citation validity | - | 0.832 |
+| Citation validity | - | 0.848 |
 | Prompt tokens | - | 2364942 |
-| Completion tokens | - | 87277 |
+| Completion tokens | - | 85912 |
 
 Evidence hit rate: share of logs where at least one cited line falls inside the human-labelled failure chunk.

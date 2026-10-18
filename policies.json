@@ -1,7 +1,10 @@
 {
   "policy_version": "2.0",
   "description": "ReleaseGuard release policies. on_violation 'fail' blocks the release, 'review' sends it to a human. weight feeds the explainable risk score.",
-  "risk_levels": {"medium": 1, "high": 5},
+  "risk_levels": {
+    "medium": 1,
+    "high": 5
+  },
   "rules": [
     {
       "id": "R1_NO_FAILED_TESTS",
@@ -49,7 +52,12 @@
       "id": "R6_NO_ERRORS_IN_LOGS",
       "description": "Job logs must not contain deployment errors",
       "type": "log_patterns",
-      "patterns": ["ERROR", "FATAL", "UNABLE_TO_LOCK_ROW", "Deployment failed"],
+      "patterns": [
+        "ERROR",
+        "FATAL",
+        "UNABLE_TO_LOCK_ROW",
+        "Deployment failed"
+      ],
       "weight": 5,
       "on_violation": "fail"
     },
@@ -75,6 +83,18 @@
       "max_failed_checks": 0,
       "weight": 2,
       "on_violation": "review"
+    },
+    {
+      "id": "R10_JOB_EXIT_NONZERO",
+      "description": "The CI job must not report a non-zero exit status",
+      "type": "log_regex",
+      "patterns": [
+        "Done\\. Your build exited with [1-9]",
+        "The command .* exited with [1-9]",
+        "Process completed with exit code [1-9]"
+      ],
+      "weight": 5,
+      "on_violation": "fail"
     }
   ]
 }
