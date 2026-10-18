@@ -112,3 +112,43 @@ def test_real_tests_forward_apex_classes_from_the_gate_environment(calls, monkey
     monkeypatch.setenv("AGENTIA_APEX_TEST_CLASSES", "AccountTest,LeadTest")
     AgentiaAdapter("real").run_tests("US-1")
     assert calls[0][-1] == "--apex-test-classes=AccountTest,LeadTest"
+
+
+# ---- second tuning round, from other dev repositories
+def test_travis_sudo_banner_and_job_stages_noise_is_ignored():
+    log = "\n".join([
+        "Configure options: --prefix=/usr --with-logging=syslog",
+        "Authentication timestamp timeout: 15.0 minutes",
+        "Password prompt timeout: 0.0 minutes",
+        "the USA under License Exception TSU of the U.S. Export",
+        "/Users/travis/.travis/job_stages: line 476: yarn: command not found",
+        "An error occured while installing Cake.",
+        "/Users/travis/.travis/job_stages: line 166: shell_session_update: command not found",
+    ])
+    assert cited(log) == [6]
+
+
+def test_mocha_error_is_found_even_though_npm_summary_exists():
+    log = "start\n  1) \n     fourslash tests\n      Error: At line 1, col 3: Should find at least 1 codefix(es)\n      at TestState.raiseError\nnpm ERR! Test failed.  See above for more details."
+    lines = cited(log)
+    assert 4 in lines and 6 not in lines
+
+
+def test_phpunit_failure_heading_is_found():
+    log = "run\n1) Composer\\Test\\RepoTest::testCanonicalizeUrl with data set #0\nArgument 4 passed to X must be an instance of Y\n"
+    assert 2 in cited(log)
+
+
+def test_program_not_installed_and_tool_error_prefix():
+    assert 2 in cited("ok\nThe program 'swift' is currently not installed. To run 'swift' please ask your administrator")
+    assert 2 in cited("ok\nxcodebuild: error: Unable to find a destination matching the provided destination specifier:")
+
+
+def test_yaml_scanner_error_is_found_before_summary():
+    log = "x\n(./a.markdown): found character that cannot start any token while scanning for the next token at line 8\nPlease check the YAML headers!\nCommand failed with status (1)"
+    assert 2 in cited(log)
+
+
+def test_specific_lines_are_supplemented_with_latest_generic_errors():
+    log = "a\nERROR: no certificate subject alternative name matches\nb\nmd5sum: x.pkl: No such file or directory\nend"
+    assert cited(log) == [2, 4]

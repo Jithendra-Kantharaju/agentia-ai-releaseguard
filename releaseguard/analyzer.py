@@ -15,14 +15,14 @@ import time
 from .evidence import normalize_log
 
 CATEGORY_PATTERNS: list[tuple[str, re.Pattern]] = [
-    ("compilation_error", re.compile(r"(?i)(compil(?:ation|er) (?:error|failed)|cannot find symbol|syntax ?error|error TS\d+|undefined reference|CMake Error|configure: error|\bfatal error:|error\[E\d+\])")),
-    ("dependency_error", re.compile(r"(?i)(could not resolve|unable to resolve|npm ERR!|ModuleNotFoundError|No module named|package .* does not exist|could not find artifact|failed to (?:fetch|download)|could not find\b|No such file or directory|command not found)")),
-    ("test_failure", re.compile(r"(?i)(\bFAILED\b|\bFAIL\b|tests? failed|AssertionError|AssertException|Failures: [1-9]|failing tests?)")),
+    ("compilation_error", re.compile(r"(?i)(compil(?:ation|er) (?:error|failed)|cannot find symbol|syntax ?error|error TS\d+|undefined reference|CMake Error|configure: error|\bfatal error:|error\[E\d+\]|\b[\w.+-]+: error:)")),
+    ("dependency_error", re.compile(r"(?i)(could not resolve|unable to resolve|npm ERR!|ModuleNotFoundError|No module named|package .* does not exist|could not find artifact|failed to (?:fetch|download)|could not find\b|No such file or directory|command not found|is currently not installed)")),
+    ("test_failure", re.compile(r"(?i)(\bFAILED\b|\bFAIL\b|tests? failed|AssertionError|AssertException|Failures: [1-9]|failing tests?|^\s*\d+\) \S+::\w+)")),
     ("timeout", re.compile(r"(?i)(timed out|timeout|deadline exceeded|no output has been received|build has been terminated)")),
     ("out_of_memory", re.compile(r"(?i)(out ?of ?memory|OOMKilled|exit code 137|\bKilled\b|heap space)")),
     ("permission_or_auth", re.compile(r"(?i)(permission denied|unauthorized|authentication failed|access denied|\bforbidden\b)")),
     ("deployment_error", re.compile(r"(?i)(deployment failed|UNABLE_TO_LOCK_ROW|FIELD_CUSTOM_VALIDATION|INVALID_CROSS_REFERENCE|quality gate)")),
-    ("generic_error", re.compile(r"(\bERROR\b|\bFATAL\b|\bError:|Exception\b|\bfatal:|exit code [1-9]|exited with|panicked at|Traceback \(most recent call last\)|Segmentation fault)")),
+    ("generic_error", re.compile(r"(\bERROR\b|\bFATAL\b|\bError:|Exception\b|\bfatal:|exit code [1-9]|exited with|panicked at|Traceback \(most recent call last\)|Segmentation fault|while (?:scanning|parsing)|error occur(?:r)?ed)")),
 ]
 CATEGORY_ORDER = [name for name, _ in CATEGORY_PATTERNS]
 ALLOWED_CATEGORIES = CATEGORY_ORDER + ["none", "other"]
@@ -34,20 +34,26 @@ BENIGN = re.compile(r"(?i)(\b0 (?:tests? )?(?:failed|failures?|errors?)\b|Failur
 # about the cause, so they are only cited when nothing more specific is found.
 WRAPPER = re.compile(
     r"(?i)(^The command .* exited with \d+|Your build exited with|^Done\. Your build|waiting for other jobs to finish"
-    r"|^error: build failed|^make(?:\[\d+\])?: \*\*\*|recipe for target|^Error: Process completed with exit code)"
+    r"|^error: build failed|^npm ERR! (?:Test failed|code ELIFECYCLE|errno|Exit status|Failed at|This is probably not a problem|A complete log)|^make(?:\[\d+\])?: \*\*\*|recipe for target|^Error: Process completed with exit code)"
 )
 # Specific root-cause signatures. When any exist, they are cited ahead of generic "ERROR" lines.
 ROOT = re.compile(
     r"(CMake Error|configure: error|panicked at|Traceback \(most recent call last\)|\bfatal error:|undefined reference"
-    r"|No such file or directory|command not found|(?i:could not find\b)|npm ERR!|ModuleNotFoundError|error\[E\d+\]"
-    r"|AssertionError|Segmentation fault|(?i:no output has been received)|(?i:build has been terminated))"
+    r"|No such file or directory|command not found|(?i:could not find\b)|ModuleNotFoundError|error\[E\d+\]"
+    r"|AssertionError|Segmentation fault|is currently not installed|\b[\w.+-]+: error:|while (?:scanning|parsing)|^\s*\d+\) \S+::\w+|(?i:no output has been received)|(?i:build has been terminated))"
+)
+
+# Travis worker boilerplate (sudo version banner, job_stages helper) that looks like errors but never is.
+NOISE = re.compile(
+    r"(?i)(Configure options:|Authentication timestamp timeout|Password prompt timeout|License Exception TSU"
+    r"|\.travis/job_stages|shell_session_update)"
 )
 
 MAX_LINE_CHARS = 300
 
 
 def _line_category(text: str) -> str | None:
-    if BENIGN.search(text):
+    if BENIGN.search(text) or NOISE.search(text):
         return None
     for name, pattern in CATEGORY_PATTERNS:
         if pattern.search(text):
@@ -70,8 +76,12 @@ def baseline_triage(job_log: str, max_lines: int = 8) -> dict:
             tiers[2].append((number, category))
         else:
             tiers[1].append((number, category))
-    matches = next((tiers[t] for t in (2, 1, 0) if tiers[t]), [])
-    chosen = matches[-max_lines:]
+    if tiers[2]:
+        # specific lines first, plus the latest generic error lines, which are often the message around them
+        chosen = tiers[2][-5:] + [m for m in tiers[1] if m not in tiers[2]][-3:]
+        chosen.sort()
+    else:
+        chosen = (tiers[1] or tiers[0])[-max_lines:]
     cited = [{"line": n, "text": lines[n - 1].strip()[:MAX_LINE_CHARS]} for n, _ in chosen]
     category = "none"
     if chosen:

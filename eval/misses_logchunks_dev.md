@@ -1,106 +1,5 @@
 # Misses for method `baseline` (first 12)
 
-## Microsoft@TypeScript:566574811  (category 0, 1448 lines)
-Labelled failure lines:
-  L1392:   1) 
-  L1393:        
-  L1394:          fourslash tests
-  L1395:            tests/cases/fourslash/importNameCodeFixNewImportExportEqualsESModuleInterop.ts
-  L1396:              fourslash test importNameCodeFixNewImportExportEqualsESModuleInterop.ts runs correctly:
-  L1397:      Error: At line 1, col 3: Should find at least 1 codefix(es), but 0 found.
-  L1398:       at TestState.raiseError (src/harness/fourslash.ts:475:19)
-  L1399:       at TestState.getAndApplyCodeActions (src/harness/fourslash.ts:2314:26)
-Method cited:
-  L1433: npm ERR! Test failed.  See above for more details.
-
-## NancyFx@Nancy:375658615  (category 0, 6017 lines)
-Labelled failure lines:
-  L6002: An error occured while installing Cake.
-Method cited:
-  L36: /Users/travis/.travis/job_stages: line 476: yarn: command not found
-  L6015: /Users/travis/.travis/job_stages: line 166: shell_session_update: command not found
-
-## SwiftyJSON@SwiftyJSON:347096816  (category 0, 907 lines)
-Labelled failure lines:
-  L900: The program 'swift' is currently not installed. To run 'swift' please ask your administrator to install the package 'python-swiftclient'
-Method cited:
-  L131: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
-  L149: Authentication timestamp timeout: 15.0 minutes
-  L150: Password prompt timeout: 0.0 minutes
-  L278: 	the USA under License Exception TSU of the U.S. Export
-
-## SwiftyJSON@SwiftyJSON:364917910  (category 1, 2497 lines)
-Labelled failure lines:
-  L2300: xcodebuild: error: Unable to find a destination matching the provided destination specifier:
-  L2301: 
-  L2302: 		{ platform:tvOS Simulator, name:Apple TV 1080p }
-Method cited:
-  L52: /Users/travis/.travis/job_stages: line 475: yarn: command not found
-  L54: sudo: apt-get: command not found
-
-## adambard@learnxinyminutes-docs:448963603  (category 0, 918 lines)
-Labelled failure lines:
-  L900: (./es-es/coldfusion-es.html.markdown): found character that cannot start any token while scanning for the next token at line 8 column 1
-Method cited:
-  L130: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
-  L148: Authentication timestamp timeout: 15.0 minutes
-  L149: Password prompt timeout: 0.0 minutes
-  L277: 	the USA under License Exception TSU of the U.S. Export
-  L902: Please check the YAML headers for the documents that failed!
-  L903: Command failed with status (1): [/home/travis/.rvm/rubies/ruby-2.2.7/bin/ru...]
-  L905: Failed 1 tests!!
-
-## adambard@learnxinyminutes-docs:487309865  (category 0, 914 lines)
-Labelled failure lines:
-  L896: (./tr-tr/clojure-tr.html.markdown): did not find expected ',' or ']' while parsing a flow sequence at line 5 column 7
-Method cited:
-  L130: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
-  L148: Authentication timestamp timeout: 15.0 minutes
-  L149: Password prompt timeout: 0.0 minutes
-  L277: 	the USA under License Exception TSU of the U.S. Export
-  L898: Please check the YAML headers for the documents that failed!
-  L899: Command failed with status (1): [/home/travis/.rvm/rubies/ruby-2.2.7/bin/ru...]
-  L901: Failed 1 tests!!
-
-## cmusatyalab@openface:199278645  (category 1, 7415 lines)
-Labelled failure lines:
-  L7377: ERROR: no certificate subject alternative name matches
-  L7378: 	requested host name 'openface-models.storage.cmusatyalab.org'.
-  L7379: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
-  L7380: + nn4.small2.v1.t7: Error in wget.
-  L7381: ERROR: no certificate subject alternative name matches
-  L7382: 	requested host name 'openface-models.storage.cmusatyalab.org'.
-  L7383: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
-  L7384: + celeb-classifier.nn4.small2.v1.pkl: Error in wget.
-Method cited:
-  L7393: md5sum: openface/celeb-classifier.nn4.small2.v1.pkl: No such file or directory
-
-## cmusatyalab@openface:199281591  (category 1, 7418 lines)
-Labelled failure lines:
-  L7380: ERROR: no certificate subject alternative name matches
-  L7381: 	requested host name 'openface-models.storage.cmusatyalab.org'.
-  L7382: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
-  L7383: + nn4.small2.v1.t7: Error in wget.
-  L7384: ERROR: no certificate subject alternative name matches
-  L7385: 	requested host name 'openface-models.storage.cmusatyalab.org'.
-  L7386: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
-  L7387: + celeb-classifier.nn4.small2.v1.pkl: Error in wget.
-Method cited:
-  L7396: md5sum: openface/celeb-classifier.nn4.small2.v1.pkl: No such file or directory
-
-## composer@composer:551282890  (category 0, 593 lines)
-Labelled failure lines:
-  L526: 1) Composer\Test\Repository\ComposerRepositoryTest::testCanonicalizeUrl with data set #0 ('https://example.org/path/to/file', '/path/to/file', 'https://example.org')
-  L527: Argument 4 passed to Composer\Repository\ComposerRepository::__construct() must be an instance of Composer\Util\HttpDownloader, none given, called in /home/travis/build/composer/co...
-  L528: 
-  L529: /home/travis/build/composer/composer/src/Composer/Repository/ComposerRepository.php:71
-  L530: /home/travis/build/composer/composer/tests/Composer/Test/Repository/ComposerRepositoryTest.php:231
-  L531: 
-  L532: 2) Composer\Test\Repository\ComposerRepositoryTest::testCanonicalizeUrl with data set #1 ('https://example.org/canonic_url', 'https://example.org/canonic_url', 'https://should-not-...
-  L533: Argument 4 passed to Composer\Repository\ComposerRepository::__construct() must be an instance of Composer\Util\HttpDownloader, none given, called in /home/travis/build/composer/co...
-Method cited:
-  L102: tee: /etc/docker/daemon.json: No such file or directory
-
 ## composer@composer:558512461  (category 0, 3783 lines)
 Labelled failure lines:
   L1091: 1) Composer\Test\ApplicationTest::testDevWarning
@@ -112,23 +11,30 @@ Labelled failure lines:
   L1097: Function ReflectionType::__toString() is deprecated
   L1098: 
 Method cited:
-  L2973: 44) Composer\Test\Package\Loader\ValidatingArrayLoaderTest::testLoadFailureThrowsException with data set #5 (array('foo/bar', 'test'), array('transport-options : should be... given...
-  L3307: FAILED tests/Composer/Test/Package
-  L3432: FAILED tests/Composer/Test/Plugin
-  L3572: 23) Composer\Test\Repository\RepositoryManagerTest::testRepoCreation with data set #7 ('invalid', array(), 'InvalidArgumentException')
-  L3708: FAILED tests/Composer/Test/Repository
+  L3734: 3) Composer\Test\Util\BitbucketTest::testRequestAccessTokenWithValidOAuthConsumerAndExpiredAccessToken
+  L3739: 4) Composer\Test\Util\BitbucketTest::testRequestAccessTokenWithUsernameAndPassword
+  L3744: 5) Composer\Test\Util\BitbucketTest::testUsernamePasswordAuthenticationFlow
+  L3749: 6) Composer\Test\Util\RemoteFilesystemTest::testGetOptionsForUrlWithStreamOptions
   L3750: ErrorException: Trying to access array offset on value of type null
+  L3756: 7) Composer\Test\Util\RemoteFilesystemTest::testGetOptionsForUrlWithCallOptionsKeepsHeader
   L3757: ErrorException: Trying to access array offset on value of type null
   L3765: FAILED tests/Composer/Test/Util
+
+## composer@composer:566904372  (category 1, 1341 lines)
+Labelled failure lines:
+  L1314:   Line   src/Composer/Installer.php                                    
+  L1315:  ------ -------------------------------------------------------------- 
+  L1316:   1174   Method Composer\Installer::updatePackageUrl() invoked with 8  
+  L1317:          parameters, 7 required.                                       
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+  L1320:  [ERROR] Found 1 error                                                          
 
 ## discourse@discourse:565586706  (category 0, 4258 lines)
 Labelled failure lines:
   L4176: app/assets/javascripts/discourse/routes/about.js.es6
 Method cited:
-  L130: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
-  L148: Authentication timestamp timeout: 15.0 minutes
-  L149: Password prompt timeout: 0.0 minutes
-  L277: 	the USA under License Exception TSU of the U.S. Export
+  L225: Locale to use while parsing sudoers: C
   L4178: error Command failed with exit code 1.
   L4245: " exited with 1.
 
@@ -139,12 +45,116 @@ Labelled failure lines:
   L5516: > Dupes 
   L5517:   None ✓
 Method cited:
-  L149: Password prompt timeout: 0.0 minutes
-  L277: 	the USA under License Exception TSU of the U.S. Export
-  L1692: 808 https://github.com/cpo007/S.C.P-Asylum-Fail
-  L1693: 809 ["https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Launch.png", "https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Home.png"]
-  L2938: 805 S.C.P-Asylum-Fail
+  L225: Locale to use while parsing sudoers: C
   L4800:   1314. https://github.com/cpo007/S.C.P-Asylum-Fail 
   L4801:   1315. https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Launch.png 
   L4802:   1316. https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Home.png 
+
+## dkhamsing@open-source-ios-apps:560605858  (category 0, 5893 lines)
+Labelled failure lines:
+  L5514: > Links 
+  L5515:   1. [L0239] 522 http://www.wtfgamersonly.com/wp-content/uploads/2014/08/gba4ios.jpg  
+  L5516:   2. [L1581] 404 https://github.com/mssun/passforios/raw/master/img/preview.gif  
+  L5517: > Dupes 
+  L5518:   None ✓
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+  L4801:   1315. https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Launch.png 
+  L4802:   1316. https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Home.png 
+  L5629:   01. [L0225]  https://douban.fm/ Failed to open TCP connection to douban.fm:443 (Connection timed out - connect(2) for "douban.fm" port 443) 
+
+## electron@electron:303140404  (category 0, 1011 lines)
+Labelled failure lines:
+  L894: Error: Cannot find module './db.json'
+  L895:     at Function.Module._resolveFilename (module.js:325:15)
+  L896:     at Function.Module._load (module.js:276:25)
+  L897:     at Module.require (module.js:353:17)
+  L898:     at require (internal/module.js:12:17)
+  L899:     at Object.<anonymous> (/home/travis/build/electron/electron/node_modules/request/node_modules/mime-types/node_modules/mime-db/index.js:11:18)
+  L900:     at Module._compile (module.js:409:26)
+  L901:     at Object.Module._extensions..js (module.js:416:10)
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+  L922: The command "eval npm install  " failed. Retrying, 2 of 3.
+  L994: E: Failed to fetch http://dl.hhvm.com/ubuntu/dists/trusty/main/binary-i386/Packages  404  Not Found [IP: 52.84.14.226 80]
+  L995: E: Some index files failed to download. They have been ignored, or old ones used instead.
+  L997: Traceback (most recent call last):
+
+## electron@electron:303144317  (category 0, 1014 lines)
+Labelled failure lines:
+  L900: Error: Cannot find module 'fast-deep-equal'
+  L901:     at Function.Module._resolveFilename (module.js:325:15)
+  L902:     at Function.Module._load (module.js:276:25)
+  L903:     at Module.require (module.js:353:17)
+  L904:     at require (internal/module.js:12:17)
+  L905:     at Object.<anonymous> (/home/travis/build/electron/electron/node_modules/request/node_modules/har-validator/node_modules/ajv/lib/compile/resolve.js:4:13)
+  L906:     at Module._compile (module.js:409:26)
+  L907:     at Object.Module._extensions..js (module.js:416:10)
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+  L935: The command "eval npm install  " failed. Retrying, 2 of 3.
+  L997: E: Failed to fetch http://dl.hhvm.com/ubuntu/dists/trusty/main/binary-i386/Packages  404  Not Found [IP: 13.33.164.241 80]
+  L998: E: Some index files failed to download. They have been ignored, or old ones used instead.
+  L1000: Traceback (most recent call last):
+
+## elixir-lang@elixir:572202401  (category 1, 964 lines)
+Labelled failure lines:
+  L713: ** (CompileError) (for doctest at) lib/list.ex:102: undefined function i/1
+  L714:     (elixir 1.10.0-dev) src/elixir_locals.erl:108: :elixir_locals."-ensure_no_undefined_local/3-lc$^0/1-0-"/2
+  L715:     (elixir 1.10.0-dev) src/elixir_locals.erl:109: anonymous fn/3 in :elixir_locals.ensure_no_undefined_local/3
+Method cited:
+  L555: $ export ELIXIR_ASSERT_TIMEOUT=2000
+  L712: == Compilation error in file test/elixir/list_test.exs ==
+  L735:   'Elixir.Exception':message/1
+  L736:   'Elixir.Exception':normalize/3
+
+## elixir-lang@elixir:572202566  (category 1, 975 lines)
+Labelled failure lines:
+  L724: ** (CompileError) (for doctest at) lib/list.ex:102: undefined function i/1
+  L725:     (elixir 1.10.0-dev) src/elixir_locals.erl:108: :elixir_locals."-ensure_no_undefined_local/3-lc$^0/1-0-"/2
+  L726:     (elixir 1.10.0-dev) src/elixir_locals.erl:109: anonymous fn/3 in :elixir_locals.ensure_no_undefined_local/3
+Method cited:
+  L556: $ export ELIXIR_ASSERT_TIMEOUT=2000
+  L723: == Compilation error in file test/elixir/list_test.exs ==
+  L746:   'Elixir.Exception':message/1
+  L747:   'Elixir.Exception':normalize/3
+
+## emacs-tw@awesome-emacs:536981552  (category 0, 1609 lines)
+Labelled failure lines:
+  L1422: > Links 
+  L1423:   1. [L296] 301 https://github.com/areina/helm-dash  → https://github.com/dash-docs-el/helm-dash 
+  L1424:   2. [L494] 502 https://www.emacswiki.org/emacs/MakefileMode  
+  L1425:   3. [L619] 502 https://www.emacswiki.org/emacs/CategoryEshell  
+  L1426:   4. [L687] 301 https://github.com/dangxuandev/blog-admin  → https://github.com/xcodebuild/blog-admin 
+  L1427:   5. [L771] 301 https://github.com/dunn/homebrew-emacs  → https://github.com/brew-stuff/homebrew-emacs 
+  L1428: > Dupes 
+  L1429:   None ✓
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+
+## emacs-tw@awesome-emacs:537024011  (category 0, 1586 lines)
+Labelled failure lines:
+  L1400: > Links 
+  L1401:   1. [L296] 301 https://github.com/areina/helm-dash  → https://github.com/dash-docs-el/helm-dash 
+  L1402:   2. [L687] 301 https://github.com/dangxuandev/blog-admin  → https://github.com/xcodebuild/blog-admin 
+  L1403:   3. [L771] 301 https://github.com/dunn/homebrew-emacs  → https://github.com/brew-stuff/homebrew-emacs 
+  L1404: > Dupes 
+  L1405:   None ✓
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+
+## erlang@otp:546804521  (category 0, 1514 lines)
+Labelled failure lines:
+  L1122: (no logger present) unexpected logger message: {log,error,"Error in process ~p with exit value:~n~p~n",[<0.0.0>,{{badmatch,{error,{bad_lib,"Function not found prim_file:read_handle...
+  L1123: 
+  L1124: (no logger present) unexpected logger message: {log,error,"Error in process ~p with exit value:~n~p~n",[<0.0.0>,{{badmatch,{error,{bad_lib,"Function not found prim_file:read_handle...
+  L1125: 
+  L1126: (no logger present) unexpected logger message: {log,error,"Error in process ~p with exit value:~n~p~n",[<0.0.0>,{{badmatch,{error,{bad_lib,"Function not found prim_file:read_handle...
+  L1127: 
+  L1128: (no logger present) unexpected logger message: {log,error,"Error in process ~p with exit value:~n~p~n",[<0.0.0>,{{badmatch,{error,{bad_lib,"Function not found prim_file:read_handle...
+  L1129: 
+Method cited:
+  L225: Locale to use while parsing sudoers: C
+  L1121: Building OTP.................... failed.
+  L1513: *** Failed ***
 

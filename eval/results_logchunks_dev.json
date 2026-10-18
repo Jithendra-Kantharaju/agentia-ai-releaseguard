@@ -3,12 +3,12 @@
     "summary": {
       "method": "baseline",
       "n": 254,
-      "evidence_hit_rate": 0.358,
-      "mean_precision": 0.235,
-      "mean_recall": 0.129,
+      "evidence_hit_rate": 0.472,
+      "mean_precision": 0.228,
+      "mean_recall": 0.192,
       "empty_rate": 0.0,
-      "avg_lines_cited": 4.453,
-      "mean_latency_s": 0.097,
+      "avg_lines_cited": 3.854,
+      "mean_latency_s": 0.131,
       "errors": 0
     },
     "items": [
@@ -115,622 +115,659 @@
         "id": "BurntSushi@ripgrep:524197508",
         "repo": "BurntSushi@ripgrep",
         "pred_lines": [
+          921,
           957,
           958,
           960
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.75,
         "recall": 0.07142857142857142,
-        "n_pred": 3
+        "n_pred": 4
       },
       {
         "id": "BurntSushi@ripgrep:524343295",
         "repo": "BurntSushi@ripgrep",
         "pred_lines": [
+          920,
           956,
           957,
           959
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.75,
         "recall": 0.07142857142857142,
-        "n_pred": 3
+        "n_pred": 4
       },
       {
         "id": "BurntSushi@ripgrep:524430085",
         "repo": "BurntSushi@ripgrep",
         "pred_lines": [
+          1612,
           1618
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 0.5,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "BurntSushi@ripgrep:524433448",
         "repo": "BurntSushi@ripgrep",
         "pred_lines": [
+          1631,
           1637
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 0.5,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "BurntSushi@ripgrep:524443210",
         "repo": "BurntSushi@ripgrep",
         "pred_lines": [
+          1601,
           1607
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 0.5,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "BurntSushi@ripgrep:524445021",
         "repo": "BurntSushi@ripgrep",
         "pred_lines": [
+          1584,
           1590
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 0.5,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557182503",
         "repo": "LightTable@LightTable",
         "pred_lines": [
+          225,
           542
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557182511",
         "repo": "LightTable@LightTable",
         "pred_lines": [
+          225,
           547
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557187552",
         "repo": "LightTable@LightTable",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           542
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557187564",
         "repo": "LightTable@LightTable",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           547
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557191599",
         "repo": "LightTable@LightTable",
         "pred_lines": [
+          225,
           547
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557191614",
         "repo": "LightTable@LightTable",
         "pred_lines": [
+          225,
           552
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557192585",
         "repo": "LightTable@LightTable",
         "pred_lines": [
+          225,
           547
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557192591",
         "repo": "LightTable@LightTable",
         "pred_lines": [
+          225,
           552
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557196001",
         "repo": "LightTable@LightTable",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           547
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "LightTable@LightTable:557196013",
         "repo": "LightTable@LightTable",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           552
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "Microsoft@TypeScript:566234931",
         "repo": "Microsoft@TypeScript",
         "pred_lines": [
+          1220,
+          1370,
           1435,
           1443,
           1451,
           1459,
           1467,
-          1480
+          1474
         ],
         "hit": true,
-        "precision": 0.8333333333333334,
+        "precision": 0.625,
         "recall": 0.1282051282051282,
-        "n_pred": 6
+        "n_pred": 8
       },
       {
         "id": "Microsoft@TypeScript:566236265",
         "repo": "Microsoft@TypeScript",
         "pred_lines": [
+          1198,
+          1348,
           1413,
           1421,
           1429,
           1437,
           1445,
-          1458
+          1452
         ],
         "hit": true,
-        "precision": 0.8333333333333334,
+        "precision": 0.625,
         "recall": 0.1282051282051282,
-        "n_pred": 6
+        "n_pred": 8
       },
       {
         "id": "Microsoft@TypeScript:566547811",
         "repo": "Microsoft@TypeScript",
         "pred_lines": [
+          1204,
+          1354,
           1420,
           1428,
           1436,
           1444,
           1452,
-          1465
+          1459
         ],
         "hit": true,
-        "precision": 0.8333333333333334,
+        "precision": 0.625,
         "recall": 0.1282051282051282,
-        "n_pred": 6
+        "n_pred": 8
       },
       {
         "id": "Microsoft@TypeScript:566574811",
         "repo": "Microsoft@TypeScript",
         "pred_lines": [
-          1433
+          1181,
+          1331,
+          1397,
+          1413,
+          1427
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.06451612903225806,
+        "n_pred": 5
       },
       {
         "id": "NancyFx@Nancy:375658615",
         "repo": "NancyFx@Nancy",
         "pred_lines": [
-          36,
-          6015
+          5444,
+          6002
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
         "n_pred": 2
       },
       {
         "id": "ReactiveX@RxJava:561008032",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          520
+          520,
+          780,
+          811,
+          832
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:561016934",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          999
+          999,
+          1252,
+          1253,
+          1260
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:562514757",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          1007
+          1007,
+          1203,
+          1204,
+          1215
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:563267830",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          1094
+          1094,
+          1225,
+          1226,
+          1233
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:564360281",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          999
+          999,
+          1478,
+          1479,
+          1486
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.14285714285714285,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:564360351",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          996
+          996,
+          1475,
+          1476,
+          1483
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.14285714285714285,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:565360975",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          1172
+          1172,
+          1517,
+          1518,
+          1525
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:565366738",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          1172
+          1172,
+          1517,
+          1518,
+          1525
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:565371172",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          1173
+          1173,
+          1518,
+          1519,
+          1526
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.2,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "ReactiveX@RxJava:565378954",
         "repo": "ReactiveX@RxJava",
         "pred_lines": [
-          1864
+          1864,
+          1876,
+          1877,
+          1884
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.25,
         "recall": 0.16666666666666666,
-        "n_pred": 1
+        "n_pred": 4
       },
       {
         "id": "SwiftyJSON@SwiftyJSON:347096816",
         "repo": "SwiftyJSON@SwiftyJSON",
         "pred_lines": [
-          131,
-          149,
-          150,
-          278
+          226,
+          900
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 4
+        "hit": true,
+        "precision": 0.5,
+        "recall": 1.0,
+        "n_pred": 2
       },
       {
         "id": "SwiftyJSON@SwiftyJSON:364917910",
         "repo": "SwiftyJSON@SwiftyJSON",
         "pred_lines": [
-          52,
-          54
+          54,
+          2300,
+          2358,
+          2362,
+          2420,
+          2424,
+          2482
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 2
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333,
+        "n_pred": 7
       },
       {
         "id": "SwiftyJSON@SwiftyJSON:364918572",
         "repo": "SwiftyJSON@SwiftyJSON",
         "pred_lines": [
-          52,
-          54
+          54,
+          2321,
+          2379,
+          2383,
+          2441,
+          2445,
+          2503
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 2
+        "hit": true,
+        "precision": 0.14285714285714285,
+        "recall": 0.3333333333333333,
+        "n_pred": 7
       },
       {
         "id": "adambard@learnxinyminutes-docs:448963603",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          900,
           902,
           903,
           905
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:487309865",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          896,
           898,
           899,
           901
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:491868630",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          902,
           904,
           905,
           907
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:559434441",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          913,
           915,
           916,
           918
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:559469687",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          915,
           917,
           918,
           920
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:559475600",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          915,
           917,
           918,
           920
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:559637917",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          914,
           916,
           917,
           919
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:559642811",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          914,
           916,
           917,
           919
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:559652409",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
+          975,
           977,
           978,
           980
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 7
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "adambard@learnxinyminutes-docs:572950271",
         "repo": "adambard@learnxinyminutes-docs",
         "pred_lines": [
+          719,
           721,
           722,
           724
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 3
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 4
       },
       {
         "id": "cmusatyalab@openface:196472359",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          8009,
-          8012,
-          8023,
           8028,
           8031,
           8042,
           8047,
-          8050
+          8050,
+          8053,
+          8061,
+          8075
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.07339449541284404,
+        "precision": 0.75,
+        "recall": 0.05504587155963303,
         "n_pred": 8
       },
       {
         "id": "cmusatyalab@openface:199278645",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7393
+          7381,
+          7393,
+          7395,
+          7412
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.125,
+        "n_pred": 4
       },
       {
         "id": "cmusatyalab@openface:199281591",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7396
+          7384,
+          7396,
+          7397,
+          7415
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.125,
+        "n_pred": 4
       },
       {
         "id": "cmusatyalab@openface:199282796",
@@ -760,139 +797,103 @@
         "id": "cmusatyalab@openface:204083712",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7577,
-          7580,
-          7591,
           7596,
           7599,
           7610,
           7615,
-          7618
+          7618,
+          7621,
+          7629,
+          7643
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.07339449541284404,
+        "precision": 0.75,
+        "recall": 0.05504587155963303,
         "n_pred": 8
       },
       {
         "id": "cmusatyalab@openface:204084152",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7581,
-          7584,
-          7595,
           7600,
           7603,
           7614,
           7619,
-          7622
+          7622,
+          7625,
+          7633,
+          7647
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.07339449541284404,
+        "precision": 0.75,
+        "recall": 0.05504587155963303,
         "n_pred": 8
       },
       {
         "id": "cmusatyalab@openface:204084833",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7596,
-          7599,
-          7610,
           7615,
           7618,
           7629,
           7634,
-          7637
+          7637,
+          7640,
+          7648,
+          7662
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.07339449541284404,
+        "precision": 0.75,
+        "recall": 0.05504587155963303,
         "n_pred": 8
       },
       {
         "id": "cmusatyalab@openface:204085173",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7591,
-          7594,
-          7605,
           7610,
           7613,
           7624,
           7629,
-          7632
+          7632,
+          7635,
+          7643,
+          7657
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.07339449541284404,
+        "precision": 0.75,
+        "recall": 0.05504587155963303,
         "n_pred": 8
       },
       {
         "id": "cmusatyalab@openface:225393266",
         "repo": "cmusatyalab@openface",
         "pred_lines": [
-          7583,
-          7586,
-          7597,
           7602,
           7605,
           7616,
           7621,
-          7624
+          7624,
+          7627,
+          7635,
+          7649
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.07339449541284404,
+        "precision": 0.75,
+        "recall": 0.05504587155963303,
         "n_pred": 8
       },
       {
         "id": "composer@composer:547576002",
         "repo": "composer@composer",
         "pred_lines": [
-          277,
-          1203,
-          1215,
-          1216,
-          1269,
+          225,
+          1202,
+          1268,
+          1280,
           1281,
           1293,
           1294
-        ],
-        "hit": true,
-        "precision": 0.125,
-        "recall": 0.09090909090909091,
-        "n_pred": 8
-      },
-      {
-        "id": "composer@composer:547593737",
-        "repo": "composer@composer",
-        "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          1275,
-          1287,
-          1299,
-          1300
-        ],
-        "hit": true,
-        "precision": 0.25,
-        "recall": 0.08695652173913043,
-        "n_pred": 8
-      },
-      {
-        "id": "composer@composer:547594407",
-        "repo": "composer@composer",
-        "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          1303,
-          1315,
-          1316
         ],
         "hit": true,
         "precision": 0.14285714285714285,
@@ -900,26 +901,62 @@
         "n_pred": 7
       },
       {
+        "id": "composer@composer:547593737",
+        "repo": "composer@composer",
+        "pred_lines": [
+          225,
+          1274,
+          1286,
+          1287,
+          1299,
+          1300
+        ],
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.13043478260869565,
+        "n_pred": 6
+      },
+      {
+        "id": "composer@composer:547594407",
+        "repo": "composer@composer",
+        "pred_lines": [
+          225,
+          1302,
+          1303,
+          1315,
+          1316
+        ],
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.18181818181818182,
+        "n_pred": 5
+      },
+      {
         "id": "composer@composer:551282890",
         "repo": "composer@composer",
         "pred_lines": [
-          102
+          526,
+          532,
+          538,
+          544,
+          550,
+          558
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.8333333333333334,
+        "recall": 0.1724137931034483,
+        "n_pred": 6
       },
       {
         "id": "composer@composer:558512461",
         "repo": "composer@composer",
         "pred_lines": [
-          2973,
-          3307,
-          3432,
-          3572,
-          3708,
+          3734,
+          3739,
+          3744,
+          3749,
           3750,
+          3756,
           3757,
           3765
         ],
@@ -932,108 +969,104 @@
         "id": "composer@composer:565348117",
         "repo": "composer@composer",
         "pred_lines": [
-          105
+          103,
+          105,
+          337,
+          338,
+          347
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "n_pred": 5
       },
       {
         "id": "composer@composer:566643668",
         "repo": "composer@composer",
         "pred_lines": [
-          105
+          105,
+          988,
+          1008,
+          1026,
+          1027,
+          1045,
+          1046
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.5714285714285714,
+        "recall": 0.07272727272727272,
+        "n_pred": 7
       },
       {
         "id": "composer@composer:566904372",
         "repo": "composer@composer",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1320
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "composer@composer:566982103",
         "repo": "composer@composer",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1319
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "composer@composer:567101801",
         "repo": "composer@composer",
         "pred_lines": [
-          105
+          105,
+          537,
+          544,
+          545
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.25,
+        "recall": 1.0,
+        "n_pred": 4
       },
       {
         "id": "discourse@discourse:565586706",
         "repo": "discourse@discourse",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           4178,
           4245
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "discourse@discourse:565999589",
         "repo": "discourse@discourse",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          11923,
+          225,
           12445,
           12447,
           12481
         ],
         "hit": true,
-        "precision": 0.125,
+        "precision": 0.25,
         "recall": 0.5,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:555180400",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          149,
-          277,
-          1692,
-          1693,
-          2938,
+          225,
           4800,
           4801,
           4802
@@ -1041,17 +1074,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:560605858",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          277,
-          1692,
-          1693,
-          2938,
-          4800,
+          225,
           4801,
           4802,
           5629
@@ -1059,35 +1088,27 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:561971122",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          1718,
-          2963,
-          4825,
-          4826,
-          4827,
+          225,
           5557,
           5670,
           5953
         ],
         "hit": true,
-        "precision": 0.125,
+        "precision": 0.25,
         "recall": 0.047619047619047616,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562351363",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          149,
-          277,
-          1698,
-          1699,
-          2944,
+          225,
           4806,
           4807,
           4808
@@ -1095,17 +1116,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562459124",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          277,
-          1696,
-          1697,
-          2942,
-          4804,
+          225,
           4805,
           4806,
           5650
@@ -1113,17 +1130,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562459179",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          149,
-          277,
-          1721,
-          1722,
-          2967,
+          225,
           4829,
           4830,
           4831
@@ -1131,17 +1144,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562461418",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          277,
-          1696,
-          1697,
-          2942,
-          4804,
+          225,
           4805,
           4806,
           5633
@@ -1149,17 +1158,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562461458",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          277,
-          1721,
-          1722,
-          2967,
-          4829,
+          225,
           4830,
           4831,
           5658
@@ -1167,17 +1172,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562475166",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          277,
-          1696,
-          1697,
-          2942,
-          4804,
+          225,
           4805,
           4806,
           5650
@@ -1185,17 +1186,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "dkhamsing@open-source-ios-apps:562475335",
         "repo": "dkhamsing@open-source-ios-apps",
         "pred_lines": [
-          277,
-          1696,
-          1697,
-          2942,
-          4804,
+          225,
           4805,
           4806,
           5635
@@ -1203,187 +1200,157 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "electron@electron:303140404",
         "repo": "electron@electron",
         "pred_lines": [
-          913,
-          914,
-          915,
-          916,
-          917,
-          919,
-          920,
+          225,
+          922,
+          994,
+          995,
           997
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303144317",
         "repo": "electron@electron",
         "pred_lines": [
-          926,
-          927,
-          928,
-          929,
-          930,
-          932,
-          933,
+          225,
+          935,
+          997,
+          998,
           1000
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303153628",
         "repo": "electron@electron",
         "pred_lines": [
-          910,
-          911,
-          912,
-          913,
-          914,
-          916,
-          917,
+          225,
+          919,
+          981,
+          982,
           984
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303172126",
         "repo": "electron@electron",
         "pred_lines": [
-          918,
-          919,
-          920,
-          921,
-          922,
-          924,
-          925,
+          225,
+          927,
+          1011,
+          1012,
           1014
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303174572",
         "repo": "electron@electron",
         "pred_lines": [
-          944,
-          945,
-          946,
-          947,
-          948,
-          950,
-          951,
+          225,
+          953,
+          1040,
+          1041,
           1043
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303176966",
         "repo": "electron@electron",
         "pred_lines": [
-          937,
-          938,
-          939,
-          940,
-          941,
-          943,
-          944,
+          225,
+          946,
+          1008,
+          1009,
           1011
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303184368",
         "repo": "electron@electron",
         "pred_lines": [
-          880,
-          881,
-          882,
-          883,
-          884,
-          886,
-          887,
+          225,
+          889,
+          951,
+          952,
           954
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303191669",
         "repo": "electron@electron",
         "pred_lines": [
-          909,
-          910,
-          911,
-          912,
-          913,
-          915,
-          916,
+          225,
+          918,
+          980,
+          981,
           983
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303192562",
         "repo": "electron@electron",
         "pred_lines": [
-          923,
-          924,
-          925,
-          926,
-          927,
-          929,
-          930,
+          225,
+          932,
+          994,
+          995,
           997
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "electron@electron:303195467",
         "repo": "electron@electron",
         "pred_lines": [
-          877,
-          878,
-          879,
-          880,
-          881,
-          883,
-          884,
+          225,
+          886,
+          948,
+          949,
           951
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 5
       },
       {
         "id": "elixir-lang@elixir:572202401",
@@ -1431,57 +1398,45 @@
         "id": "emacs-tw@awesome-emacs:536981552",
         "repo": "emacs-tw@awesome-emacs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277
+          225
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "emacs-tw@awesome-emacs:537024011",
         "repo": "emacs-tw@awesome-emacs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277
+          225
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "emacs-tw@awesome-emacs:542563687",
         "repo": "emacs-tw@awesome-emacs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277
+          225
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "emacs-tw@awesome-emacs:543405275",
         "repo": "emacs-tw@awesome-emacs",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277
+          225
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "emacs-tw@awesome-emacs:547360333",
@@ -1567,153 +1522,136 @@
         "id": "erlang@otp:546804521",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1121,
           1513
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:546984181",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1129,
           1333
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:546987224",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1125,
           1517
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:550114180",
         "repo": "erlang@otp",
         "pred_lines": [
+          225,
           1295,
-          1494
+          1494,
+          1819,
+          1820,
+          1958
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 6
       },
       {
         "id": "erlang@otp:551677118",
         "repo": "erlang@otp",
         "pred_lines": [
           1047,
-          1218
+          1218,
+          1823,
+          1832,
+          1866
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "erlang@otp:552509993",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1034,
           1235
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:553211512",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1189,
           1390
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:554431291",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1145,
           1537
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:554692041",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1159,
           1551
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "erlang@otp:555761574",
         "repo": "erlang@otp",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1136,
           1528
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "google@material-design-icons:92806560",
@@ -1829,164 +1767,137 @@
         "id": "google@web-starter-kit:348091008",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          122,
-          140,
-          141,
-          268,
+          217,
           2178
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.06666666666666667,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "google@web-starter-kit:348092162",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          122,
-          140,
-          141,
-          268,
+          217,
           2175
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.06666666666666667,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "google@web-starter-kit:348096455",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          2291,
-          4588
+          217,
+          2280,
+          2514,
+          4577
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 2
+        "hit": true,
+        "precision": 0.25,
+        "recall": 0.06666666666666667,
+        "n_pred": 4
       },
       {
         "id": "google@web-starter-kit:348293982",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          2291
+          217,
+          2280
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 1
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.06666666666666667,
+        "n_pred": 2
       },
       {
         "id": "google@web-starter-kit:398798677",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267,
+          216,
           705,
           749
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "google@web-starter-kit:398800704",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267,
+          216,
           712,
           757
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "google@web-starter-kit:411570811",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267,
+          216,
           711,
           755
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "google@web-starter-kit:537108381",
         "repo": "google@web-starter-kit",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           834,
           877
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 3
       },
       {
         "id": "iluwatar@java-design-patterns:565304449",
         "repo": "iluwatar@java-design-patterns",
         "pred_lines": [
-          837,
-          838,
-          839,
-          868,
-          870,
+          225,
           885,
           887,
           893
         ],
-        "hit": true,
-        "precision": 0.375,
-        "recall": 0.375,
-        "n_pred": 8
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
       },
       {
         "id": "iluwatar@java-design-patterns:565659321",
         "repo": "iluwatar@java-design-patterns",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          832,
+          225,
           834,
           835,
           836
         ],
         "hit": true,
-        "precision": 0.5,
-        "recall": 0.5,
-        "n_pred": 8
+        "precision": 0.75,
+        "recall": 0.375,
+        "n_pred": 4
       },
       {
         "id": "jekyll@jekyll:557871100",
         "repo": "jekyll@jekyll",
         "pred_lines": [
-          148,
-          149,
-          277,
-          1041,
-          1328,
+          225,
           1666,
           1667,
           1692
@@ -1994,17 +1905,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "jekyll@jekyll:558414447",
         "repo": "jekyll@jekyll",
         "pred_lines": [
-          148,
-          149,
-          277,
-          1040,
-          1327,
+          225,
           1665,
           1666,
           1691
@@ -2012,17 +1919,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "jekyll@jekyll:558541567",
         "repo": "jekyll@jekyll",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          957,
+          225,
           1238,
           1239,
           1274
@@ -2030,17 +1933,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "jekyll@jekyll:558544016",
         "repo": "jekyll@jekyll",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          974,
+          225,
           1255,
           1256,
           1291
@@ -2048,17 +1947,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "jekyll@jekyll:558598688",
         "repo": "jekyll@jekyll",
         "pred_lines": [
-          148,
-          149,
-          277,
-          978,
-          1265,
+          225,
           1631,
           1632,
           1654
@@ -2066,7 +1961,7 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "jekyll@jekyll:562218280",
@@ -2130,147 +2025,120 @@
         "id": "jgthms@bulma:373686035",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267,
+          216,
           903
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.5,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:406362104",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          885
+          216
         ],
-        "hit": true,
-        "precision": 1.0,
-        "recall": 1.0,
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
         "n_pred": 1
       },
       {
         "id": "jgthms@bulma:437082455",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          133,
-          151,
-          152,
-          280,
+          228,
           1024
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:438531930",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          133,
-          151,
-          152,
-          280,
+          228,
           1108
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:513332094",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           987
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:534204380",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           921
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:534209066",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           939
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:534210704",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           940
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:534211385",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           952
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jgthms@bulma:534214736",
         "repo": "jgthms@bulma",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           875
         ],
         "hit": true,
-        "precision": 0.2,
+        "precision": 0.5,
         "recall": 0.25,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "jwilm@alacritty:564527447",
@@ -2300,26 +2168,26 @@
         "id": "jwilm@alacritty:567130646",
         "repo": "jwilm@alacritty",
         "pred_lines": [
-          1436,
-          1439,
-          1442,
+          1427,
           1445,
           1448,
           1539,
           1542,
-          1637
+          1637,
+          1651,
+          1653
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.03864734299516908,
+        "precision": 0.625,
+        "recall": 0.024154589371980676,
         "n_pred": 8
       },
       {
         "id": "major@MySQLTuner-perl:431782730",
         "repo": "major@MySQLTuner-perl",
         "pred_lines": [
-          1163,
-          1195
+          216,
+          1163
         ],
         "hit": true,
         "precision": 0.5,
@@ -2330,222 +2198,194 @@
         "id": "martanne@vis:243935654",
         "repo": "martanne@vis",
         "pred_lines": [
-          1376
+          1376,
+          1520,
+          1522
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.3333333333333333,
         "recall": 0.5,
-        "n_pred": 1
+        "n_pred": 3
       },
       {
         "id": "martanne@vis:346413726",
         "repo": "martanne@vis",
         "pred_lines": [
-          122,
-          140,
-          141,
-          268
+          1454,
+          1459,
+          1462,
+          1465,
+          1468
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 5
       },
       {
         "id": "martanne@vis:346425105",
         "repo": "martanne@vis",
         "pred_lines": [
-          122,
-          140,
-          141,
-          268
+          1454,
+          1459,
+          1462,
+          1465,
+          1468
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 5
       },
       {
         "id": "martanne@vis:496555781",
         "repo": "martanne@vis",
         "pred_lines": [
-          1217,
-          1224,
-          1231,
-          1238,
+          1140,
           1245,
           1252,
           1259,
-          1266
+          1266,
+          1298
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 8
+        "hit": true,
+        "precision": 0.16666666666666666,
+        "recall": 0.125,
+        "n_pred": 6
       },
       {
         "id": "mhinz@vim-galore:374778890",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:374779116",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:374779422",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:374779992",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:374781325",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:374803396",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:403259414",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:417699186",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:430784580",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "mhinz@vim-galore:443978045",
         "repo": "mhinz@vim-galore",
         "pred_lines": [
-          121,
-          139,
-          140,
-          267
+          216
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 4
+        "n_pred": 1
       },
       {
         "id": "necolas@normalize.css:140173233",
         "repo": "necolas@normalize.css",
         "pred_lines": [
-          2367
+          2357
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
+        "hit": true,
+        "precision": 1.0,
+        "recall": 0.1,
         "n_pred": 1
       },
       {
         "id": "neovim@neovim:567614596",
         "repo": "neovim@neovim",
         "pred_lines": [
-          5317,
-          5324,
-          5331,
           5338,
           5345,
           5434,
           5442,
-          5447
+          5447,
+          12179,
+          12180,
+          12181
         ],
         "hit": false,
         "precision": 0.0,
@@ -2557,234 +2397,280 @@
         "repo": "neovim@neovim",
         "pred_lines": [
           987,
-          8067
+          8067,
+          9864,
+          9865,
+          9866
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "neovim@neovim:567670361",
         "repo": "neovim@neovim",
         "pred_lines": [
           1035,
-          8101
+          8101,
+          9898,
+          9899,
+          9900
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "neovim@neovim:567681636",
         "repo": "neovim@neovim",
         "pred_lines": [
           981,
-          8067
+          8067,
+          9864,
+          9865,
+          9866
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "neovim@neovim:567681970",
         "repo": "neovim@neovim",
         "pred_lines": [
           984,
-          8052
+          8052,
+          9849,
+          9850,
+          9851
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "neovim@neovim:567682531",
         "repo": "neovim@neovim",
         "pred_lines": [
           1263,
-          8372
+          8372,
+          10169,
+          10170,
+          10171
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "neovim@neovim:567686448",
         "repo": "neovim@neovim",
         "pred_lines": [
           1068,
-          8148
+          8148,
+          9945,
+          9946,
+          9947
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "neovim@neovim:567689244",
         "repo": "neovim@neovim",
         "pred_lines": [
           1067,
-          8134
+          8134,
+          9931,
+          9932,
+          9933
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 2
+        "n_pred": 5
       },
       {
         "id": "powershell@PowerShell:535985298",
         "repo": "powershell@PowerShell",
         "pred_lines": [
+          225,
           926,
           927,
-          940
+          940,
+          968,
+          972,
+          973
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 3
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.5,
+        "n_pred": 7
       },
       {
         "id": "powershell@PowerShell:535986685",
         "repo": "powershell@PowerShell",
         "pred_lines": [
-          975,
-          977,
           1012,
           1118,
           1120,
           1122,
-          1124
+          1124,
+          1141,
+          1145,
+          1147
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 7
+        "n_pred": 8
       },
       {
         "id": "powershell@PowerShell:535987243",
         "repo": "powershell@PowerShell",
         "pred_lines": [
-          1056,
-          1057,
           1075,
           1160,
           1161,
           1162,
-          1163
+          1163,
+          1172,
+          1174,
+          1175
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 7
+        "n_pred": 8
       },
       {
         "id": "powershell@PowerShell:535987256",
         "repo": "powershell@PowerShell",
         "pred_lines": [
+          225,
           926,
           927,
-          940
+          940,
+          981,
+          985,
+          986
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 3
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.5,
+        "n_pred": 7
       },
       {
         "id": "powershell@PowerShell:536509309",
         "repo": "powershell@PowerShell",
         "pred_lines": [
-          1054,
-          1055,
           1071,
           5844,
           5845,
           5846,
-          5847
+          5847,
+          5864,
+          5865,
+          5867
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 7
+        "n_pred": 8
       },
       {
         "id": "powershell@PowerShell:536509314",
         "repo": "powershell@PowerShell",
         "pred_lines": [
+          225,
           927,
           928,
-          941
+          941,
+          5381,
+          5385,
+          5386
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 3
+        "n_pred": 7
       },
       {
         "id": "powershell@PowerShell:536510132",
         "repo": "powershell@PowerShell",
         "pred_lines": [
-          1056,
-          1057,
           1076,
           1151,
           1152,
           1153,
-          1154
+          1154,
+          1163,
+          1165,
+          1166
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 7
+        "n_pred": 8
       },
       {
         "id": "powershell@PowerShell:536510159",
         "repo": "powershell@PowerShell",
         "pred_lines": [
+          225,
           926,
           927,
-          940
+          940,
+          967,
+          971,
+          972
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 3
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.5,
+        "n_pred": 7
       },
       {
         "id": "powershell@PowerShell:547432425",
         "repo": "powershell@PowerShell",
         "pred_lines": [
-          1056,
-          1057,
           1076,
           1146,
           1147,
           1148,
-          1149
+          1149,
+          1158,
+          1160,
+          1161
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 7
+        "n_pred": 8
       },
       {
         "id": "powershell@PowerShell:547432434",
         "repo": "powershell@PowerShell",
         "pred_lines": [
+          225,
           927,
           928,
-          941
+          941,
+          973,
+          977,
+          978
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
-        "n_pred": 3
+        "hit": true,
+        "precision": 0.42857142857142855,
+        "recall": 0.5,
+        "n_pred": 7
       },
       {
         "id": "processone@ejabberd:554568247",
@@ -2826,11 +2712,7 @@
         "id": "purcell@emacs.d:495224858",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          904,
+          225,
           906,
           908,
           909
@@ -2838,17 +2720,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:495247642",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          877,
+          225,
           879,
           881,
           882
@@ -2856,17 +2734,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:495316554",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          875,
+          225,
           877,
           879,
           880
@@ -2874,17 +2748,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:495429346",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          895,
+          225,
           897,
           899,
           900
@@ -2892,17 +2762,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:515415388",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          148,
-          149,
-          277,
-          845,
-          1057,
+          225,
           1059,
           1066,
           1068
@@ -2910,17 +2776,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:515415960",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          868,
+          225,
           870,
           877,
           879
@@ -2928,17 +2790,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:515416520",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          871,
+          225,
           873,
           880,
           882
@@ -2946,17 +2804,13 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:516445189",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
-          931,
+          225,
           933,
           940,
           942
@@ -2964,33 +2818,31 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "purcell@emacs.d:533616131",
         "repo": "purcell@emacs.d",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           876
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 5
+        "n_pred": 2
       },
       {
         "id": "purcell@emacs.d:570347231",
         "repo": "purcell@emacs.d",
         "pred_lines": [
+          589,
           795
         ],
         "hit": true,
-        "precision": 1.0,
+        "precision": 0.5,
         "recall": 1.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "purescript@purescript:549434310",
@@ -3032,18 +2884,18 @@
         "id": "purescript@purescript:549463948",
         "repo": "purescript@purescript",
         "pred_lines": [
-          3248,
-          3251,
-          3276,
-          3645,
-          4743,
           4790,
           4916,
+          5182,
+          5188,
+          5194,
+          5200,
+          5206,
           5214
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
+        "hit": true,
+        "precision": 0.625,
+        "recall": 0.07692307692307693,
         "n_pred": 8
       },
       {
@@ -3098,17 +2950,19 @@
         "id": "rails@rails:517100249",
         "repo": "rails@rails",
         "pred_lines": [
-          1926,
           1934,
           1942,
           1952,
           1960,
-          1968
+          1968,
+          2710,
+          2720,
+          2721
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 6
+        "n_pred": 8
       },
       {
         "id": "rails@rails:517209604",
@@ -3181,10 +3035,7 @@
         "id": "rails@rails:517367844",
         "repo": "rails@rails",
         "pred_lines": [
-          130,
-          148,
-          149,
-          277,
+          225,
           1443,
           8126,
           8127
@@ -3192,35 +3043,27 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 7
+        "n_pred": 4
       },
       {
         "id": "rails@rails:517367909",
         "repo": "rails@rails",
         "pred_lines": [
-          148,
-          149,
-          277,
-          974,
-          986,
+          225,
           1017,
           1039,
           1040
         ],
-        "hit": true,
-        "precision": 0.125,
-        "recall": 0.14285714285714285,
-        "n_pred": 8
+        "hit": false,
+        "precision": 0.0,
+        "recall": 0.0,
+        "n_pred": 4
       },
       {
         "id": "rails@rails:517368002",
         "repo": "rails@rails",
         "pred_lines": [
-          148,
-          149,
-          277,
-          1156,
-          1470,
+          225,
           2296,
           2303,
           2304
@@ -3228,7 +3071,7 @@
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 8
+        "n_pred": 4
       },
       {
         "id": "soulmachine@leetcode:172062089",
@@ -3322,36 +3165,38 @@
         "id": "soulmachine@leetcode:302364749",
         "repo": "soulmachine@leetcode",
         "pred_lines": [
-          8
+          8,
+          226
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "soulmachine@leetcode:306325878",
         "repo": "soulmachine@leetcode",
         "pred_lines": [
-          8
+          8,
+          226
         ],
         "hit": false,
         "precision": 0.0,
         "recall": 0.0,
-        "n_pred": 1
+        "n_pred": 2
       },
       {
         "id": "twbs@bootstrap:565940461",
         "repo": "twbs@bootstrap",
         "pred_lines": [
+          584,
+          586,
+          591,
+          592,
           595,
-          596,
           597,
-          598,
-          599,
-          601,
           602,
-          604
+          603
         ],
         "hit": false,
         "precision": 0.0,
@@ -3362,14 +3207,14 @@
         "id": "twbs@bootstrap:565973566",
         "repo": "twbs@bootstrap",
         "pred_lines": [
+          578,
+          580,
+          585,
+          586,
           589,
-          590,
           591,
-          592,
-          593,
-          595,
           596,
-          598
+          597
         ],
         "hit": false,
         "precision": 0.0,
@@ -3380,50 +3225,50 @@
         "id": "twbs@bootstrap:566522647",
         "repo": "twbs@bootstrap",
         "pred_lines": [
+          646,
+          647,
+          648,
+          650,
           653,
-          654,
           655,
-          656,
-          657,
-          659,
           660,
-          662
+          661
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.038461538461538464,
         "n_pred": 8
       },
       {
         "id": "twbs@bootstrap:566876747",
         "repo": "twbs@bootstrap",
         "pred_lines": [
+          646,
+          647,
+          648,
+          650,
           653,
-          654,
           655,
-          656,
-          657,
-          659,
           660,
-          662
+          661
         ],
-        "hit": false,
-        "precision": 0.0,
-        "recall": 0.0,
+        "hit": true,
+        "precision": 0.5,
+        "recall": 0.038461538461538464,
         "n_pred": 8
       },
       {
         "id": "twbs@bootstrap:567309401",
         "repo": "twbs@bootstrap",
         "pred_lines": [
+          367,
+          369,
+          374,
+          375,
           378,
-          379,
           380,
-          381,
-          382,
-          384,
           385,
-          387
+          386
         ],
         "hit": false,
         "precision": 0.0,
@@ -3434,14 +3279,14 @@
         "id": "twbs@bootstrap:567309876",
         "repo": "twbs@bootstrap",
         "pred_lines": [
+          372,
+          374,
+          379,
+          380,
           383,
-          384,
           385,
-          386,
-          387,
-          389,
           390,
-          392
+          391
         ],
         "hit": false,
         "precision": 0.0,
@@ -3476,12 +3321,15 @@
         "id": "twitter@AnomalyDetection:46403875",
         "repo": "twitter@AnomalyDetection",
         "pred_lines": [
+          1400,
+          1445,
+          1446,
           1460
         ],
         "hit": true,
-        "precision": 1.0,
-        "recall": 0.0625,
-        "n_pred": 1
+        "precision": 0.5,
+        "recall": 0.125,
+        "n_pred": 4
       },
       {
         "id": "twitter@AnomalyDetection:48330777",
