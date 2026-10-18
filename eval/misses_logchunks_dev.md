@@ -1,145 +1,150 @@
 # Misses for method `baseline` (first 12)
 
-## BVLC@caffe:214074807  (category 0)
+## Microsoft@TypeScript:566574811  (category 0, 1448 lines)
 Labelled failure lines:
-  L3974: CMake Error at /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
-  L3975:   Could NOT find Halide (missing: HALIDE_ROOT_DIR HALIDE_LIBRARIES
-  L3976:   HALIDE_INCLUDE_DIR)
-  L3977: Call Stack (most recent call first):
-  L3978:   /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374 (_FPHSA_FAILURE_MESSAGE)
-  L3979:   cmake/Modules/FindHalide.cmake:38 (find_package_handle_standard_args)
-  L3980:   cmake/Dependencies.cmake:209 (find_package)
-  L3981:   CMakeLists.txt:46 (include)
+  L1392:   1) 
+  L1393:        
+  L1394:          fourslash tests
+  L1395:            tests/cases/fourslash/importNameCodeFixNewImportExportEqualsESModuleInterop.ts
+  L1396:              fourslash test importNameCodeFixNewImportExportEqualsESModuleInterop.ts runs correctly:
+  L1397:      Error: At line 1, col 3: Should find at least 1 codefix(es), but 0 found.
+  L1398:       at TestState.raiseError (src/harness/fourslash.ts:475:19)
+  L1399:       at TestState.getAndApplyCodeActions (src/harness/fourslash.ts:2314:26)
 Method cited:
-  (nothing)
+  L1433: npm ERR! Test failed.  See above for more details.
 
-## BVLC@caffe:214077363  (category 0)
+## NancyFx@Nancy:375658615  (category 0, 6017 lines)
 Labelled failure lines:
-  L3981: CMake Error at /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
-  L3982:   Could NOT find Halide (missing: HALIDE_ROOT_DIR HALIDE_LIBRARIES
-  L3983:   HALIDE_INCLUDE_DIR)
-  L3984: Call Stack (most recent call first):
-  L3985:   /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374 (_FPHSA_FAILURE_MESSAGE)
-  L3986:   cmake/Modules/FindHalide.cmake:38 (find_package_handle_standard_args)
-  L3987:   cmake/Dependencies.cmake:209 (find_package)
-  L3988:   CMakeLists.txt:46 (include)
+  L6002: An error occured while installing Cake.
 Method cited:
-  (nothing)
+  L36: /Users/travis/.travis/job_stages: line 476: yarn: command not found
+  L6015: /Users/travis/.travis/job_stages: line 166: shell_session_update: command not found
 
-## BVLC@caffe:214247336  (category 0)
+## SwiftyJSON@SwiftyJSON:347096816  (category 0, 907 lines)
 Labelled failure lines:
-  L3974: CMake Error at /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
-  L3975:   Could NOT find Halide (missing: HALIDE_LIBRARIES HALIDE_INCLUDE_DIR)
-  L3976: Call Stack (most recent call first):
-  L3977:   /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374 (_FPHSA_FAILURE_MESSAGE)
-  L3978:   cmake/Modules/FindHalide.cmake:38 (find_package_handle_standard_args)
-  L3979:   cmake/Dependencies.cmake:209 (find_package)
-  L3980:   CMakeLists.txt:46 (include)
+  L900: The program 'swift' is currently not installed. To run 'swift' please ask your administrator to install the package 'python-swiftclient'
 Method cited:
-  (nothing)
+  L131: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
+  L149: Authentication timestamp timeout: 15.0 minutes
+  L150: Password prompt timeout: 0.0 minutes
+  L278: 	the USA under License Exception TSU of the U.S. Export
 
-## BVLC@caffe:214320399  (category 1)
+## SwiftyJSON@SwiftyJSON:364917910  (category 1, 2497 lines)
 Labelled failure lines:
-  L3941: ./scripts/travis/install-deps.sh: line 117: cd: ./scripts/travis: No such file or directory
+  L2300: xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+  L2301: 
+  L2302: 		{ platform:tvOS Simulator, name:Apple TV 1080p }
 Method cited:
-  (nothing)
+  L52: /Users/travis/.travis/job_stages: line 475: yarn: command not found
+  L54: sudo: apt-get: command not found
 
-## BVLC@caffe:214320609  (category 1)
+## adambard@learnxinyminutes-docs:448963603  (category 0, 918 lines)
 Labelled failure lines:
-  L3914: ./scripts/travis/install-deps.sh: line 117: cd: ./scripts/travis: No such file or directory
+  L900: (./es-es/coldfusion-es.html.markdown): found character that cannot start any token while scanning for the next token at line 8 column 1
 Method cited:
-  (nothing)
+  L130: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
+  L148: Authentication timestamp timeout: 15.0 minutes
+  L149: Password prompt timeout: 0.0 minutes
+  L277: 	the USA under License Exception TSU of the U.S. Export
+  L902: Please check the YAML headers for the documents that failed!
+  L903: Command failed with status (1): [/home/travis/.rvm/rubies/ruby-2.2.7/bin/ru...]
+  L905: Failed 1 tests!!
 
-## BVLC@caffe:214327990  (category 0)
+## adambard@learnxinyminutes-docs:487309865  (category 0, 914 lines)
 Labelled failure lines:
-  L4003: CMake Error at /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
-  L4004:   Could NOT find Halide (missing: HALIDE_LIBRARIES HALIDE_INCLUDE_DIR)
-  L4005: Call Stack (most recent call first):
-  L4006:   /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374 (_FPHSA_FAILURE_MESSAGE)
-  L4007:   cmake/Modules/FindHalide.cmake:38 (find_package_handle_standard_args)
-  L4008:   cmake/Dependencies.cmake:209 (find_package)
-  L4009:   CMakeLists.txt:46 (include)
+  L896: (./tr-tr/clojure-tr.html.markdown): did not find expected ',' or ']' while parsing a flow sequence at line 5 column 7
 Method cited:
-  (nothing)
+  L130: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
+  L148: Authentication timestamp timeout: 15.0 minutes
+  L149: Password prompt timeout: 0.0 minutes
+  L277: 	the USA under License Exception TSU of the U.S. Export
+  L898: Please check the YAML headers for the documents that failed!
+  L899: Command failed with status (1): [/home/travis/.rvm/rubies/ruby-2.2.7/bin/ru...]
+  L901: Failed 1 tests!!
 
-## BVLC@caffe:214329485  (category 0)
+## cmusatyalab@openface:199278645  (category 1, 7415 lines)
 Labelled failure lines:
-  L3937: CMake Error at /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:138 (message):
-  L3938:   Could NOT find Halide (missing: HALIDE_LIBRARIES HALIDE_INCLUDE_DIR)
-  L3939: Call Stack (most recent call first):
-  L3940:   /usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake:374 (_FPHSA_FAILURE_MESSAGE)
-  L3941:   cmake/Modules/FindHalide.cmake:38 (find_package_handle_standard_args)
-  L3942:   cmake/Dependencies.cmake:209 (find_package)
-  L3943:   CMakeLists.txt:46 (include)
+  L7377: ERROR: no certificate subject alternative name matches
+  L7378: 	requested host name 'openface-models.storage.cmusatyalab.org'.
+  L7379: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
+  L7380: + nn4.small2.v1.t7: Error in wget.
+  L7381: ERROR: no certificate subject alternative name matches
+  L7382: 	requested host name 'openface-models.storage.cmusatyalab.org'.
+  L7383: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
+  L7384: + celeb-classifier.nn4.small2.v1.pkl: Error in wget.
 Method cited:
-  (nothing)
+  L7393: md5sum: openface/celeb-classifier.nn4.small2.v1.pkl: No such file or directory
 
-## BVLC@caffe:221812641  (category 2)
+## cmusatyalab@openface:199281591  (category 1, 7418 lines)
 Labelled failure lines:
-  L3758: CMake Error at /usr/share/cmake-3.2/Modules/FindBoost.cmake:1201 (message):
-  L3759:   Unable to find the requested Boost libraries.
-  L3760: 
-  L3761:   Boost version: 1.54.0
-  L3762: 
-  L3763:   Boost include path: /usr/include
-  L3764: 
-  L3765:   Detected version of Boost is too old.  Requested version was 1.55 (or
+  L7380: ERROR: no certificate subject alternative name matches
+  L7381: 	requested host name 'openface-models.storage.cmusatyalab.org'.
+  L7382: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
+  L7383: + nn4.small2.v1.t7: Error in wget.
+  L7384: ERROR: no certificate subject alternative name matches
+  L7385: 	requested host name 'openface-models.storage.cmusatyalab.org'.
+  L7386: To connect to openface-models.storage.cmusatyalab.org insecurely, use `--no-check-certificate'.
+  L7387: + celeb-classifier.nn4.small2.v1.pkl: Error in wget.
 Method cited:
-  (nothing)
+  L7396: md5sum: openface/celeb-classifier.nn4.small2.v1.pkl: No such file or directory
 
-## BurntSushi@ripgrep:524197508  (category 0)
+## composer@composer:551282890  (category 0, 593 lines)
 Labelled failure lines:
-  L957: configure: error: in `/home/travis/build/BurntSushi/ripgrep/target/i686-unknown-linux-musl/debug/build/jemalloc-sys-754a2cc36ac04a65/out/build':
-  L958: configure: error: C compiler cannot create executables
-  L959: See `config.log' for more details
-  L960: thread 'main' panicked at 'command did not execute successfully: "sh" "/home/travis/build/BurntSushi/ripgrep/target/i686-unknown-linux-musl/debug/build/jemalloc-sys-754a2cc36ac04a6...
-  L961: expected success, got: exit code: 77', /home/travis/.cargo/registry/src/github.com-1ecc6299db9ec823/jemalloc-sys-0.3.0/build.rs:370:9
-  L962: stack backtrace:
-  L963:    0:     0x5597a5c1a753 - std::sys::unix::backtrace::tracing::imp::unwind_backtrace::h6bfa65e4a0f076ef
-  L964:                                at src/libstd/sys/unix/backtrace/tracing/gcc_s.rs:39
+  L526: 1) Composer\Test\Repository\ComposerRepositoryTest::testCanonicalizeUrl with data set #0 ('https://example.org/path/to/file', '/path/to/file', 'https://example.org')
+  L527: Argument 4 passed to Composer\Repository\ComposerRepository::__construct() must be an instance of Composer\Util\HttpDownloader, none given, called in /home/travis/build/composer/co...
+  L528: 
+  L529: /home/travis/build/composer/composer/src/Composer/Repository/ComposerRepository.php:71
+  L530: /home/travis/build/composer/composer/tests/Composer/Test/Repository/ComposerRepositoryTest.php:231
+  L531: 
+  L532: 2) Composer\Test\Repository\ComposerRepositoryTest::testCanonicalizeUrl with data set #1 ('https://example.org/canonic_url', 'https://example.org/canonic_url', 'https://should-not-...
+  L533: Argument 4 passed to Composer\Repository\ComposerRepository::__construct() must be an instance of Composer\Util\HttpDownloader, none given, called in /home/travis/build/composer/co...
 Method cited:
-  L921: error: failed to run custom build command for `jemalloc-sys v0.3.0`
-  L1000: warning: build failed, waiting for other jobs to finish...
-  L1001: error: build failed
-  L1003: The command "ci/script.sh" exited with 101.
-  L1007: Done. Your build exited with 1.
+  L102: tee: /etc/docker/daemon.json: No such file or directory
 
-## BurntSushi@ripgrep:524343295  (category 0)
+## composer@composer:558512461  (category 0, 3783 lines)
 Labelled failure lines:
-  L956: configure: error: in `/home/travis/build/BurntSushi/ripgrep/target/i686-unknown-linux-musl/debug/build/jemalloc-sys-8599e81d749c60c3/out/build':
-  L957: configure: error: C compiler cannot create executables
-  L958: See `config.log' for more details
-  L959: thread 'main' panicked at 'command did not execute successfully: "sh" "/home/travis/build/BurntSushi/ripgrep/target/i686-unknown-linux-musl/debug/build/jemalloc-sys-8599e81d749c60c...
-  L960: expected success, got: exit code: 77', /home/travis/.cargo/registry/src/github.com-1ecc6299db9ec823/jemalloc-sys-0.3.0/build.rs:370:9
-  L961: stack backtrace:
-  L962:    0:     0x55ffe43f9ad3 - std::sys::unix::backtrace::tracing::imp::unwind_backtrace::h805294fd9a8a1853
-  L963:                                at src/libstd/sys/unix/backtrace/tracing/gcc_s.rs:39
+  L1091: 1) Composer\Test\ApplicationTest::testDevWarning
+  L1092: Function ReflectionType::__toString() is deprecated
+  L1093: 
+  L1094: /home/travis/build/composer/composer/tests/Composer/Test/ApplicationTest.php:25
+  L1095: 
+  L1096: 2) Composer\Test\ApplicationTest::testDevWarningPrevented
+  L1097: Function ReflectionType::__toString() is deprecated
+  L1098: 
 Method cited:
-  L920: error: failed to run custom build command for `jemalloc-sys v0.3.0`
-  L999: warning: build failed, waiting for other jobs to finish...
-  L1000: error: build failed
-  L1002: The command "ci/script.sh" exited with 101.
-  L1006: Done. Your build exited with 1.
+  L2973: 44) Composer\Test\Package\Loader\ValidatingArrayLoaderTest::testLoadFailureThrowsException with data set #5 (array('foo/bar', 'test'), array('transport-options : should be... given...
+  L3307: FAILED tests/Composer/Test/Package
+  L3432: FAILED tests/Composer/Test/Plugin
+  L3572: 23) Composer\Test\Repository\RepositoryManagerTest::testRepoCreation with data set #7 ('invalid', array(), 'InvalidArgumentException')
+  L3708: FAILED tests/Composer/Test/Repository
+  L3750: ErrorException: Trying to access array offset on value of type null
+  L3757: ErrorException: Trying to access array offset on value of type null
+  L3765: FAILED tests/Composer/Test/Util
 
-## BurntSushi@ripgrep:524430085  (category 0)
+## discourse@discourse:565586706  (category 0, 4258 lines)
 Labelled failure lines:
-  L1618: thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }', src/libcore/result.rs:999:5
-  L1619: note: Run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
+  L4176: app/assets/javascripts/discourse/routes/about.js.es6
 Method cited:
-  L1612: error: failed to run custom build command for `pcre2-sys v0.2.0`
-  L1621: warning: build failed, waiting for other jobs to finish...
-  L1623: error: build failed
-  L1625: The command "ci/script.sh" exited with 101.
-  L1629: Done. Your build exited with 1.
+  L130: Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-ti...
+  L148: Authentication timestamp timeout: 15.0 minutes
+  L149: Password prompt timeout: 0.0 minutes
+  L277: 	the USA under License Exception TSU of the U.S. Export
+  L4178: error Command failed with exit code 1.
+  L4245: " exited with 1.
 
-## BurntSushi@ripgrep:524433448  (category 0)
+## dkhamsing@open-source-ios-apps:555180400  (category 0, 5886 lines)
 Labelled failure lines:
-  L1637: thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }', src/libcore/result.rs:999:5
-  L1638: note: Run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
+  L5514: > Links 
+  L5515:   1. [L0153] 404 http://a5.mzstatic.com/us/r30/Purple69/v4/b4/96/83/b49683ea-62bc-e9a5-9480-bd75e529d259/screen696x696.jpeg  
+  L5516: > Dupes 
+  L5517:   None ✓
 Method cited:
-  L1631: error: failed to run custom build command for `pcre2-sys v0.2.0`
-  L1640: warning: build failed, waiting for other jobs to finish...
-  L1642: error: build failed
-  L1644: The command "ci/script.sh" exited with 101.
-  L1648: Done. Your build exited with 1.
+  L149: Password prompt timeout: 0.0 minutes
+  L277: 	the USA under License Exception TSU of the U.S. Export
+  L1692: 808 https://github.com/cpo007/S.C.P-Asylum-Fail
+  L1693: 809 ["https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Launch.png", "https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Home.png"]
+  L2938: 805 S.C.P-Asylum-Fail
+  L4800:   1314. https://github.com/cpo007/S.C.P-Asylum-Fail 
+  L4801:   1315. https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Launch.png 
+  L4802:   1316. https://github.com/cpo007/S.C.P-Asylum-Fail/blob/master/Image/Home.png 
 

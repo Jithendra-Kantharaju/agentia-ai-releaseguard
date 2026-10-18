@@ -10,6 +10,7 @@ All methods return plain dicts so the rest of the app never cares which mode is 
 from __future__ import annotations
 
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -87,7 +88,7 @@ class AgentiaAdapter:
             self._commands = _read_json(COMMANDS_FILE)
         return self._commands
 
-    def _run(self, key: str, extra_arg: str | None = None) -> dict:
+    def _run(self, key: str, extra_arg: str | None = None, extra_args: list[str] | None = None) -> dict:
         cfg = self._load_commands()
         cmd = list(cfg[key])
         exe = shutil.which(cmd[0])
@@ -98,6 +99,7 @@ class AgentiaAdapter:
                 "or use --mode mock."
             )
         cmd[0] = exe
+        cmd.extend(extra_args or [])
         if extra_arg:
             cmd.append(extra_arg)
         try:
@@ -142,7 +144,11 @@ class AgentiaAdapter:
     def run_tests(self, work_id: str | None = None) -> dict:
         if self.mode == "mock":
             return normalize_tests(_read_json(self._scenario_dir / "test_results.json"))
-        res = self._run("work_test", work_id)
+        # Never call "work test --local" here: it runs the project quality gate, which may be ReleaseGuard
+        # itself (infinite recursion). "work test apex" runs Apex tests via the Salesforce CLI; Agentia passes
+        # the class names to gate scripts in AGENTIA_APEX_TEST_CLASSES.
+        classes = os.getenv("AGENTIA_APEX_TEST_CLASSES", "").strip()
+        res = self._run("work_test", None, [f"--apex-test-classes={classes}"] if classes else None)
         # A non-zero exit code usually means failing tests, which is still useful evidence.
         normalized = normalize_tests(res["data"])
         if not res["ok"] and normalized["failed"] is None:

@@ -206,17 +206,23 @@ def _clip(text: str, width: int = 180) -> str:
     return text if len(text) <= width else text[:width] + "..."
 
 
-def render_misses(items: list[dict], result: dict, count: int) -> str:
-    """Markdown of the first `count` logs where the method missed the labelled chunk (for error analysis on DEV)."""
+def render_misses(items: list[dict], result: dict, count: int, per_repo: int = 2) -> str:
+    """Markdown of `count` logs where the method missed the labelled chunk (for error analysis on DEV).
+    At most `per_repo` per repository, so the sample is not dominated by one project."""
     by_id = {i["id"]: i for i in items}
     out = [f"# Misses for method `{result['summary']['method']}` (first {count})", ""]
     shown = 0
+    seen_repos: dict[str, int] = {}
     for row in result["items"]:
         if row.get("hit") or row["id"] not in by_id:
             continue
         item = by_id[row["id"]]
+        repo = str(item.get("repo"))
+        if seen_repos.get(repo, 0) >= per_repo:
+            continue
+        seen_repos[repo] = seen_repos.get(repo, 0) + 1
         lines = item["log"].split("\n")
-        out.append(f"## {row['id']}  (category {item.get('category')})")
+        out.append(f"## {row['id']}  (category {item.get('category')}, {len(lines)} lines)")
         out.append("Labelled failure lines:")
         for n in item["gold_lines"][:8]:
             out.append(f"  L{n}: {_clip(lines[n - 1]) if 0 < n <= len(lines) else ''}")

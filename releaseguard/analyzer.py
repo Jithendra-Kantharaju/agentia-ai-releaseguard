@@ -15,20 +15,33 @@ import time
 from .evidence import normalize_log
 
 CATEGORY_PATTERNS: list[tuple[str, re.Pattern]] = [
-    ("compilation_error", re.compile(r"(?i)(compil(?:ation|er) (?:error|failed)|cannot find symbol|syntax ?error|error TS\d+|undefined reference)")),
-    ("dependency_error", re.compile(r"(?i)(could not resolve|unable to resolve|npm ERR!|ModuleNotFoundError|No module named|package .* does not exist|could not find artifact|failed to (?:fetch|download))")),
+    ("compilation_error", re.compile(r"(?i)(compil(?:ation|er) (?:error|failed)|cannot find symbol|syntax ?error|error TS\d+|undefined reference|CMake Error|configure: error|\bfatal error:|error\[E\d+\])")),
+    ("dependency_error", re.compile(r"(?i)(could not resolve|unable to resolve|npm ERR!|ModuleNotFoundError|No module named|package .* does not exist|could not find artifact|failed to (?:fetch|download)|could not find\b|No such file or directory|command not found)")),
     ("test_failure", re.compile(r"(?i)(\bFAILED\b|\bFAIL\b|tests? failed|AssertionError|AssertException|Failures: [1-9]|failing tests?)")),
-    ("timeout", re.compile(r"(?i)(timed out|timeout|deadline exceeded)")),
+    ("timeout", re.compile(r"(?i)(timed out|timeout|deadline exceeded|no output has been received|build has been terminated)")),
     ("out_of_memory", re.compile(r"(?i)(out ?of ?memory|OOMKilled|exit code 137|\bKilled\b|heap space)")),
     ("permission_or_auth", re.compile(r"(?i)(permission denied|unauthorized|authentication failed|access denied|\bforbidden\b)")),
     ("deployment_error", re.compile(r"(?i)(deployment failed|UNABLE_TO_LOCK_ROW|FIELD_CUSTOM_VALIDATION|INVALID_CROSS_REFERENCE|quality gate)")),
-    ("generic_error", re.compile(r"(\bERROR\b|\bFATAL\b|\bError:|Exception\b|\bfatal:|exit code [1-9]|exited with)")),
+    ("generic_error", re.compile(r"(\bERROR\b|\bFATAL\b|\bError:|Exception\b|\bfatal:|exit code [1-9]|exited with|panicked at|Traceback \(most recent call last\)|Segmentation fault)")),
 ]
 CATEGORY_ORDER = [name for name, _ in CATEGORY_PATTERNS]
 ALLOWED_CATEGORIES = CATEGORY_ORDER + ["none", "other"]
 
 # Lines such as "0 failed" or "Errors: 0" are good news, not evidence of failure.
 BENIGN = re.compile(r"(?i)(\b0 (?:tests? )?(?:failed|failures?|errors?)\b|Failures: 0|Errors: 0)")
+
+# Summary lines printed AFTER the real failure ("The command ... exited with 1"). They are true but say nothing
+# about the cause, so they are only cited when nothing more specific is found.
+WRAPPER = re.compile(
+    r"(?i)(^The command .* exited with \d+|Your build exited with|^Done\. Your build|waiting for other jobs to finish"
+    r"|^error: build failed|^make(?:\[\d+\])?: \*\*\*|recipe for target|^Error: Process completed with exit code)"
+)
+# Specific root-cause signatures. When any exist, they are cited ahead of generic "ERROR" lines.
+ROOT = re.compile(
+    r"(CMake Error|configure: error|panicked at|Traceback \(most recent call last\)|\bfatal error:|undefined reference"
+    r"|No such file or directory|command not found|(?i:could not find\b)|npm ERR!|ModuleNotFoundError|error\[E\d+\]"
+    r"|AssertionError|Segmentation fault|(?i:no output has been received)|(?i:build has been terminated))"
+)
 
 MAX_LINE_CHARS = 300
 
@@ -43,13 +56,21 @@ def _line_category(text: str) -> str | None:
 
 
 def baseline_triage(job_log: str, max_lines: int = 8) -> dict:
-    """Keyword/regex baseline. Cites the last matching lines, where failures usually are."""
+    """Keyword/regex baseline in three tiers: specific root-cause lines, then generic error lines, then
+    wrapper/summary lines. Within the best tier it cites the last matches, where failures usually are."""
     lines = normalize_log(job_log).split("\n")
-    matches = []
+    tiers: dict[int, list[tuple[int, str]]] = {0: [], 1: [], 2: []}
     for number, text in enumerate(lines, start=1):
         category = _line_category(text)
-        if category:
-            matches.append((number, category))
+        if not category:
+            continue
+        if WRAPPER.search(text.strip()):
+            tiers[0].append((number, category))
+        elif ROOT.search(text):
+            tiers[2].append((number, category))
+        else:
+            tiers[1].append((number, category))
+    matches = next((tiers[t] for t in (2, 1, 0) if tiers[t]), [])
     chosen = matches[-max_lines:]
     cited = [{"line": n, "text": lines[n - 1].strip()[:MAX_LINE_CHARS]} for n, _ in chosen]
     category = "none"

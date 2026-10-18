@@ -1,9 +1,9 @@
 {
-  "_note": "Used only with --mode real. Verify each command with 'agentia --help' and edit here if your CLI version differs. The work id / job id is appended as the last argument when you pass --work-id / --job-id.",
-  "work_get": ["agentia", "cicd", "work", "get"],
-  "work_test": ["agentia", "cicd", "work", "test", "--local"],
+  "_note": "Used only with --mode real. Commands were taken from 'agentia ... --help' of @copado/agentia-cli 1.0.0-rc.0. The work id / job id is appended as the last argument when you pass --work-id / --job-id.",
+  "work_get": ["agentia", "cicd", "work", "get", "--json"],
+  "work_test": ["agentia", "cicd", "work", "test", "apex"],
   "job_log_get": ["agentia", "cicd", "job", "log", "get"],
-  "work_submit": ["agentia", "cicd", "work", "submit"],
-  "work_status": ["agentia", "cicd", "work", "status"],
+  "work_submit": ["agentia", "cicd", "work", "submit", "--skip-local-tests"],
+  "work_status": ["agentia", "cicd", "work", "status", "--json"],
   "timeout_seconds": 600
 }
